@@ -1,6 +1,6 @@
-@import "_global.css";
-@import "_overall.css";
-@import "_fonts.css";
+@import "../konstrukt/css/_global.css";
+@import "../konstrukt/css/_overall.css";
+@import "../konstrukt/css/_fonts.css";
 
 /** Components **/
 
