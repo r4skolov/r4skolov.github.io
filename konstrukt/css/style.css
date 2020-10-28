@@ -1,6 +1,6 @@
-@import "../css/_global.css";
-@import "../css/_overall.css";
-@import "../css/_fonts.css";
+@import "_global.css";
+@import "_overall.css";
+@import "_fonts.css";
 
 /** Components **/
 
