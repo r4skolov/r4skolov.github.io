@@ -1,17 +1,17 @@
-@import "/konstrukt/css/_global.css";
-@import "/konstrukt/css/_overall.css";
-@import "/konstrukt/css/_fonts.css";
+@import "_global.css";
+@import "_overall.css";
+@import "_fonts.css";
 
 /** Components **/
 
-@import "/konstrukt/css/components/main.css";
-@import "/konstrukt/css/components/header.css";
-@import "/konstrukt/css/components/second.css";
-@import "/konstrukt/css/components/thirty.css";
-@import "/konstrukt/css/components/four.css";
-@import "/konstrukt/css/components/signup.css";
-@import "/konstrukt/css/components/footer.css";
-@import "/konstrukt/css/components/slider.css";
+@import "../css/components/main.css";
+@import "../css/components/header.css";
+@import "../css/components/second.css";
+@import "../css/components/thirty.css";
+@import "../css/components/four.css";
+@import "../css/components/signup.css";
+@import "../css/components/footer.css";
+@import "../css/components/slider.css";
 
 
 
