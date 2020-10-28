@@ -1,0 +1,162 @@
+.footer {
+    width: 100%;
+    height: 297px;
+    background: url(/img/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.footer_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company {
+    width: 27%;
+    margin-top: 42px;
+    margin-left: 10px;
+    
+}
+
+
+footer {
+    color: #fff;
+
+}
+.footer_title {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer_logo {
+    width: 101px;
+    height: 23px;
+    padding-bottom: 10px;
+}
+
+.footer_text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+
+.footer_links {
+    display: flex;
+    width: 38%;
+    
+}
+
+
+
+.links_title {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+
+.list_links {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.85px;
+    color: #fff;
+   
+}
+
+.list_links-one {
+    padding-top: 66px;
+    padding-left: 55px;
+    
+}
+
+.list_links-two {
+    padding-top: 67px;
+    padding-left: 32px;
+
+   
+}
+
+.list_links-thirt {
+    padding-top: 67px;
+    padding-left: 42px;
+   
+}
+
+li a:hover{
+ color: #00A4E5;
+}
+
+
+.Contact {
+    width: 20%;
+   margin-top: 41px;
+   padding-left: 8px;
+
+}
+
+.adress {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #fff;
+    padding-bottom: 11px;
+}
+
+
+.phone {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #fff;
+    padding-bottom: 17px;
+}
+
+.mail {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #fff;
+}
+
+.Social {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    padding-top: 70px; 
+    margin-right: 30px;
+}
+
+.Social a {
+    font-size: 15px;
+   
+}
+
+.Social a:hover {
+    color: #00A4E5;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    color: #fff;
+    padding-top: 60px;
+    padding-left: 50px;
+}

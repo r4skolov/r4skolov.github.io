@@ -1,0 +1,142 @@
+
+.gird-item {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+padding-bottom: 115px;
+}
+
+
+.our_title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.our_title:after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 1px;
+    margin: 10px auto;
+    
+    background-color: #16ACE8;
+}
+
+
+.info {
+    width: 86%;
+}
+
+.grid_item1 {
+    
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.170455px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #48555B;
+}
+
+.blue {
+    color: #16ACE8;
+}
+
+.grid_item2 {
+    
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+
+    margin-top: 31px;
+    margin-left: 9px;
+}
+
+.galler_main {
+    
+    min-width: 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin: 0 10px;
+    min-width: 0;
+}
+
+
+.content1 {
+    position: relative;
+    padding: 0 5px;
+}
+
+
+
+
+.text_img {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.7px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 1;
+}
+
+
+
+
+/* Слайдер */
+    .slick-slider{
+        position: relative;
+     }
+  /* Слайдер запущен */
+  .slick-slider.slick-initialized{
+      width: 440px;
+      
+      padding-left: 0px;
+      
+  }
+  /* Слайдер с точками */
+  .slick-slider.slick-dotted{ }
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slick-dots{ 
+      display: flex;
+     position: absolute;
+     bottom: -40px;
+  }
+  .slick-dots li{
+      list-style: none;
+  }
+  /* Активная точка */
+  .slick-dots li.slick-active button {
+
+  background-color: #00a4e5;
+    width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: none;
+  }
+  /* Элемент точки */
+  .slick-dots li button{
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      border-radius: 50%;
+      margin: 0 5px;
+      outline: none;
+      border: none;
+  }
