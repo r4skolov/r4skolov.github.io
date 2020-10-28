@@ -4,14 +4,14 @@
 
 /** Components **/
 
-@import "../konstrukt/css/components/main.css";
-@import "../konstrukt/css/components/header.css";
-@import "../konstrukt/css/components/second.css";
-@import "../konstrukt/css/components/thirty.css";
-@import "../konstrukt/css/components/four.css";
-@import "../konstrukt/css/components/signup.css";
-@import "../konstrukt/css/components/foote.css";
-@import "../konstrukt/css/components/slider.css";
+@import "/konstrukt/css/components/main.css";
+@import "/konstrukt/css/components/header.css";
+@import "/konstrukt/css/components/second.css";
+@import "/konstrukt/css/components/thirty.css";
+@import "/konstrukt/css/components/four.css";
+@import "/konstrukt/css/components/signup.css";
+@import "/konstrukt/css/components/footer.css";
+@import "/konstrukt/css/components/slider.css";
 
 
 
