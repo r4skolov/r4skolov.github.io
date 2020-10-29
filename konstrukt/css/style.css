@@ -13,7 +13,6 @@
 @import "/konstrukt/css/components/slider.css";
 
 
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -71,6 +70,7 @@ a {
     }
 
 }
+
 
 @media (max-width: 871px) { 
 
