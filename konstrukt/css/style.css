@@ -1,5 +1,5 @@
-@import "/konstrukt/css/_global.css";
-@import "/konstrukt/css/_overall.css";
+@import "/konstrukt/css/_globa.css";
+@import "/konstrukt/css/_verall.css";
 
 /** Components **/
 
@@ -11,8 +11,6 @@
 @import "/konstrukt/css/components/signup.css";
 @import "/konstrukt/css/components/footer.css";
 @import "/konstrukt/css/components/slider.css";
-
-
 
 
 
