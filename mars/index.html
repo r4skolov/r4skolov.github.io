@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/441acdde87.js" crossorigin="anonymous"></script>
+    <title>Марс</title>
+</head>
+
+<body>
+    <svg style="display: none">
+        <symbol id="vk" viewBox="0 0 512 512">
+            <g>
+                <path d="M440.649,295.361c16.984,16.582,34.909,32.182,50.142,50.436
+                c6.729,8.112,13.099,16.482,17.973,25.896c6.906,13.382,0.651,28.108-11.348,28.907l-74.59-0.034
+                c-19.238,1.596-34.585-6.148-47.489-19.302c-10.327-10.519-19.891-21.714-29.821-32.588c-4.071-4.444-8.332-8.626-13.422-11.932
+                c-10.182-6.609-19.021-4.586-24.84,6.034c-5.926,10.802-7.271,22.762-7.853,34.8c-0.799,17.564-6.108,22.182-23.751,22.986
+                c-37.705,1.778-73.489-3.926-106.732-22.947c-29.308-16.768-52.034-40.441-71.816-67.24
+                C58.589,258.194,29.094,200.852,2.586,141.904c-5.967-13.281-1.603-20.41,13.051-20.663c24.333-0.473,48.663-0.439,73.025-0.034
+                c9.89,0.145,16.437,5.817,20.256,15.16c13.165,32.371,29.274,63.169,49.494,91.716c5.385,7.6,10.876,15.201,18.694,20.55
+                c8.65,5.923,15.236,3.96,19.305-5.676c2.582-6.11,3.713-12.691,4.295-19.234c1.928-22.513,2.182-44.988-1.199-67.422
+                c-2.076-14.001-9.962-23.065-23.933-25.714c-7.129-1.351-6.068-4.004-2.616-8.073c5.995-7.018,11.634-11.387,22.875-11.387h84.298
+                c13.271,2.619,16.218,8.581,18.035,21.934l0.072,93.637c-0.145,5.169,2.582,20.51,11.893,23.931
+                c7.452,2.436,12.364-3.526,16.836-8.251c20.183-21.421,34.588-46.737,47.457-72.951c5.711-11.527,10.622-23.497,15.381-35.458
+                c3.526-8.875,9.059-13.242,19.056-13.049l81.132,0.072c2.406,0,4.84,0.035,7.17,0.434c13.671,2.33,17.418,8.211,13.195,21.561
+                c-6.653,20.945-19.598,38.4-32.255,55.935c-13.53,18.721-28.001,36.802-41.418,55.634
+                C424.357,271.756,425.336,280.424,440.649,295.361L440.649,295.361z" />
+            </g>
+
+        </symbol>
+
+        <symbol id="telegram" viewBox="0 0 24 24">
+            <g>
+                <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564
+                1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 
+                8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394
+                 1.136-.176.691.218z" />
+            </g>
+        </symbol>
+
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path d="M384,176h-96v-64c0-17.664,14.336-32,32-32h32V0h-64l0,
+                0c-53.024,0-96,42.976-96,96v80h-64v80h64v256
+                h96V256h64L384,176z" />
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 511 511.9">
+            <g>
+                <path
+                    d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+                <path
+                    d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+                <path
+                    d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+            </g>
+        </symbol>
+
+
+        <symbol id="arrow_right" viewBox="0 0 89 16" width="89" height="16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M82.3431 0.928941L88.7071 7.2929C89.0976 7.68343 89.0976 8.31659 88.7071 8.70712L82.3431 15.0711C81.9526 15.4616 81.3195 15.4616 80.9289
+                 15.0711C80.5384 14.6806 80.5384 14.0474 80.9289 13.6569L85.5858 9.00001L0 9.00001L0 7.00001L85.5858 7.00001L80.9289 2.34315C80.5384 1.95263 
+                 80.5384 1.31947 80.9289 0.928941C81.3195 0.538416 81.9526 0.538416 82.3431 0.928941Z" />
+            </g>
+        </symbol>
+        <symbol id="arrow_left" width="89" height="16" viewBox="0 0 89 16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65685 15.0711L0.292893 8.70709C-0.0976327 8.31657 -0.0976327 
+                7.6834 0.292893 7.29288L6.65685 0.928916C7.04738 0.538392 7.68054 0.538392 8.07107 0.928917C8.46159 1.31944 8.46159
+                 1.95261 8.07107 2.34313L3.41422 6.99998L89 6.99999L89 8.99999L3.41422 8.99998L8.07107 13.6568C8.46159 14.0474 8.46159 
+                 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711Z" />
+            </g>
+        </symbol>
+    </svg>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header_top">
+                    <button class="nav_toggle" type="button">
+                        <span class="nav_toggle-item">burger</span>
+                    </button>
+                    <div class="header_logo">
+                        <img src="/mars/img/logo/logo_1.png" alt="">
+                    </div>
+                    <div class="header_info">
+                        <div class="info"><span class="aqua">телефон –</span> +7 ( 499 ) 709 84 59</div>
+                        <div class="info"><span class="aqua">работаем –</span> ежедневно с 10:00 до 22:00</div>
+                        <div class="info"><span class="aqua">адрес –</span> Москва, 2-ой Троицкий переулок, 6А, стр. 3
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bottom">
+                    <nav class="nav">
+                        <a class="nav_link" href="#">Направления</a>
+                        <a class="nav_link" href="#">Абонименты</a>
+                        <a class="nav_link" href="#">Педагоги</a>
+                        <a class="nav_link" href="#">Студенты</a>
+                        <a class="nav_link" href="#">Сертификаты</a>
+                        <a class="nav_link" href="#">Как добраться</a>
+                    </nav>
+                    <div>
+                        <a class="header_btn" href="#">mars.online</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="container">
+                <div class="intro_inner">
+                    <div class="intro_test">
+                        <h1 class="intro_title">Мы <span class="aqua_title">обучаем музыке</span> в Марс прямо сейчас
+                        </h1>
+                        <p class="intro_text">Все занятия по специальности — только индивидуальные.
+                            Один учитель и один ученик — это лучший способ чему-то научиться.</p>
+                        <a class="intro_btn" href="#">записаться на пробный</a>
+                    </div>
+                    <div class="intro_img " id="slider_1">
+                        <div class="intro_slider">
+                            <img src="/mars/img/intro.jpg" alt="">
+                        </div>
+                        <div class="intro_slider">
+                            <img src="/mars/img/intro.jpg" alt="">
+                        </div>
+                        <div class="intro_slider">
+                            <img src="/mars/img/intro.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="buttons_slider">
+                        <button class="arrow_prev" type="button">
+                            <span>
+                                <svg class="slider_arrow">
+                                    <use xlink:href="#arrow_left"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <span class="countsSlides" id="#cp">1</span>
+                        <span class="count_slash"> / </span>
+                        <span class="count_right">3</span>
+                        <button class="arrow_next" type="button">
+                            <span>
+                                <svg class="slider_arrow">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="second">
+            <div class="container">
+                <div class="grid_item">
+                    <div class="first_column">
+                        <div class="first_item-text">Все занятия по специальности — только индивидуальные. Один учитель
+                            и один ученик
+                            — это лучший способ чему-то научиться.</div>
+                        <div class="first_item-img">
+                            <img src="/mars/img/second/Rectangle 5.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="second_column">
+                        <div class="second_item-img">
+                            <img src="/mars/img/second/Rectangle 6.jpg" alt="" width="100%"></div>
+                    </div>
+                    <div class="third_column">
+                        <div class="tihrd_stats">
+                            <div class="tihrd_stats-item">
+                                <span class="aqua aqua--stats">36</span> <br>
+                                <p class="stats_text">индивидуальных урока</p>
+                            </div>
+                            <div class="tihrd_stats-item">
+                                <span class="aqua aqua--stats">200 000</span> <br>
+                                <p class="stats_text">уроков по инструментам</p>
+                            </div>
+                            <div class="tihrd_stats-item">
+                                <span class="aqua aqua--stats">10 917</span> <br>
+                                <p class="stats_text">индивидуальных урока</p>
+                            </div>
+                        </div>
+                        <div class="third_item-img">
+                            <img src="/mars/img/second/Rectangle 14.jpg" alt="" width="100%">
+
+                        </div>
+                        <div class="third_item-img">
+                            <img src="/mars/img/second/Rectangle 15.jpg" alt="" width="100%">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="directions">
+            <div class="container">
+                <div class="section_header section_header--direction">
+                    <h2 class="section_title direction--title">Наши направления </h2>
+                    <a class="section_link" href="">Все направления</a>
+                </div>
+                <div class="direction_item">
+                    <div class="directions_icon"><img src="/mars/img/icons/icon_1.png" alt=""></div>
+                    <div class="direction_info">
+                        <div class="direction_title">Вокал</div>
+                        <div class="direction_text">Мы вместе пройдем путь от самых основ до вашего
+                            первого уверенного выступления на сцене.
+                            Обучение вокалу — это сложная и тонкая работа,
+                            но под руководством опытного наставника вы сможете
+                            добиться хороших результатов.
+                        </div>
+                        <div class="direction_rows">
+                            <a href="#"> <img src="/mars/img/right.svg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction_item">
+                    <div class="directions_icon"><img src="/mars/img/icons/icon_2.png" alt=""></div>
+                    <div class="direction_info">
+                        <div class="direction_title">Фортепиано</div>
+                        <div class="direction_text">Мы вместе пройдем путь от самых основ до вашего
+                            первого уверенного выступления на сцене.
+                            Обучение вокалу — это сложная и тонкая работа,
+                            но под руководством опытного наставника вы сможете
+                            добиться хороших результатов.
+                        </div>
+                        <div class="direction_rows">
+                            <a href="#"> <img src="/mars/img/right.svg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction_item">
+                    <div class="directions_icon"><img src="/mars/img/icons/icon_3.png" alt=""></div>
+                    <div class="direction_info">
+                        <div class="direction_title">Гитара</div>
+                        <div class="direction_text">Мы вместе пройдем путь от самых основ до вашего
+                            первого уверенного выступления на сцене.
+                            Обучение вокалу — это сложная и тонкая работа,
+                            но под руководством опытного наставника вы сможете
+                            добиться хороших результатов.
+                        </div>
+                        <div class="direction_rows">
+                            <a href="#"> <img src="/mars/img/right.svg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction_item">
+                    <div class="directions_icon"><img src="/mars/img/icons/icon_4.png" alt=""></div>
+                    <div class="direction_info direction_info--last">
+                        <div class="direction_title">Онлайн</div>
+                        <div class="direction_text">Мы вместе пройдем путь от самых основ до вашего
+                            первого уверенного выступления на сцене.
+                            Обучение вокалу — это сложная и тонкая работа,
+                            но под руководством опытного наставника вы сможете
+                            добиться хороших результатов.
+                        </div>
+                        <div class="direction_rows">
+                            <a href="#"> <img src="/mars/img/right.svg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teachers">
+            <div class="container">
+                <div class="section_header teacher--header">
+                    <h2 class="section_title teacher--title">Педагоги</h2>
+                    <a class="section_link" href="">Все педагоги</a>
+                </div>
+                <div class="teacher_main">
+                    <div class="teacher_slider">
+                        <div class="slider_item">
+                            <div class="slider_img">
+                                <img class="teachers_image" src="/mars/img/teachers/teacher_1.jpg" alt="">
+                            </div>
+                            <div class="slider_name">Виктория Тихорова</div>
+                            <div class="slider_prof">Фортепиано</div>
+                        </div>
+                        <div class="slider_item">
+                            <div class="slider_img">
+                                <img class="teachers_image" src="/mars/img/teachers/teacher_2.jpg" alt="">
+                            </div>
+                            <div class="slider_name">Валерия Скороходова</div>
+                            <div class="slider_prof">Вокал</div>
+                        </div>
+                        <div class="slider_item">
+                            <div class="slider_img">
+                                <img class="teachers_image" src="/mars/img/teachers/teacher_3.jpg" alt="">
+                            </div>
+                            <div class="slider_name">Вероника Иванова</div>
+                            <div class="slider_prof">Гитара</div>
+                        </div>
+                    </div>
+                    <div class="buttons_slide-2">
+                        <button class="teacher_btn-prev" type="button">
+                            <span>
+                                <svg class="slider_arrow">
+                                    <use xlink:href="#arrow_left"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="counts_">
+                            <span class="countsSlides_2" id="#countsSlides_2">1</span>
+                            <span class="countsSlides_2-slash"> / </span>
+                            <span class="countsSlides_2-num">3</span>
+                        </div>
+                        <button class="teacher_btn-next" type="button">
+                            <span>
+                                <svg class="slider_arrow">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trial">
+            <div class="container">
+
+                <div class="trial_img">
+                    <div class="trial_test">
+                        <img class="img_test" src="/mars/img/Frame_55.jpg" alt="" width="50%">
+
+                        <div class="trial_window">
+                            <div class="tests">
+                                <div class="trial_title">Запишитесь на пробное занятие</div>
+                                <div class="trial_subtitle">Мы вместе пройдем путь от самых основ до вашего первого <br>
+                                    уверенного выступления на сцене.</div>
+                                <div class="trial_forms">
+                                    <form class="trial_form" action="" method="post">
+                                        <div>
+                                            <input class="name" type="text" placeholder="ваше имя">
+                                        </div>
+                                        <div>
+                                            <input class="number" type="tel" placeholder="+7(___) ___-__-__">
+                                        </div>
+                                        <div class="chekbox">
+                                            <label class="chekbox_group">
+                                                <input class="chekbox_real" type="checkbox">
+                                                <span class="chekbox_fake"></span>
+                                                <span class="chekbox_title"> Даю свое согласие на обработку своих <a
+                                                        class="aqua" href="#"> персональных
+                                                        данных</a> </span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <button class="trial_btn " type="button">записаться на пробный</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lessons">
+            <div class="container">
+                <h2 class="section_title lessons--title">Вот как проходят занятия</h2>
+                <div class="grid_lessons">
+                    <div class="first-lessons_column">
+                        <div class="lessons_text">Все занятия по специальности — только индивидуальные.
+                            Один учитель и один ученик — это лучший способ чему-то научиться.</div>
+                        <div class="lessons_img-one">
+                            <img src="/mars/img/lesson/lesson_1.jpg" alt="">
+                        </div>
+                        <div class="lessons_img-two">
+                            <img src="/mars/img/lesson/lesson_2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="second-lessons_column">
+                        <div class="lessons-row">
+                            <div class="lessons_img-thirt">
+                                <img src="/mars/img/lesson/lesson_3.jpg" alt="">
+                            </div>
+                            <div class="lessons_img-four">
+                                <img src="/mars/img/lesson/lesson_4.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="lessons_img-five">
+                            <img class="img_five" src="/mars/img/lesson/lesson_5.jpg" alt="">
+
+                            <div class="lessons_text-five">Мы вместе пройдем путь от самых основ до вашего первого
+                                уверенного
+                                выступления на сцене.
+                                Обучение вокалу — это сложная и тонкая работа, но под руководством
+                                опытного наставника вы сможете добиться хороших результатов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="concerts">
+            <div class="container">
+                <h2 class="section_title concerts--title">А тут концерты и видосы </h2>
+                <div class="contcers_main">
+                    <div class="concerts_slider">
+                        <div class="concerts_video_first">
+                            <div class="concert_video">
+                                <img class="concerts_video" src="/mars/img/videos/video_1.jpg" alt="">
+                            </div>
+                            <div class="concerts_title">Живой концерт прошел в Москве</div>
+                            <div class="concerts_subtitle">Клуб «16 Тонн»‎ </div>
+                        </div>
+                        <div class="concerts_video-second">
+                            <div class="concert_video">
+                                <img class="concerts_video" src="/mars/img/videos/video_1.jpg" alt="">
+                            </div>
+                            <div class="concerts_title">Концерт на крыше</div>
+                            <div class="concerts_subtitle">Выступали на крыше</div>
+                        </div>
+                    </div>
+
+                    <div class="buttons_slide-2">
+                        <button class="concerts_btn-prev teacher_btn-prev" type="button">
+                            <span>
+                                <svg class="slider_arrow">
+                                    <use xlink:href="#arrow_left"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="counts_">
+                            <span class="countsSlides_3">1</span>
+                            <span class="countsSlides_3-slash"> / </span>
+                            <span class="countsSlides_3-num">2</span>
+                        </div>
+                        <button class="concerts_btn-next teacher_btn-next" type="button">
+                            <span>
+                                <svg class="slider_arrow">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="answers">
+            <div class="container">
+                <h2 class="section_title answers_header--title">Ответы на популярные вопросы</h2>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        За сколько занятий вы меня научите петь / играть на гитаре / фортепиано…?
+                        <button class="answers_toggle" type="button" data-collapse="#answers_1">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_1">
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        Обучаете ли вы с нуля?
+                        <button class="answers_toggle" type="button" data-collapse="#answers_2">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_2">
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        Заниматься стоит только людям, музыкальным от природы?
+                        <button class="answers_toggle" type="button" data-collapse="#answers_3">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_3">
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        От меня будут ждать и требовать результата, а я очень медленный.
+                        <button class="answers_toggle" type="button" data-collapse="#answers_4">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_4">
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        Начинать заниматься музыкой стоит исключительно в детстве?
+                        <button class="answers_toggle" type="button" data-collapse="#answers_5">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_5">
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        Сколько нужно времени уделять музыке?
+                        <button class="answers_toggle" type="button" data-collapse="#answers_6">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_6">
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+                <div class="answers_item">
+                    <div class="answers_title">
+                        Как проходят ваши занятия?
+                        <button class="answers_toggle" type="button" data-collapse="#answers_7">
+                            <span class="answers_toggle_item">Menu</span>
+                        </button>
+                    </div>
+                    <div class="answers_text" id="answers_7">Мы вместе пройдем путь от самых основ до вашего первого
+                        уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                        Мы вместе пройдем путь от самых основ до вашего первого уверенного выступления на сцене.
+                        Обучение вокалу — это сложная и тонкая работа, но под руководством
+                        опытного наставника вы сможете добиться хороших результатов.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_item">
+                    <div class="footer_item-top">
+                        <div class="item_top-firs">
+                            <div class="footer_logo">
+                                <img class="footer_img" src="/mars/img/logo/logo_1.png" alt="">
+                                <br><span class="footer_subtitle">© «Марс», 2013–2020</span>
+                            </div>
+                        </div>
+                        <div class="item_top-second">
+                            <div class="footer_icons">
+                                <a href="#" target="_blank">
+                                    <svg class="icons_style vk--hove">
+                                        <use xlink:href="#vk"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icons_style instagra--hove">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icons_style telegram--hove">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icons_style facebook--hove">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer_number-adress">
+                                <div class="footer_number">
+                                    +7 ( 499 ) 709 84 59
+                                </div>
+                                <div class="adress">
+                                    <span class="aqua"> адрес</span> – Москва, 2-ой Троицкий переулок, 6А, стр. 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_item-bottom">
+                        <div class="item_bottom-first">
+                            <div class="footer_nav">
+                                <div class="footer_nav-top">
+                                    <div class="footer_nav-item">
+                                        <a class="footer_nav-link" href="#">Направления</a>
+                                    </div>
+                                    <div class="footer_nav-item">
+                                        <a class="footer_nav-link " href="#">Педагоги</a>
+                                    </div>
+                                    <div class="footer_nav-item">
+                                        <a class="footer_nav-link" href="#">Сертификаты</a>
+                                    </div>
+                                </div>
+                                <div class="footer_nav-bottom">
+                                    <div class="footer_nav-item">
+                                        <a class="footer_nav-link " href="#">Абонименты</a>
+                                    </div>
+                                    <div class="footer_nav-item">
+                                        <a class="footer_nav-link " href="#">Студенты</a>
+                                    </div>
+                                    <div class="footer_nav-item">
+                                        <a class="footer_nav-link" href="#">Как добраться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bottom-second">
+                            <form class="footer_form" action="" method="post">
+                                <div class="col-75">
+                                    <div class="form_title">Получать новости на почту</div>
+                                    <input class="input_mail" type="text" placeholder="ваш E-mail">
+                                </div>
+
+                                <div>
+                                    <button class="trial_btn footer--btn" type="button">
+                                        <img class="trial_btn-arrow" src="/mars/img/Arrow_Stroke.png" alt="">
+                                        отправить</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="/mars/js/slick.js"></script>
+    <script src="/mars/js/slick.min.js"></script>
+    <script src="/mars/js/main.js"></script>
+</body>
+
+</html>

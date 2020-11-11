@@ -1,0 +1,92 @@
+
+.lessons {
+    padding-bottom: 124px;
+}
+.lessons img {
+    width: 100%;
+}
+
+.grid_lessons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-column-gap: 40px; 
+}
+
+.first-lessons_column {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr 1fr;
+    grid-row-gap: 27px;
+}
+
+.second-lessons_column {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-row-gap: 57px;
+}
+
+.lessons-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lessons_text {
+    padding-top: 26px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.lessons_img-one {
+    padding-top: 0px;
+}
+
+.lessons_img-two {
+    position: relative;
+}
+
+.lessons_img-two::before {
+    background: url("/img/second/play.png") no-repeat 50% 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.lessons_img-thirt {
+    position: relative;
+    display: grid;
+    align-items: end;
+}
+
+.lessons_img-thirt::before {
+    background: url("/img/second/play.png") no-repeat 48% 80%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.lessons_img-four {
+    display: grid;
+    align-items: end;
+    padding-top: 26px;
+    padding-left: 22px;
+}
+
+.lessons_text-five {
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.44rem;
+    color: #0E0E0E;
+}

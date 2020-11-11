@@ -1,0 +1,20 @@
+/* Слайдер */
+.slick-slider{
+    top: -10px;
+
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    
+}
+
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+
+/* Стрелка */
+
+
