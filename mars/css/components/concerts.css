@@ -31,7 +31,7 @@
 }
 
 .concert_video::before {
-    background: url("/mars/img/second/play.png") no-repeat 48% 50%;
+    background: url("../mars/img/second/play.png") no-repeat 48% 50%;
     content: "";
     display: block;
     position: absolute;
