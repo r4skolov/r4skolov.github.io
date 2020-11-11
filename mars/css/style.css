@@ -1,7 +1,7 @@
 @import "/mars/css/_global.css";
 @import "/mars/css/_overall.css";
 @import "/mars/css/_fonts.css";
-
+@import "/mars/css/slider.css";
 
 /* Components */
 
@@ -15,7 +15,7 @@
 @import "/mars/css/components/concerts.css";
 @import "/mars/css/components/answers.css";
 @import "/mars/css/components/footer.css";
-@import "/mars/css/_slider.css";
+
 
 
 
