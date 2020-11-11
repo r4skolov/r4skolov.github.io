@@ -104,7 +104,7 @@ input:focus{
     width: 15px;
     height: 15px;
 
-    background: url("/mars/img/icons/check.svg") no-repeat;
+    background: url("img/icons/check.svg") no-repeat;
     background-size: 15px 15px;
     opacity: 1;
 

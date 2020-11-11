@@ -65,7 +65,7 @@
 }
 
 .lessons_img-thirt::before {
-    background: url("/mars/img/second/play.png") no-repeat 48% 80%;
+    background: url("img/second/play.png") no-repeat 48% 80%;
     content: "";
     display: block;
     position: absolute;
