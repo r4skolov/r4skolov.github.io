@@ -7,7 +7,16 @@
 
 /* Components */
 
-
+@import "/mars/css/components/header.css";
+@import "/mars/css/components/intro.css";
+@import "/mars/css/components/second.css";
+@import "/mars/css/components/directions.css";
+@import "/mars/css/components/teachers.css";
+@import "/mars/css/components/trial.css";
+@import "/mars/css/components/lessons.css";
+@import "/mars/css/components/concerts.css";
+@import "/mars/css/components/answers.css";
+@import "/mars/css/components/footer.css";
 
 
 
