@@ -1,23 +1,22 @@
-@import "../css/_global.css";
-@import "../css/_overall.css";
-@import "../css/_fonts.css";
-@import "../css/_media.css";
+@import "/mars/css/_global.css";
+@import "/mars/css/_overall.css";
+@import "/mars/css/_media.css";
 
 
 
 /* Components */
 
-@import "../css/components/header.css";
-@import "../css/components/intro.css";
-@import "../css/components/second.css";
-@import "../css/components/directions.css";
-@import "../css/components/teachers.css";
-@import "../css/components/trial.css";
-@import "../css/components/lessons.css";
-@import "../css/components/concerts.css";
-@import "../css/components/answers.css";
-@import "../css/components/footer.css";
-@import "../css/_slider.css";
+@import "/mars/css/components/header.css";
+@import "/mars/css/components/intro.css";
+@import "/mars/css/components/second.css";
+@import "/mars/css/components/directions.css";
+@import "/mars/css/components/teachers.css";
+@import "/mars/css/components/trial.css";
+@import "/mars/css/components/lessons.css";
+@import "/mars/css/components/concerts.css";
+@import "/mars/css/components/answers.css";
+@import "/mars/css/components/footer.css";
+@import "/mars/css/slider.css";
 
 
 
