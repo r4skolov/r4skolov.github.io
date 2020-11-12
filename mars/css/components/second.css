@@ -73,7 +73,7 @@
 }
 
 .third_item-img::before {
-    background: url("/second/play.png") no-repeat 47% 44%;
+    background: url("/img/second/play.png") no-repeat 47% 44%;
     content: "";
     display: block;
     position: absolute;
