@@ -1,91 +1,23 @@
-@import "/mars/css/_global.css";
-@import "/mars/css/_overall.css";
-@import "/mars/css/_fonts.css";
-@import "/mars/css/slider.css";
+@import "../css/_global.css";
+@import "../css/_overall.css";
+@import "../css/_fonts.css";
+@import "../css/_media.css";
+
+
 
 /* Components */
 
-@import "/mars/css/components/header.css";
-@import "/mars/css/components/intro.css";
-@import "/mars/css/components/second.css";
-@import "/mars/css/components/directions.css";
-@import "/mars/css/components/teachers.css";
-@import "/mars/css/components/trial.css";
-@import "/mars/css/components/lessons.css";
-@import "/mars/css/components/concerts.css";
-@import "/mars/css/components/answers.css";
-@import "/mars/css/components/footer.css";
-
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-    
-}
-
-ul,ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.container {
-    max-width: 1190px;
-    margin: 0 auto; 
-    padding: 0 15px;
-}
-
-.page {
-    overflow: hidden;
-}
-
-.section_title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 130%;
-    color: #0E0E0E;
-}
-
-/* Слайдер */
-.slick-slider{
-    top: -10px;
-
-}
-
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-    
-}
-
-/* Лента слайдов */
-.slick-track{
-  display: flex;
-}
-
-/* Стрелка */
-
+@import "../css/components/header.css";
+@import "../css/components/intro.css";
+@import "../css/components/second.css";
+@import "../css/components/directions.css";
+@import "../css/components/teachers.css";
+@import "../css/components/trial.css";
+@import "../css/components/lessons.css";
+@import "../css/components/concerts.css";
+@import "../css/components/answers.css";
+@import "../css/components/footer.css";
+@import "../css/_slider.css";
 
 
 
@@ -113,11 +45,7 @@ a {
         margin-left: 148px;
     }
 
-    .tests {
-        padding-top: 67px;
-        padding-left: 36px;
-    }
-
+   
     .trial_title {
         font-size: 28px;
     }
@@ -179,10 +107,7 @@ a {
 
     /* Trial */
 
-    .tests {
-        padding-top: 49px;
-        padding-left: 53px;
-    }
+    
 
     .trial_title {
         font-size: 26px;
@@ -325,32 +250,21 @@ a {
 
     /* Trial */
 
-    .trial_img {
-        justify-content: center;
+    .trial_image {
+        width: 100%;
     }
 
 
     .trial_window {
+        width: 94%;
+        max-width: 544px;
         position: absolute;
-        top: 17px;
-        left: 18px;
+        top: 3%;
+        left: 3%;
+        bottom: 3%;
+        right: 3%;        
     }
 
-
-    .img_test {
-        width: 100%;
-    }
-
-    .trial_test {
-
-        height: 486px;
-    }
-
-    .tests {
-        padding: 49px 0 0 0;
-        width: 544px;
-        height: 402px;
-    }
 
     .trial_btn {
         margin-top: 22px;
@@ -711,17 +625,8 @@ a {
 
     /* Trial */
 
-    .tests {
-        width: 469px;
-    }
+    
 
-    .trial_img {
-        margin-left: 30px;
-    }
-
-    .img_test {
-        width: 91%;
-    }
 
 
     .item_top-firs {
@@ -870,28 +775,14 @@ a {
 
     /* Trial */
 
-    .tests {
-        width: 415px;
-    }
 
     .trial_title {
         font-size: 24px;
     }
 
-    .name {
-        width: 381px;
-    }
-
-    .number {
-        width: 381px;
-    }
-
-    .trial_img {
-        margin-left: 0px;
-    }
-
-    .img_test {
-        width: 100%;
+   
+    .tests {
+        padding-left: 0;
     }
 
     /* Lessons */
@@ -1011,10 +902,7 @@ a {
 
     /* Trial */
 
-    .tests {
-        width: 350px;
-    }
-
+  
     .trial_title {
         font-size: 21px;
     }
@@ -1023,13 +911,9 @@ a {
         padding-bottom: 16px;
     }
 
-    .name {
-        width: 327px;
-    }
+   
 
-    .number {
-        width: 327px;
-    }
+    
 
     .trial_btn {
         margin-top: 23px;
@@ -1198,30 +1082,26 @@ a {
 
     /* Trial */
 
-    .tests {
-        width: 311px;
-        height: 435px;
+  
+    .trial_img {
+        width: 100%;
     }
 
-    .trial_test {
-        height: 522px;
+    .trial_image {
+        min-width: 364px;
     }
 
     .trial_title {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .trial_subtitle {
         padding-bottom: 16px;
     }
 
-    .name {
-        width: 290px;
-    }
+    
 
-    .number {
-        width: 290px;
-    }
+    
 
     .trial_btn {
         margin-top: 28px;
@@ -1342,23 +1222,12 @@ a {
 
     /* Trial */
 
-    .tests {
-        width: 269px;
-        height: 435px;
-    }
 
-    .imng_test {
-        width: 99%;
+    
+    .trial_image {
+        min-width: 300px;
     }
-
-    .trial_window {
-        top: 11px;
-        left: 11px;
-    }
-
-    .trial_test {
-        height: 507px;
-    }
+    
 
     .trial_title {
         font-size: 20px;
@@ -1368,13 +1237,9 @@ a {
         padding-bottom: 14px;
     }
 
-    .name {
-        width: 237px;
-    }
+    
 
-    .number {
-        width: 237px;
-    }
+    
 
     .trial_btn {
         margin-top: 28px;
