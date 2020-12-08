@@ -1,0 +1,20 @@
+<svg id="Arrow_right" data-name="Arrow right" xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #626262;
+        stroke: #fff;
+        stroke-width: 1px;
+        opacity: 0.1;
+      }
+
+      .cls-2 {
+        font-size: 8px;
+        fill: #fff;
+        font-family: ElegantIcons;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-1" cx="35.5" cy="35.5" r="35"/>
+  <text id="_4_copy" data-name="4 copy" class="cls-2" transform="matrix(-5.227, 0, 0, 5.23, 56.5, 52.722)">4</text>
+</svg>
