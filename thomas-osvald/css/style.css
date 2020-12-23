@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   background-color: #0d0d0f;
   counter-reset: section;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6 {
