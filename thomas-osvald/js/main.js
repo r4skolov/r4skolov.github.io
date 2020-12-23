@@ -165,12 +165,8 @@ document.addEventListener('click', (event) => {
 
       const modal = event.target.closest(`.${CLASS_LIST.MODAL}`);
       modal.classList.remove(CLASS_LIST.MODAL_ACTIVE);
-
-      
     }
 
-    $('.modal').on('wheel', function (e) {
-      e.stopPropagation();
 })
 
 });
