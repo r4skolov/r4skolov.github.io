@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.main--about {
+    justify-content: center;
+}
+
 .side-bar__black {
     color: #cf3249;
     background:#0d0d0f;
@@ -19,7 +23,7 @@
     display: flex;
 
         &-content {
-            padding-left: 80px;
+            padding-left: 50px;
         }
 
         &-subtitle {
@@ -49,6 +53,10 @@
 
         &-btn {
             margin-left: 20px;
+            background: url("../img/Button.png");
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
         }
 
         &-btntext {
@@ -59,6 +67,18 @@
             text-transform: uppercase;
             color:#cf3249;
         }
+}
+
+.about--inner__img {
+    width: 50%;
+}
+
+.about--content {
+    width: 50%;
+}
+.about-img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .menu-btn__red {
@@ -104,7 +124,7 @@
 
         &__modal-btn {
             height: 32px;
-            margin-right: 130px;
+            margin-right: 20px;
             background-color: transparent;
             border: none;
             cursor: pointer;
@@ -134,7 +154,7 @@
             width: 53%;
         }
 
-        &__text {
+        &__info {
             width: 40%;
             height: 100vh;
             padding-left: 70px;
@@ -147,9 +167,10 @@
 }
 
 
-.modal-content__txt {
+.modal-content__text {
     max-width: 700px;
-    max-height: 600px;
+    height: 100%;
+    padding-bottom: 200px;
     padding-right: 100px;
     font-size: 14px;
     font-weight: 100;

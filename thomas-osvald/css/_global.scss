@@ -11,6 +11,7 @@ body {
     font-weight: 400;
     margin: 0 auto;
     background-color: #0d0d0f;
+    counter-reset: section;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -35,8 +36,6 @@ a {
     text-decoration: none;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto; 
-    padding: 0 15px;
-}
+
+
+

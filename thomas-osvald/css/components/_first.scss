@@ -1,7 +1,7 @@
 .page {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     
         &-first {
             background: #cf3249 ;
@@ -58,15 +58,16 @@
 .main {
     width: 100%;
     height: 100vh;
-    background: url("../img/main.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 }
 
 .side-bar__right {
     min-width: 135px;
-    height: 100vh;
     background: #0d0d0f;
     color: #cf3249;
     display: flex;
@@ -123,7 +124,7 @@
     &__bold {
         font-weight: bold;
         font-size: 25px;
-        padding-right: 5px;
+        
     }
 
     &__normal {
@@ -186,6 +187,27 @@
     bottom: 100px;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: transform .3s;
+    transform:translateY(-100%) ;
+
+    &--active {
+        
+        transform: translateY(0);
+        transition: transform .3s;
+    }
+}
+
+
+
 
 .modal {
     position: absolute;
@@ -222,7 +244,6 @@
             cursor: pointer;
             padding-bottom: 10px;
             color: #cf3249;
-            cursor: pointer;
             position: relative;
             outline: none;
 
@@ -244,22 +265,28 @@
     }
 }
 
-.dialog-menu__list {
+.menu__list {
     margin-top: 90px;
     margin-left: 200px;
+
+        &__item {
+            margin-bottom: 10px;
+        }
+        
+        
+    }
+
+.logo-header {
+    display: none;
 }
 
-.dialog-menu__item {
-    margin-bottom: 10px;
-}
-
-.menu__link {
+.menu-list__link {
     font-size: 48px;
     color: #29292f;
     font-weight: 800;
     position: relative;
     
-
+   
 
     &::after {
         content: '/';
@@ -280,3 +307,40 @@
         display: block;
     }
 }
+
+
+.numbers__bold::before {
+    counter-increment: section;                 
+    content: "0" counter(section) " ";   
+                                                
+  }
+
+  .bullets {
+      text-align: center;
+  }
+
+  .bullets-list__link {
+      position: relative;
+      opacity: 0.5;
+  }
+
+  .bullet {
+     font-size: 0;
+     color: transparent;
+  }
+
+  .bullet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #cf3249;
+    
+  }
+
+  .bullets__link--active {
+      opacity: 1;
+  }

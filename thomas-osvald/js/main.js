@@ -27,11 +27,6 @@ $(function(){
 });
 
 
-
-
-
-
-
 $(function(){
   $('.slider-big').slick({
       slidesToShow: 1,
@@ -60,8 +55,6 @@ $(function(){
 
 });
 
-
-
 $(function(){
   $('.slider-tabs').slick({
     vertical: true,
@@ -77,25 +70,61 @@ $(function(){
     infinite: false,
     prevArrow: '<button  type="button" class="slider-tabs__btn slider-tabs__prev">Up</button>',
     nextArrow: '<button  type="button" class="slider-tabs__btn slider-tabs__next">Down</button>',
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+          variableWidth: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,
+          prevArrow: '<button  type="button" class="slider-tabs__btn slider-tabs__prev">Prev</button>',
+          nextArrow: '<button  type="button" class="slider-tabs__btn slider-tabs__next">Next</button>',
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+          variableWidth: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          centerMode: true,
+          prevArrow: '<button  type="button" class="slider-tabs__btn slider-tabs__prev">Prev</button>',
+          nextArrow: '<button  type="button" class="slider-tabs__btn slider-tabs__next">Next</button>',
+        }
+      },
+  ]
     });
 
 });
 
 
+
+$(window).on('load resize', function() {
+  if ($(window).width() < 641) {
+    $('.clients-slider:not(.slick-initialized)').slick({
+    prevArrow: '<button  type="button" class="slider-clients__btn slider-clients__prev">Next</button>',
+    nextArrow: '<button  type="button" class="slider-clients__btn slider-clients__next">Prev</button>',
+    });
+  } else {
+    $(".clients-slider.slick-initialized").slick("unslick");
+  }
+});
+
+
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    //options here
-    autoScroling:false,
-    controlArrows: false,
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
-    fadingEffect:true, 
-    fadingEffect:'slides', 
-    scrollHorizontally: true,
-    scrollingSpeed: 800,
-    afterLoad: true,
-    
+    scrollOverflow: true,
+    anchors: ['Home', 'AboutMe', 'Myworks', 'Partners', 'Contact'],
+    menu: '#myMenu',
+
   });
+  fullpage_api.setKeyboardScrolling(false);
 
 });
 
@@ -158,4 +187,21 @@ $('.tab').on('click', function(e){
 
  $('.product-slider').slick('setPosition');
 });
+
+$('.menu-btn').on('click', function () {
+  $('menu__btn').toggleClass ('');
+  $('.nav').toggleClass('nav--active');
+
+  $('.nav').on('wheel', function (e) {
+    e.stopPropagation();
+})
+});
+
+
+$('.menu-list__link').on('click', function () {
+  $('menu__btn').toggleClass ('');
+  $('.nav').removeClass('nav--active');
+});
+
+
 
