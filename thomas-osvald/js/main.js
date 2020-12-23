@@ -139,8 +139,6 @@ const CLASS_LIST = {
     
 };
 
-
-
 document.addEventListener('click', (event) => {
     //open
     if (event.target.closest(`.${CLASS_LIST.TRIGGER_OPEN}`)) {
