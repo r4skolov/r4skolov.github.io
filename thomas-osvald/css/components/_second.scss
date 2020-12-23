@@ -178,6 +178,7 @@
     color: #a4a4a7;
     padding-left: 50px;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
    
 
         &::-webkit-scrollbar {

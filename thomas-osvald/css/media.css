@@ -282,6 +282,7 @@
     .modal5-wrapper {
         flex-direction: column;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .follow-container{
