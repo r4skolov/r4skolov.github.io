@@ -282,7 +282,6 @@
     .modal5-wrapper {
         flex-direction: column;
         overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
     }
 
     .follow-container{
@@ -515,6 +514,12 @@
 
     .modal-content__text--partners {
         padding-left: 0;
+    }
+
+    .about--text {
+        overflow-y: scroll;
+    padding-left: 0;
+    height: 146px;
     }
 }
 

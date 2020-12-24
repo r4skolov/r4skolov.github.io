@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   background-color: #0d0d0f;
   counter-reset: section;
-  -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -621,15 +620,6 @@ a {
   padding-top: 50px;
   padding-right: 10px;
   padding-bottom: 10px;
-}
-
-.mobile-overflow {
-  width: 700px;
-}
-
-.scroll {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .section-main {

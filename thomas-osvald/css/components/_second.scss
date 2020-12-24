@@ -183,7 +183,6 @@
 
         &::-webkit-scrollbar {
             width: 15px;
-            
         }
 
         &::-webkit-scrollbar-track {
@@ -204,13 +203,4 @@
     padding-top: 50px;
     padding-right: 10px;
     padding-bottom: 10px;
-}
-
-.mobile-overflow {
-    width: 700px;
-}
-
-.scroll {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
 }
