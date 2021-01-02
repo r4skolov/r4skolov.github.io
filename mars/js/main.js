@@ -75,3 +75,11 @@ $(".teacher_slider").on('afterChange', function(event, slick, currentSlide){
 $(".concerts_slider").on('afterChange', function(event, slick, currentSlide){
     $(".countsSlides_3").text(currentSlide + 1);
  });
+
+ $("#burger").on("click", function(event) {
+  event.preventDefault();
+
+  $(this).toggleClass("active");
+  $("#nav").toggleClass("active");
+
+});

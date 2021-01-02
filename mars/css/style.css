@@ -458,6 +458,30 @@ a {
         display: none;
     }
 
+    .nav-list {
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 70px;
+        left: -110%;
+        z-index: 9999;
+        width: 350px;
+        height: 100vh;
+        background-color: #181817;
+        transition: all .3s;
+
+    }
+
+    .nav-list__item {
+        margin: 0;
+        padding: 15px 0 15px 15px;
+        border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
     .nav_toggle {
         display: block;
     }
@@ -904,6 +928,9 @@ a {
         width: 81%;
     }
 
+    .nav-list {
+        width: 270px;
+    }
 
     /* Second */
 
@@ -1225,6 +1252,11 @@ a {
 
     .nav_toggle {
         left: 0;
+    }
+
+    .nav-list {
+        width: 320px;
+        text-align: center;
     }
 
     .header_logo {
