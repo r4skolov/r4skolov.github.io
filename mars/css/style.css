@@ -1,7 +1,7 @@
 @import "/mars/css/_global.css";
 @import "/mars/css/_overall.css";
+@import "/mars/css/_fonts.css";
 @import "/mars/css/_media.css";
-@import "/mars/css/slider.css";
 
 
 
@@ -17,58 +17,9 @@
 @import "/mars/css/components/concerts.css";
 @import "/mars/css/components/answers.css";
 @import "/mars/css/components/footer.css";
+@import "/mars/css/_slider.css";
 
 
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-    
-}
-
-ul,ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-/** Контейнер */
-.container {
-    max-width: 1190px;
-    margin: 0 auto; 
-    padding: 0 15px;
-}
-
-.page {
-    overflow: hidden;
-}
-
-.section_title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 130%;
-    color: #0E0E0E;
-}
 
 @media (max-width: 1041px) {
 
@@ -454,11 +405,31 @@ a {
 
     /* Intro */
 
-    .nav {
-        display: none;
-    }
+   .nav-list {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 70px;
+    left: -110%;
+    z-index: 9999;
+    width: 350px;
+    height: 100vh;
+    background-color: #181817;
+    transition: all .3s;
+   }
 
-    .nav_toggle {
+   .nav-list__item {
+    margin: 0;
+    padding: 15px 0 15px 15px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+   }
+
+
+   .nav-list.active {
+       left: 0;
+   }
+
+    .burger {
         display: block;
     }
 
@@ -576,11 +547,11 @@ a {
     }
 
     .lessons_img-two::before {
-        background: url(/img/second/play.png) no-repeat 50% 40%;
+        background: url("../img/second/play.png") no-repeat 50% 40%;
     }
 
     .lessons_img-thirt::before {
-        background: url(/img/second/play.png) no-repeat 50% 87%;
+        background: url("../img/second/play.png") no-repeat 50% 87%;
     }
 
     /* Concerts */
@@ -877,7 +848,7 @@ a {
     }
 
     .lessons_img-thirt::before {
-        background: url(/img/second/play.png) no-repeat 50% 26%;
+        background: url("../img/second/play.png") no-repeat 50% 26%;
     }
 
 
@@ -902,6 +873,11 @@ a {
 
     .intro_text {
         width: 81%;
+    }
+
+   
+    .nav-list {
+        width: 270px;
     }
 
 
@@ -978,7 +954,7 @@ a {
     }
 
     .concert_video::before {
-        background: url(/img/second/play.png) no-repeat 38% 50%;
+        background: url("../img/second/play.png") no-repeat 38% 50%;
     }
 
     .concerts--title {
@@ -1077,7 +1053,7 @@ a {
     }
 
     .third_item-img::before {
-        background: url(/img/second/play.png) no-repeat 50% 27%;
+        background: url("../img/second/play.png") no-repeat 50% 27%;
     }
 
     .tihrd_stats-item {
@@ -1165,7 +1141,7 @@ a {
     }
 
     .concert_video::before {
-        background: url(/img/second/play.png) no-repeat 34% 50%;
+        background: url("../img/second/play.png") no-repeat 34% 50%;
     }
 
 
@@ -1227,8 +1203,17 @@ a {
         left: 0;
     }
 
+    .burger {
+        left: 10px;
+    }
+
+    .nav-list {
+        width: 320px;
+        text-align: center;
+    }
+
     .header_logo {
-        margin-left: 27px;
+        margin-left: 40px;
     }
 
     .header_btn {
@@ -1259,7 +1244,7 @@ a {
     }
 
     .third_item-img::before {
-        background: url(/img/second/play.png) no-repeat 50% 12%;
+        background: url("../img/second/play.png") no-repeat 50% 12%;
     }
 
     /* Teachers */
@@ -1295,7 +1280,7 @@ a {
     }
 
     .concert_video::before {
-        background: url(/img/second/play.png) no-repeat 28% 50%;
+        background: url("../img/second/play.png") no-repeat 28% 50%;
     }
 
     .concerts_title {
