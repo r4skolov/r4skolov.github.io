@@ -13,7 +13,11 @@
     padding-top: 210px;
 }
 
-
+.intro_test {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
 .intro_title {
     width: 43%;
     font-size: 44px;
