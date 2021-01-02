@@ -1250,6 +1250,11 @@ a {
 
 @media (max-width: 320px) {
 
+
+   .burger {
+       left: 10px;
+   }
+
     /* Intro */
 
     .nav_toggle {
@@ -1262,7 +1267,7 @@ a {
     }
 
     .header_logo {
-        margin-left: 27px;
+        margin-left: 40px;
     }
 
     .header_btn {
@@ -1320,9 +1325,6 @@ a {
         padding-bottom: 14px;
     }
 
-    
-
-    
 
     .trial_btn {
         margin-top: 28px;
