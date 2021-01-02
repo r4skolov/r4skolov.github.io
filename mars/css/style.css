@@ -454,9 +454,7 @@ a {
 
     /* Intro */
 
-    .nav {
-        display: none;
-    }
+   
 
     .nav-list {
         display: block;
@@ -470,6 +468,10 @@ a {
         background-color: #181817;
         transition: all .3s;
 
+    }
+
+    .burger {
+        display: block;
     }
 
     .nav-list__item {
