@@ -1,0 +1,149 @@
+.main__inner-four {
+    display: flex;
+    width: 100%;
+}
+
+.wrapper--partners {
+    margin-left: 150px;
+    align-items: end;
+}
+
+.client-wrapper {
+    width: 50%;
+    background-color: #111114;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clients-slider__item {
+    width: 50%;
+    padding: 50px 0;
+}
+
+.four--content {
+    margin-top: 150px
+}
+
+.main--text {
+    width: 100%;
+}
+
+
+.carusel-wrapper {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.modal4-wrapper {
+    width: 55%;
+    height: 100vh;
+    background-color: #111114;
+    display: flex;
+    margin-right: 130px;
+}
+
+.slider-tabs {
+    position: relative;
+}
+
+.slider-tabs .slick-track {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider-tabs .slick-slide {
+    text-align: center;
+    margin: 60px 0;
+}
+
+
+.slider-tabs .slick-slide:last-child {
+    margin-bottom:  0;
+}
+
+.slider-tabs .slick-list {
+    height: 600px !important;
+}
+
+.modal__dialog-four {
+    align-items: flex-end;
+}
+
+.slider-tabs__btn {
+    position: absolute;
+    bottom: -150px;
+    color: #cf3249;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    padding-bottom: 30px;
+}
+
+.slider-tabs__next {
+    left: -30px;
+} 
+
+.slider-tabs__prev {
+    right: -20px;
+}
+
+
+.slash-sliders {
+    font-size: 0;
+    position: relative;
+        &::before {
+            content: '';
+            position:absolute;
+            width: 60px;
+            height: 1px;
+            background-color:#cf3249 ;
+            transform: rotate(-55deg);
+            bottom: -100px;
+            left: 40px;
+        }
+}
+
+.partners__item {
+    height: 100vh;
+}
+
+.partners__content {
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.modal-content__text--partners {
+    padding-bottom: 320px;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content.tabs-content--active {
+    display: block;
+}
+
+.tab {
+    opacity: 0.4;
+    transition: all .3s;
+}
+
+.tab--active {
+    opacity: 1;
+    transition: all .3s;
+}
