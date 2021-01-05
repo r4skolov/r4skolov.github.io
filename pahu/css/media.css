@@ -99,6 +99,10 @@
 
 @media (max-width: 980px) {
 
+    body.lock {
+        overflow: hidden;
+    }
+
     .header__logo {
         margin-left: 48px;
     }
@@ -106,7 +110,7 @@
     .menu__list {
         display: block;
         color: #fff;
-        position: absolute;
+        position: fixed;
         top: 100px;
         left: -110%;
         flex-direction: column;

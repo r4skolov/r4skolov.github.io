@@ -139,6 +139,7 @@ $("#burger").on("click", function(event) {
 
     $(this).toggleClass("active");
     $("#mobile__menu").toggleClass("active");
+    $('body').toggleClass('lock');
 
 });
 
