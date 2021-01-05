@@ -455,11 +455,14 @@ a {
     /* Intro */
 
    
+    body.lock {
+        overflow: hidden;
+    }
 
     .nav-list {
         display: block;
         color: #fff;
-        position: absolute;
+        position: fixed;
         top: 70px;
         left: -110%;
         z-index: 9999;
