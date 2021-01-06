@@ -82,4 +82,8 @@ $(".concerts_slider").on('afterChange', function(event, slick, currentSlide){
   $(this).toggleClass("active");
   $("#nav").toggleClass("active");
   $('body').toggleClass('lock');
+
+  $('#nav').on('wheel', function (e) {
+    e.stopPropagation();
+  });
 });
