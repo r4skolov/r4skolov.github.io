@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -70,7 +71,7 @@
                 <div class="modal-content__info modal-content__info--about">
                     <p class="main__inner-subtitle">Photographer</p>
                     <h2 class="main__inner-title about__modal--title">About Me</h2>
-                    <p class="modal-content__text modal-content__text--about"><span class="big-letter">M</span>y great interest in life
+                    <div class="modal-content__text modal-content__text--about scroll"><span class="big-letter">M</span>y great interest in life
                         has been people. A human being changes continuously throughout life.
                         His thoughts and thoughts and moods change, his expressions and even his features
                         change.
@@ -126,7 +127,7 @@
                         and with even deeper understanding of portraiture’s main challenges.
                         It is important to remember that a portrait sitting is an extremely
                         artificial situation. Very few people are able to lose their
-                        self-consciousness immediately and behave in front of the camera</p>
+                        self-consciousness immediately and behave in front of the camera</div>
                 </div>
             </div>
         </div>
@@ -663,7 +664,6 @@
     </div>
 
 <div id="fullpage">
-    
  <div class="section">  
         <section data-menuachor="Home"  class="page page-first">
             
@@ -711,28 +711,28 @@
                 <div class="pagination">
                     <div class="bullets">
                         <ul class="bullets-list">
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link bullets__link--active" href="#">
+                            <li class="bullets-list__item" data-menuachor="Home">
+                                <a class="bullets-list__link bullets__link--active" href="#Home">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="AboutMe">
+                                <a class="bullets-list__link" href="#AboutMe">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Myworks">
+                                <a class="bullets-list__link" href="#Myworks">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Partners">
+                                <a class="bullets-list__link" href="#Partners">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Contact">
+                                <a class="bullets-list__link" href="#Contact">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
@@ -808,28 +808,28 @@
             <div class="pagination">
                 <div class="bullets">
                     <ul class="bullets-list">
-                        <li class="bullets-list__item">
-                            <a class="bullets-list__link" href="#">
+                        <li class="bullets-list__item" data-menuachor="Home">
+                            <a class="bullets-list__link " href="#Home">
                                 <span class="bullet">.</span>
                             </a>
                         </li>
-                        <li class="bullets-list__item">
-                            <a class="bullets-list__link bullets__link--active" href="#">
+                        <li class="bullets-list__item" data-menuachor="AboutMe">
+                            <a class="bullets-list__link bullets__link--active" href="#AboutMe">
                                 <span class="bullet">.</span>
                             </a>
                         </li>
-                        <li class="bullets-list__item">
-                            <a class="bullets-list__link" href="#">
+                        <li class="bullets-list__item" data-menuachor="Myworks">
+                            <a class="bullets-list__link" href="#Myworks">
                                 <span class="bullet">.</span>
                             </a>
                         </li>
-                        <li class="bullets-list__item">
-                            <a class="bullets-list__link" href="#">
+                        <li class="bullets-list__item" data-menuachor="Partners">
+                            <a class="bullets-list__link" href="#Partners">
                                 <span class="bullet">.</span>
                             </a>
                         </li>
-                        <li class="bullets-list__item">
-                            <a class="bullets-list__link" href="#">
+                        <li class="bullets-list__item" data-menuachor="Contact">
+                            <a class="bullets-list__link" href="#Contact">
                                 <span class="bullet">.</span>
                             </a>
                         </li>
@@ -845,7 +845,7 @@
     </section>
 </div>
 
- <!--  
+
     <div class="section">
         <section data-menuachor="Myworks" class="page page-third" >
             <div class="side-bar side-bar__black">
@@ -854,20 +854,24 @@
                     <a class="js-modal-open menu-btn menu-btn__red" href="#modal-1">Menu</a>
                 </div>
                 <div class="social-icons">
+                    <a class="logo logo-header" href="#">
+                        <span class="logo__bold">Thomas</span><br>
+                        <span class="logo__normal">Osvald</span>
+                    </a>
                     <ul class="social-icons__list">
                         <li class="social-icons__list-item">
                             <a href="#" target="_blank">
-                                <img src="/img/social/twitter-red.svg" alt="">
+                                <img src="/thomas-osvald//img/social/twitter-red.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icons__list-item">
                             <a href="#" target="_blank">
-                                <img src="img/social/facebook-red.svg" alt="">
+                                <img src="/thomas-osvald/img/social/facebook-red.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icons__list-item">
                             <a href="#" target="_blank">
-                                <img src="img/social/instagram-red.svg" alt="">
+                                <img src="/thomas-osvald/img/social/instagram-red.svg" alt="">
                             </a>
                         </li>
                     </ul>
@@ -884,42 +888,7 @@
                         </div>
                         <div class="modal3-wrapper">
                             <div class="slider-container">
-                                <div class="slider-wrapper">
-                                    <div class="slider-big">
-                                        <div class="slider__item">
-                                            <img src="/img/big-slider.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/big-slider.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/big-slider.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/big-slider.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="slider-nav__big">
-                                        <div class="slider__item">
-                                            <img src="/img/slider-small.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/slider-small.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/slider-small.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/slider-small.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/slider-small.jpg" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="/img/slider-small.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="slider-bar">
                                 <div class="side-bar__content">
@@ -931,52 +900,21 @@
                     </div>
                 </div>
                 <div class="slider-wrapper">
-                    <div class="slider">
-                        <div class="slider__item">
-                            <img src="/img/slider-pic.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-pic.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-pic.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-pic.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="buttons-slide">
-                        <button class="button-slider__prev" type="button">Prev</button>
-                        <span class="slider-slash">/</span>
-                        <button class="button-slider__next" type="button">Next</button>
-                    </div>
-                    <div class="slider-nav">
-                        <div class="slider__item">
-                            <img src="/img/slider-small.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-small.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-small.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-small.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-small.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/slider-small.jpg" alt="">
-                        </div>
-                    </div>
+                  
                     <div class="main__inner-content slider-content">
                         <p class="main__inner-subtitle">Some Photos</p>
                         <h2 class="main__inner-title">My Works</h2>
                         <p class="main__inner-text">Work in various fields of
                             photography has <br> permitted me to return to new ideas.</p>
-                        <p class="main__inner-btntext">open fullscreen<a class="js-modal-open  main__inner-btn"
+                        <p class="main__inner-btntext works-slider">open fullscreen<a class="js-modal-open  main__inner-btn"
                                 href="#modal-3"></a> </p>
+                    </div>
+                   
+                    <div class="section-gallery fotorama" data-width="800" data-nav="thumbs" data-thumbwidth="110" data-thumbheights="60">
+                        <img src="/thomas-osvald/img/slides1.jpg" alt="">
+                        <img src="/thomas-osvald/img/slides2.jpg" alt="">
+                        <img src="/thomas-osvald/img/slides3.jpg" alt="">
+                        <img src="/thomas-osvald/img/slides4.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -988,28 +926,28 @@
                 <div class="pagination">
                     <div class="bullets">
                         <ul class="bullets-list">
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Home">
+                                <a class="bullets-list__link " href="#Home">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="AboutMe">
+                                <a class="bullets-list__link" href="#AboutMe">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link bullets__link--active" href="#">
+                            <li class="bullets-list__item bullets__link--active" data-menuachor="Myworks">
+                                <a class="bullets-list__link  bullets__link--active" href="#Myworks">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Partners">
+                                <a class="bullets-list__link" href="#Partners">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Contact">
+                                <a class="bullets-list__link" href="#Contact">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
@@ -1024,7 +962,6 @@
             </div>
         </section>
     </div>
-    -->
 
     <div class="section">
          <section data-menuachor="Partners" class="page page-four" >
@@ -1105,28 +1042,28 @@
                  <div class="pagination">
                     <div class="bullets">
                         <ul class="bullets-list">
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Home">
+                                <a class="bullets-list__link" href="#Home">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="AboutMe">
+                                <a class="bullets-list__link" href="#AboutMe">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Myworks">
+                                <a class="bullets-list__link" href="#Myworks">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link bullets__link--active" href="#">
+                            <li class="bullets-list__item" data-menuachor="Partners">
+                                <a class="bullets-list__link bullets__link--active" href="#Partners">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
-                            <li class="bullets-list__item">
-                                <a class="bullets-list__link" href="#">
+                            <li class="bullets-list__item" data-menuachor="Contact">
+                                <a class="bullets-list__link" href="#Contact">
                                     <span class="bullet">.</span>
                                 </a>
                             </li>
@@ -1149,6 +1086,10 @@
                         <a class="js-modal-open menu-btn menu-btn__red" href="#modal-1">Menu</a>
                     </div>
                     <div class="social-icons">
+                        <a class="logo logo-header" href="#">
+                            <span class="logo__bold">Thomas</span><br>
+                            <span class="logo__normal">Osvald</span>
+                        </a>
                         <ul class="social-icons__list">
                             <li class="social-icons__list-item">
                                 <a href="#" target="_blank">
@@ -1208,28 +1149,28 @@
                     <div class="pagination">
                         <div class="bullets">
                             <ul class="bullets-list">
-                                <li class="bullets-list__item">
-                                    <a class="bullets-list__link" href="#">
+                                <li class="bullets-list__item" data-menuachor="Home">
+                                    <a class="bullets-list__link " href="#Home">
                                         <span class="bullet">.</span>
                                     </a>
                                 </li>
-                                <li class="bullets-list__item">
-                                    <a class="bullets-list__link" href="#">
+                                <li class="bullets-list__item" data-menuachor="AboutMe">
+                                    <a class="bullets-list__link" href="#AboutMe">
                                         <span class="bullet">.</span>
                                     </a>
                                 </li>
-                                <li class="bullets-list__item">
-                                    <a class="bullets-list__link" href="#">
+                                <li class="bullets-list__item bullets__link--active" data-menuachor="Myworks">
+                                    <a class="bullets-list__link" href="#Myworks">
                                         <span class="bullet">.</span>
                                     </a>
                                 </li>
-                                <li class="bullets-list__item">
-                                    <a class="bullets-list__link" href="#">
+                                <li class="bullets-list__item" data-menuachor="Partners">
+                                    <a class="bullets-list__link" href="#Partners">
                                         <span class="bullet">.</span>
                                     </a>
                                 </li>
-                                <li class="bullets-list__item">
-                                    <a class="bullets-list__link bullets__link--active" href="#">
+                                <li class="bullets-list__item" data-menuachor="Contact">
+                                    <a class="bullets-list__link bullets__link--active" href="#Contact">
                                         <span class="bullet">.</span>
                                     </a>
                                 </li>
@@ -1243,16 +1184,14 @@
                     </div>
                 </div>
         </section>
-    
     </div>
+</div>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.js"></script>
 <script src="/thomas-osvald/js/main.js"></script> 
 <script src="/thomas-osvald/js/slick.min.js"></script>  
-<script src="/thomas-osvald/js/fullpage.extensions.min.js"></script>  
-<script src="/thomas-osvald/js/wow.js"></script>  
+<script src="/thomas-osvald/js/fotorama.js"></script>  
+<script src="/thomas-osvald/js/fullpage.extensions.min.js"></script>   
 <script src="/thomas-osvald/vendors/easings.min.js"></script> 
 <script src="/thomas-osvald/vendors/scrolloverflow.min.js"></script>  
 </body>

@@ -1,138 +1,20 @@
 .section-main {
-    width: 70%;
+    width: 100%;
 }
-
-.slider-nav  img{
-    width: 160px;
-    height: 140px;
-}
-
-.slider.slick-slider{ 
-    text-align: right;
-    margin-top: 170px;
-    margin-right: 45px;
-}
-
-.slider-nav .slick-active{
-    outline: none;
-  }
-
-.slider-nav.slick-slider{
-    width: 820px;
-     margin-left: 100px;
-  }
 
 
 .slider-wrapper {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
 }
 
-.slider-nav {
-    position: absolute;
-    right: 411px;
-    bottom: -142px;
-}
-  .buttons-slide {
-      position: absolute;
-      right: 140px;
-      bottom: -90px;
-  }
-
-  .button-slider__prev,
-  .button-slider__next{
-      color: #cf3249;
-      background-color: transparent;
-      border: none;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 600;
-      outline: none;
-  }
-
-  .slider-slash {
-      color: #cf3249;
-     
-  }
-  
- .button-slider__prev {
-     margin-right: 20px;
- }
-
- .button-slider__next {
-    margin-left: 20px;
-}
 
 .slider-content {
-    position: absolute;
-    top: 100px;
-    right: 600px;
-    z-index: 999;
+    padding-left: 0;
 }
 
-.modal3-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+.fotorama__thumb-border {
+    border-color: #cf3249;
+    background-image: none;
 }
-
-.slider-container {
-    width: 70%;
-    position: absolute;
-    top: 100px;
-    left: 200px;
-}
-
-.slider-bar {
-    width: 30%;
-    height: 100vh;
-    background-color: #111114;
-    position: relative;
-}
-
-.side-bar__content {
-    position: absolute;
-    bottom: 350px;
-    transform: rotate(-90deg);
-    left: 120px;
-}
-
-.side-bar__subtitle {
-    font-size: 20px;
-    font-weight: 500;
-    color: #cf3249;
-    margin-bottom: 10px;
-}
-
-.side-bar__title {
-    font-size: 65px;
-    font-weight: 700;
-    color: #cf3249;
-}
-
-.slider-nav__big.slick-slider {
-    width: 930px;
-} 
-
-
-.slider-big__btn {
-    position: absolute;
-    left: 30%;
-    bottom: -50px;
-    color: #cf3249;
-    background-color: transparent;
-    border: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    outline: none;
-    z-index: 10;
-}
-
-.slider-big__prev { 
-    margin-right: 50px;
-}
-
-.slider-big__next {
-    margin-left: 50px;
-}
-

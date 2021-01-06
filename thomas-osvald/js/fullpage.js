@@ -278,56 +278,7 @@
         * Sets the autoScroll option.
         * It changes the scroll bar visibility and the history of the site as a result.
         */
-        function setAutoScrolling(value, type){
-            //removing the transformation
-            if(!value){
-                silentScroll(0);
-            }
-
-            setVariableState('autoScrolling', value, type);
-
-            var element = $(SECTION_ACTIVE_SEL)[0];
-
-            if(options.autoScrolling && !options.scrollBar){
-                css($htmlBody, {
-                    'overflow': 'hidden',
-                    'height': '100%'
-                });
-
-                setRecordHistory(originals.recordHistory, 'internal');
-
-                //for IE touch devices
-                css(container, {
-                    '-ms-touch-action': 'none',
-                    'touch-action': 'none'
-                });
-
-                if(element != null){
-                    //moving the container up
-                    silentScroll(element.offsetTop);
-                }
-            }else{
-                css($htmlBody, {
-                    'overflow' : 'visible',
-                    'height' : 'initial'
-                });
-
-                var recordHistory = !options.autoScrolling ? false : originals.recordHistory;
-                setRecordHistory(recordHistory, 'internal');
-
-                //for IE touch devices
-                css(container, {
-                    '-ms-touch-action': '',
-                    'touch-action': ''
-                });
-
-                //scrolling the page to the section with no animation
-                if (element != null) {
-                    var scrollSettings = getScrollSettings(element.offsetTop);
-                    scrollSettings.element.scrollTo(0, scrollSettings.options);
-                }
-            }
-        }
+    
 
         /**
         * Defines wheter to record the history for each hash change in the URL.

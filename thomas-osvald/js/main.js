@@ -125,13 +125,13 @@ $(document).ready(function() {
 
   });
   fullpage_api.setKeyboardScrolling(false);
-
 });
 
 
 const CLASS_LIST = {
     MODAL: 'modal',
     MODAL_ACTIVE: 'modal--active',
+    MODAL_HAS_SCROLL: 'modal--has-scroll',
     MODAL_DIALOG_BODY: 'modal__dialog-body',
     TRIGGER_OPEN: 'js-modal-open',
     TRIGGER_CLOSE: 'js-modal-close'
@@ -139,9 +139,11 @@ const CLASS_LIST = {
 };
 
 
+
 document.addEventListener('click', (event) => {
     //open
     if (event.target.closest(`.${CLASS_LIST.TRIGGER_OPEN}`)) {
+      console.log('open');
       event.preventDefault();
 
       const target = event.target.closest(`.${CLASS_LIST.TRIGGER_OPEN}`);
@@ -157,6 +159,7 @@ document.addEventListener('click', (event) => {
       event.target.closest(`.${CLASS_LIST.TRIGGER_CLOSE}`) ||
       event.target.classList.contains(CLASS_LIST.MODAL_ACTIVE)
     ) {
+      console.log('close');
       event.preventDefault();
 
       const modal = event.target.closest(`.${CLASS_LIST.MODAL}`);
@@ -168,6 +171,7 @@ document.addEventListener('click', (event) => {
     $('.modal').on('wheel', function (e) {
       e.stopPropagation();
 })
+
 
 });
 
@@ -181,6 +185,7 @@ $('.tab').on('click', function(e){
  $(this).addClass('tab--active');
  $($(this).attr('href')).addClass('tabs-content--active')
 
+ $('.product-slider').slick('setPosition');
 });
 
 $('.menu-btn').on('click', function () {
@@ -197,6 +202,5 @@ $('.menu-list__link').on('click', function () {
   $('menu__btn').toggleClass ('');
   $('.nav').removeClass('nav--active');
 });
-
 
 
