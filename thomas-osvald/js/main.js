@@ -1,5 +1,61 @@
 
 $(function(){
+    $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        draggable: false,
+        swipe: false,
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        variableWidth: false,
+        centerPadding: '0px',
+        draggable: false,
+        swipe: false,
+        prevArrow: '.button-slider__prev',
+        nextArrow: '.button-slider__next',
+      });
+
+});
+
+
+$(function(){
+  $('.slider-big').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav__big',
+      draggable: false,
+      swipe: false,
+    });
+    $('.slider-nav__big').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.slider-big',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      variableWidth: true,
+      centerPadding: '0px',
+      draggable: true,
+      swipe: false,
+      prevArrow: '<button  type="button" class="slider-big__btn slider-big__prev">Prev</button>',
+      nextArrow: '<button  type="button" class="slider-big__btn slider-big__next">Next</button>',
+      
+    });
+
+});
+
+$(function(){
   $('.slider-tabs').slick({
     vertical: true,
     verticalSwiping: true,
