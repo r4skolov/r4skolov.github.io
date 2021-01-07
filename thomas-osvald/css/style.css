@@ -460,7 +460,7 @@ a {
 
 .main__inner-btn {
   margin-left: 20px;
-  background: url("/img/Button.png");
+  background: url("../img/Button.png");
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -546,7 +546,7 @@ a {
   cursor: pointer;
   position: relative;
   outline: none;
-  background: url("/img/close-button.png");
+  background: url("../img/close-button.png");
   width: 32px;
 }
 
@@ -958,7 +958,7 @@ a {
   cursor: pointer;
   position: relative;
   outline: none;
-  background: url("/img/button-send.png");
+  background: url("../img/button-send.png");
 }
 
 .form-item__button {
