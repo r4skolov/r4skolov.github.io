@@ -34,7 +34,7 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .container {
@@ -232,13 +232,13 @@ a {
 .services-item {
   width: 31%;
   min-width: 300px;
-  background: url("/img/blockbg1.jpg");
+  background: url("../img/blockbg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin: 0 10px 30px 10px;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .services-item__inner {
@@ -252,23 +252,23 @@ a {
 }
 
 .services-item:nth-child(2) {
-  background: url("/img/blockbg2.jpg");
+  background: url("../img/blockbg2.jpg");
 }
 
 .services-item:nth-child(3) {
-  background: url("/img/blockbg3.jpg");
+  background: url("../img/blockbg3.jpg");
 }
 
 .services-item:nth-child(4) {
-  background: url("/img/blockbg4.jpg");
+  background: url("../img/blockbg4.jpg");
 }
 
 .services-item:nth-child(5) {
-  background: url("/img/blockbg5.jpg");
+  background: url("../img/blockbg5.jpg");
 }
 
 .services-item:nth-child(6) {
-  background: url("/img/blockbg6.jpg");
+  background: url("../img/blockbg6.jpg");
 }
 
 .service-item__title {
@@ -282,7 +282,7 @@ a {
 .services-item__inner-hover {
   opacity: 0;
   width: 100%;
-  background: url("/img/blockbg1-hover.jpg");
+  background: url("../img/blockbg1-hover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all .1s;
@@ -294,23 +294,23 @@ a {
 }
 
 .services__hover--one {
-  background: url("/img/blockbg3-hover.jpg");
+  background: url("../img/blockbg3-hover.jpg");
 }
 
 .services__hover--two {
-  background: url("/img/blockbg2-hover.jpg");
+  background: url("../img/blockbg2-hover.jpg");
 }
 
 .services__hover--three {
-  background: url("/img/blockbg4-hover.jpg");
+  background: url("../img/blockbg4-hover.jpg");
 }
 
 .services__hover--four {
-  background: url("/img/blockbg5-hover.jpg");
+  background: url("../img/blockbg5-hover.jpg");
 }
 
 .services__hover--five {
-  background: url("/img/blockbg6-hover.jpg");
+  background: url("../img/blockbg6-hover.jpg");
 }
 
 .services-btn {
@@ -324,7 +324,7 @@ a {
   transition: all .1s;
   -webkit-transition: all linear .2s;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .services-btn:hover {
@@ -398,7 +398,7 @@ a {
   -webkit-transition: all linear .2s;
   z-index: 2;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .about-info__btn:hover {
@@ -473,7 +473,7 @@ a {
   transition: all .1s;
   -webkit-transition: all linear .2s;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .project-content__text {
@@ -500,7 +500,7 @@ a {
   position: absolute;
   top: 100px;
   right: 0;
-  background-image: url("/img/license-fon.png");
+  background-image: url("../img/license-fon.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -537,7 +537,7 @@ a {
   position: absolute;
   top: 2px;
   left: 4px;
-  background-image: url("/img/ok.png");
+  background-image: url("../img/ok.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -551,7 +551,7 @@ a {
 }
 
 .section-question {
-  background: url("/img/question.jpg");
+  background: url("../img/question.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -598,7 +598,7 @@ a {
   position: absolute;
   bottom: 50px;
   left: 0;
-  background-image: url("/img/footer-bg.png");
+  background-image: url("../img/footer-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -631,7 +631,7 @@ a {
 .info-list__link:hover {
   color: #FFCC00;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .contanct-list__item {
@@ -645,7 +645,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("/img/geo.png");
+  background-image: url("../img/geo.png");
   width: 11px;
   height: 16px;
 }
@@ -656,7 +656,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("/img/mob.png");
+  background-image: url("../img/mob.png");
   width: 15px;
   height: 15px;
 }
@@ -667,7 +667,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("/img/massege.png");
+  background-image: url("../img/massege.png");
   width: 15px;
   height: 12px;
 }
@@ -698,7 +698,7 @@ a {
 }
 
 .section-about__company {
-  background: url("/img/about-image.jpg");
+  background: url("../img/about-image.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -731,7 +731,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: url("/img/about-bgbg.png");
+  background-image: url("../img/about-bgbg.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -766,7 +766,7 @@ a {
 }
 
 .section-progres {
-  background: url("/img/progress.jpg");
+  background: url("../img/progress.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -888,7 +888,7 @@ a {
 }
 
 .section-services {
-  background: url("/img/services.jpg");
+  background: url("../img/services.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -917,7 +917,7 @@ a {
   width: 100%;
   height: 180px;
   resize: none;
-  background: url("/img/input-text.jpg");
+  background: url("../img/input-text.jpg");
   color: #FFFFFF;
   font-size: 16px;
   line-height: 19px;
@@ -960,7 +960,7 @@ a {
 .input-style {
   width: 100%;
   height: 50px;
-  background: url("/img/input-text.jpg");
+  background: url("../img/input-text.jpg");
   border: none;
   outline: none;
   color: #FFFFFF;
@@ -1010,7 +1010,7 @@ a {
   transition: all .1s;
   -webkit-transition: all linear .2s;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .send:hover {
@@ -1123,7 +1123,7 @@ a {
   transition: all .1s;
   -webkit-transition: all linear .2s;
   cursor: pointer;
-  cursor: url("/img/cur.png"), default;
+  cursor: url("../img/cur.png"), default;
 }
 
 .projects-content__text {
@@ -1142,7 +1142,7 @@ a {
 }
 
 .section-contacts {
-  background: url("/img/contacts.jpg");
+  background: url("../img/contacts.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1154,7 +1154,7 @@ a {
 }
 
 .section-projects {
-  background: url("/img/black-bg.jpg");
+  background: url("../img/black-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
