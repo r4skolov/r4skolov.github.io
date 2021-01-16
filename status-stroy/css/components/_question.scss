@@ -1,0 +1,38 @@
+.section-question {
+    background: url("../img/question.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.question-title {
+   
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-size: calc(24px + 49 * ((100vw - 320px) / (1350 - 320)));
+}
+
+
+
+.question--btn {
+    padding: 20px 30px;
+    position: relative;
+    z-index: 2;
+    &::before {
+        content: "";
+        width: 280px;
+        height: 60px;
+        border: 1px solid $white;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: -1;
+    }
+}
+
+.test {
+    position: relative;
+}

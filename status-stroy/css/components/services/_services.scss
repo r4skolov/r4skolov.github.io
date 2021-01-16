@@ -1,0 +1,219 @@
+.section-services {
+    background: url("../img/services.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.services--page {
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.consult {
+    display: flex;
+
+        &-item {
+            width: 50%;
+        }
+}
+
+.input-wrapper {
+    margin-bottom: 30px;
+}
+
+.massage {
+    width: 100%; 
+    height: 180px; 
+    resize: none; 
+    background: url("../img/input-text.jpg");
+    color: $white;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 0 0 15px;
+    border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #7A7979;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+}
+
+.input-style {
+    width: 100%;
+    height: 50px;
+    background: url("../img/input-text.jpg");
+    border: none;
+    outline: none;
+    color: $white;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 0 0 15px;
+
+    &::placeholder {
+        color: #7A7979;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+}
+
+.send {
+    
+        background-color: $yellow;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+        padding: 20px 90px;
+        position: relative;
+        margin-right: 20px;
+        transition: all .1s;
+        -webkit-transition: all linear .2s;
+        cursor: pointer;
+        cursor: url("../img/cur.png"), default;
+    
+            &:hover {
+                background-color: #ffffff;
+            }
+
+            &::before {
+                content: "";
+                width: 280px;
+                height: 60px;
+                border: 1px solid $white;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                z-index: -1;
+            }
+    
+}
+
+.consult--second {
+    padding-left: 75px;
+}
+
+.consult-title {
+    font-weight: 300;
+    font-size: 48px;
+    font-size: calc(34px + 13 * ((100vw - 320px) / (1350 - 320)));
+    line-height: 56px;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 68px;
+            height: 1px;
+            background-color: $white;
+            
+        }
+}
+
+.consult-text {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+}
+
+.consult-info {
+    display: flex;
+}
+
+.info-item {
+    padding-left: 80px;
+}
+
+.info-title {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.projects-slider {
+    padding-bottom: 126px;
+}
+
+.projects-content {
+    position: relative;
+    width: 308px;
+    height: 280px;
+    margin-right: 31px;
+}
+
+.projects-slider .slick-slide img {
+    width: 308px;
+    height: 280px;
+}
+
+.projects-slider .slick-track {
+    left: -10%;
+}
+
+
+.sliders__item-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.all-projects {
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 1px solid $white;
+}
+
+
+
+.projects-content__hover {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 50px 30px;
+    transition: all .1s;
+    -webkit-transition: all linear .2s;
+    cursor: pointer;
+    cursor: url("../img/cur.png"), default;
+}
+
+.projects-content__text {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.projects-btn {
+    color: $yellow;
+    border-bottom: 1px solid $yellow;
+}
+
+
+.projects-content:hover .projects-content__hover {
+    opacity: 1;
+} 
