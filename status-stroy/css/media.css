@@ -30,8 +30,6 @@
        
     }
 
-  
-
     .about-item {
         padding-right: 0px;
     }
@@ -140,6 +138,10 @@
     .services {
         margin-top: 50px;
         justify-content: center;
+    }
+
+    .services--page {
+        padding-top: 0px;
     }
 
     .license-item__content {
@@ -353,6 +355,42 @@
     .about-info {
         text-align: center;
     }
+
+    .services-item {
+        width: 31%;
+        height: 67px;
+    }
+
+    .services-item__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        -webkit-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
+        text-align: center;
+    }
+
+    .service-item__title {
+        width: 100%;
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    .services-item__inner-hover {
+        padding: 0px 10px; 
+        height: 100%;
+    }
+    .services-btn {
+        margin-top: 10px;
+        padding: 13px 26px;
+    }
+
+    .services-item__icon {
+        width: 80px;
+    }
  }
 
 @media (max-width: 414px) {
@@ -452,15 +490,18 @@
     .sliders__item-title {
         margin-left: 18px;
     }
+    .about-info__btn {
+        padding: 20px 87px;
+    }
+
+    .about-info__btn::before {
+        width: 271px;
+    }
 }
 
 @media (max-width: 320px) {
-   .about-info__btn {
-       padding: 20px 87px;
-   }
-   .about-info__btn::before {
-        width: 271px;
-    }
+  
+   
 
     .project-content {
         width: 295px;
