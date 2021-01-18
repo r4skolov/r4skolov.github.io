@@ -624,6 +624,10 @@ a {
   display: inline;
 }
 
+.product-slider .slick-slide:active, .slick-slide:focus {
+  outline: none;
+}
+
 .product-slider-btn {
   position: absolute;
   top: 50%;
