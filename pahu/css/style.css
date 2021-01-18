@@ -624,7 +624,7 @@ a {
   display: inline;
 }
 
-.product-slider .slick-slide:active, .slick-slide:focus {
+.product-slider .slick-slide:active .slick-slide:focus {
   outline: none;
 }
 
