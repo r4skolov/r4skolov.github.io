@@ -518,53 +518,47 @@ a {
 
     /* Second */
 
-    .about {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 128px);
-            grid-gap: 20px;
-        }
+    .first_item-text {
+        width: 127%;
+        font-size: 14px;
+        margin-top: 37px;
+    }
 
-      .about-gallery__item--3 {
-        display: none;
-      }
-      .about-gallery__item--1 {
-            -ms-grid-column: 1;
-            -ms-grid-column-span: 1;
-            grid-column: 1/2;
-            -ms-grid-row: 1;
-             grid-row: 1;
-        }
-        
-      .about-text {
-        width: 87%;
-      }
+    .first_item-img {
+        padding-top: 67px;
+        padding-right: 10px;
+    }
 
-      .about-gallery__item--4 {
-        -ms-grid-column: 2;
-        grid-column: 2;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 1;
-        grid-row: 1/2;
-      }
+    .aqua--stats {
+        font-size: 28px;
+    }
 
-      .about__stats {
-        margin-left: 0px;
-      }
-      .about-gallery__item--5 {
-        -ms-grid-column: 2;
-        grid-column: 2;
-        -ms-grid-row: 4;
-        grid-row: 4;
-        margin-left: 0px;
-        margin-top: 0px;
-      }
+    .stats_text {
+        font-size: 14px;
+    }
 
-      .about-gallery__item--6 {
-        display: none;
-      }
-    
-    
+    .second_column {
+        margin-left: 10px;
+        margin-top: 121px;
+        margin-right: 10px;
+    }
+
+    .second_item-img {
+        padding: 0;
+    }
+
+    .third_column {
+        grid-template-rows: none;
+        margin-top: 27px;
+    }
+
+    .tihrd_stats-item {
+        padding-bottom: 10px;
+    }
+
+    .third_item-img {
+        padding: 0;
+    }
 
     /* Direction  */
 
@@ -795,82 +789,39 @@ a {
 
     /* Second */
 
-    .about {
-        display: grid;
-         grid-template-columns: repeat(1, 1fr);
-         grid-template-rows: repeat(5, 11%);
-        grid-gap: 20px;
-      }
-      
-      .about-gallery__item--3 {
-        display
-        : none;
-      }
-      .about-gallery__item--1 {
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
-        grid-column: 1/2;
-        -ms-grid-row: 1;
-        grid-row: 1;
-      }
-      .about-gallery__item--2 {
-        -ms-grid-column: 1;
-        grid-column: 1;
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 4;
-        grid-row: 2/6;
-      }
-      .about-text {
-        width: 100%;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 150%;
-        /* or 21px */
-        text-align: center;
-      }
-      .about-gallery__item--4 {
-        -ms-grid-column: 1;
-        grid-column: 1;
-        -ms-grid-row: 6;
-        grid-row: 6;
-      }
-      .about__stats {
-        margin-left: 0px;
-        width: 50%;
-      }
-      .about-gallery__item--5 {
-        -ms-grid-column: 1;
-        grid-column: 1;
-        -ms-grid-row: 6;
-        grid-row: 6;
-        width: 100%;
-        text-align: end;
-      }
-      .about-gallery__item--6 {
+    .intro {
+        margin-bottom: 60px;
+    }
+
+    .first_item-text {
+        width: 99%;
+        margin-top: 0;
+    }
+
+    .first_item-img {
+        padding-top: 21px;
+    }
+
+    .grid_item {
+        grid-template-columns: 70% 30%;
+    }
+
+    .second_column {
         display: none;
-      }
-      .about-img {
-        width: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
-        height: 100%;
-      }
-      .about-img__mob {
-        width: 50%;
-        -o-object-fit: cover;
-           object-fit: cover;
-      }
-      .aqua--stats {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 130%;
-      }
-      .stats_text {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 150%;
-        color: #0E0E0E;
-      }
+    }
+
+    .third_column {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .tihrd_stats-item {
+        padding-bottom: 25px;
+    }
+
+    .third_item-img:last-child {
+        display: none;
+    }
 
     /* Directon */
 
