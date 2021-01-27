@@ -7,8 +7,8 @@ $(function(){
         slidesToScroll: 1,
         arrows: true,
         dots:true,
-        prevArrow: '<button class="banner-slider__btn banner-slider__btn-prev"> <img src="/img/arrow_prev.png" alt=""></button>',
-        nextArrow: '<button class="banner-slider__btn banner-slider__btn-next"><img src="/img/arrow_next.png" alt=""></button>',
+        prevArrow: '<button class="banner-slider__btn banner-slider__btn-prev"> <img src="/roscafe-test/img/arrow_prev.png" alt=""></button>',
+        nextArrow: '<button class="banner-slider__btn banner-slider__btn-next"><img src="/roscafe-test/img/arrow_next.png" alt=""></button>',
         responsive: [
             {
               breakpoint: 834,
@@ -30,8 +30,8 @@ $(function(){
         dots:true,
         adaptiveHeight: true,
         variableWidth: true,
-        prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="/img/products/product-arrowprev.png" alt=""></button>',
-        nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="/img/products/product-arrownext.png"" alt=""></button>',
+        prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="/roscafe-test/img/products/product-arrowprev.png" alt=""></button>',
+        nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="/roscafe-test/img/products/product-arrownext.png"" alt=""></button>',
         responsive: [
             {
               breakpoint: 834,
@@ -54,8 +54,8 @@ $(function(){
         dots:true,
         adaptiveHeight: true,
         variableWidth: true,
-        prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="/img/products/product-arrowprev.png" alt=""></button>',
-        nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="/img/products/product-arrownext.png"" alt=""></button>',
+        prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="/roscafe-test/img/products/product-arrowprev.png" alt=""></button>',
+        nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="/roscafe-test/img/products/product-arrownext.png"" alt=""></button>',
         responsive: [
             {
               breakpoint: 834,
