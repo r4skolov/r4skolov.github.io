@@ -479,7 +479,7 @@
 
 .sorting .jq-selectbox__trigger-arrow {
     position: absolute;
-    background-image: url("/img/icons/arrow_down-select.png");
+    background-image: url("../img/icons/arrow_down-select.png");
     top: 7px;
     right: 12px;
     width: 12px;
@@ -656,7 +656,7 @@
     border-left: none;
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    background-image: url("/img/icons/cheked.svg");
+    background-image: url("../img/icons/cheked.svg");
 }
 
 .jq-checkbox.focused, .jq-radio.focused {
@@ -677,7 +677,7 @@
             top: 11px;
             right: -7px;
             z-index: 1;
-            background: url("/img/icons/arrow_down.png");
+            background: url("../img/icons/arrow_down.png");
             width: 7px;
             height: 4px;
         }
@@ -701,7 +701,7 @@
     position: absolute;
     top: -5px;
     left: 2px;
-    background-image: url("/img/icons/search_filter.png");
+    background-image: url("../img/icons/search_filter.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
