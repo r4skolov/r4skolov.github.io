@@ -307,6 +307,8 @@
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+    padding: 0;
+    text-align: center;
 }
 
 .favorite {
@@ -396,6 +398,7 @@
     margin-left: 20px;
     cursor: pointer;
     fill:#D7D7D7;
+    padding: 0;
 
         &--active {
             fill:$yellow;
@@ -476,7 +479,7 @@
 
 .sorting .jq-selectbox__trigger-arrow {
     position: absolute;
-    background-image: url("../img/icons/arrow_down-select.png");
+    background-image: url("/img/icons/arrow_down-select.png");
     top: 7px;
     right: 12px;
     width: 12px;
@@ -538,7 +541,8 @@
 
 .filter-drop {
     position: relative;
-    padding-bottom: 20px;
+    
+    cursor: pointer;
 }
 
 .filter-button {
@@ -615,6 +619,7 @@
 
 .filter-dropdown {
     display: block;
+    margin-top: 20px;
 }
 
 .aside-filter__content-box {
@@ -651,7 +656,7 @@
     border-left: none;
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    background-image: url("../img/icons/cheked.svg");
+    background-image: url("/img/icons/cheked.svg");
 }
 
 .jq-checkbox.focused, .jq-radio.focused {
@@ -672,7 +677,7 @@
             top: 11px;
             right: -7px;
             z-index: 1;
-            background: url("../img/icons/arrow_down.png");
+            background: url("/img/icons/arrow_down.png");
             width: 7px;
             height: 4px;
         }
@@ -696,7 +701,7 @@
     position: absolute;
     top: -5px;
     left: 2px;
-    background-image: url("../img/icons/search_filter.png");
+    background-image: url("/img/icons/search_filter.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
@@ -956,5 +961,7 @@
     top: -64px;
     width: 100%;
     padding: 14px 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 

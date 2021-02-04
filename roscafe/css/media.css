@@ -43,7 +43,7 @@
         margin-bottom: 20px;
          margin-right: 0;
         margin-left: 0px;
-        width: 251px;
+        width: 258px;
    }
 
    .catalog-inner__list {
@@ -53,6 +53,7 @@
    .less-filters {
         display: block;
         display: inline-flex;
+        align-items: end;
     }
 
     .sorting {
