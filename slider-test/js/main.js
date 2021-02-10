@@ -10,6 +10,8 @@ $(function(){
         dots:true,
         adaptiveHeight: false,
         variableWidth: true,
+        useTransforms: false,
+        useCSS: false,
         prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="/img/products/product-arrowprev.png" alt=""></button>',
         nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="/img/products/product-arrownext.png"" alt=""></button>',
       
