@@ -85,6 +85,7 @@
         -webkit-transition: all linear .2s;
         cursor: pointer;
         cursor: url("../img/cur.png"), default;
+        border: none;
     
             &:hover {
                 background-color: #ffffff;
