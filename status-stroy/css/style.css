@@ -485,6 +485,7 @@ a {
 .project-btn {
   color: #FFCC00;
   border-bottom: 1px solid #FFCC00;
+  outline: none;
 }
 
 .project-content:hover .project-content__hover {
