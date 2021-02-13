@@ -29,6 +29,8 @@ $(function(){
     slidesToScroll: 1,
     variableWidth:true,
         arrows: false,
+        useTransforms: false,
+        useCSS: false,
     responsive: [
         {
           breakpoint: 769,
@@ -87,6 +89,8 @@ $(window).on('load resize', function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth:false,
+        useTransforms: false,
+        useCSS: false,
         prevArrow: '<button class="clients-slider__btn clients-btn__prev"><svg class="client-slider__arrow"><use xlink:href="#arrow__left"></use></svg></button>',
         nextArrow: '<button class="clients-slider__btn clients-btn__next"><svg class="client-slider__arrow"><use xlink:href="#arrow__right"></use></svg></button>',
       });
