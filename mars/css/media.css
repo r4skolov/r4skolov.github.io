@@ -1,0 +1,1030 @@
+@media (max-width: 1200px) {
+    .description {
+         grid-gap: 20px;
+    }
+
+    .trial_title {
+        font-size: 26px;
+    }
+
+    .lessons-inner {
+        grid-gap: 20px;
+        grid-row-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .info {
+        padding-left: 30px;
+    }
+}
+
+
+
+@media (max-width: 963px) {
+
+    .slider_img {
+        margin: 0 11px 20px 5px;
+    }
+
+    .info {
+        padding-left: 10px;
+    }
+
+    /* Trial */
+
+    .trial_title {
+        font-size: 26px;
+    }
+
+    .trial_subtitle {
+        font-size: 14px;
+        padding-bottom: 44px;
+    }
+
+    .trial_form {
+        padding-left: 0;
+    }
+
+    .lessons-item_1 {
+        font-size: 14px;
+    }
+
+     /* Trial */
+
+     .trial_image {
+        width: 100%;
+    }
+
+
+    .trial_window {
+         position: absolute;
+         top: 20px;
+         left: 20px;
+         bottom: 20px;
+         right: 20px;      
+    }
+
+    .trial_window-inner {
+        padding: 68px 5px 0 5px;
+        width: 100%;
+    }
+
+    .input_mail {
+        margin-bottom: 24px;
+    }
+
+}
+
+
+@media (max-width: 907px) {
+    .footer_nav {
+        display: flex;
+    }
+
+    .footer_nav-top {
+        flex-direction: column;
+        padding-right: 60px;
+    }
+
+    .footer_nav-bottom {
+        flex-direction: column;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .footer_nav-item {
+        padding: 30px 0;
+    }
+
+    .footer_nav-item:first-child {
+        padding-top: 0;
+    }
+
+
+}
+
+
+
+@media (max-width: 896px) {
+
+    /* Intro */
+
+    .header {
+        top: 10px;
+    }
+
+    .header_top {
+        border-bottom: none;
+    }
+
+    .info:nth-child(2) {
+        display: none;
+    }
+
+    .info:nth-child(3) {
+        display: none;
+    }
+
+    .header_btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 1;
+    }
+
+    .header_info {
+        margin-right: 150px;
+    }
+
+    /* Direction */
+
+    .direction_info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 180px;
+    }
+
+    .direction_title {
+        margin-left: 0;
+    }
+
+    .directions_icon {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        z-index: 1;
+        padding-left: 0px;
+    }
+
+    .direction_text {
+        width: 100%;
+        padding: 5px 0 20px 0;
+        margin-left: 0;
+    }
+
+    .direction_item::after {
+        top: 0;
+    }
+
+}
+
+
+@media (max-width: 801px) {
+
+    .item_top-second {
+        width: auto;
+        flex-direction: column-reverse;
+        position: absolute;
+        right: 0;
+        top: 53px;
+    }
+
+    .footer_icons {
+        padding-top: 32px;
+    }
+
+    .footer_item-bottom {
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .footer_nav-item {
+        padding: 18px 0;
+    }
+
+    .footer_form {
+        margin-top: 30px;
+    }
+
+    .mail-form {
+        width: 80%;
+    }
+
+    .input_mail {
+        width: 100%;
+    }
+
+    .answers_title {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .description-text {
+        font-size: 14px;
+    }
+
+    .descriptuon-stats__num {
+        font-size: 28px;
+    }
+
+    .descriptuon-stats__num {
+        font-size: 28px;
+    }
+
+    .description-stats {
+        font-size: 14px;
+    }
+
+    /* Lessons */
+
+    
+    .answers_item {
+        padding: 15px 0;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .first_item-text {
+        width: 100%;
+    }
+
+    .second_item-img {
+        padding: 20px 9px 30px;
+    }
+
+}
+
+
+@media (max-width: 746px) {
+
+    /* Intro */
+
+    .intro_inner {
+        padding-top: 102px;
+    }
+
+   
+    body.lock {
+        overflow: hidden;
+    }
+
+    .nav {
+        display: block;
+        color: #fff;
+        position: fixed;
+        top: 70px;
+        left: -110%;
+        z-index: 9999;
+        width: 100%;
+        height: 100vh;
+        background-color:  #000000d6;;
+        transition: .3s cubic-bezier(0.4, 0, 1, 1);
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 350px;
+        height: 100vh;
+        background-color: #181817;
+    }
+
+    .nav_link {
+         margin-right:0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-list__item {
+        margin: 0;
+        padding: 15px 0 15px 15px;
+        border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
+    .header_logo {
+        margin-left: 50px;
+    }
+
+    .intro-slider_text {
+        font-size: 34px;
+    }
+    
+    .intro-slider_subtext {
+        font-size: 14px;
+    }
+
+    .intro-slider_wrapper {
+        top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .lessons-inner {
+        grid-template-rows: 76px 29% 7% 1fr 1fr;;
+    }
+}
+
+@media (max-width: 640px) {
+
+
+    .section_title {
+        font-size: 28px;
+    }
+
+    /* Intro */
+    .intro-img_wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+ 
+    .header_info {
+        display: none;
+    }
+  
+    /* Second */
+
+    .description {
+        display: grid;
+        grid-template-columns: 65% 31%;
+        grid-template-rows: 18% auto;
+        grid-template-areas: "description-text  description-col3_text"
+                             "description-col1_img  description-col3_text"
+                             "description-col1_img  description-col3_img";
+         grid-gap: 20px;
+        grid-row-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .description-text {
+        grid-area: description-text;
+    }
+    
+    .description-col1_img {
+        grid-area: description-col1_img;
+        display: flex;
+        align-items: flex-end;
+
+    }
+    
+    .description-col3_img {
+        grid-area: description-col3_img;
+        display: flex;
+        align-items: flex-end;
+   
+    }
+    
+    .description-col3_text {
+        grid-area: description-col3_text;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description-col2_img {
+        display: none;
+    }
+
+    .description-col3_img-2 {
+        display: none;
+    }
+
+    /* Direction  */
+
+    .direction--title {
+     
+    }
+
+    .direction_item {
+        margin: 77px auto;
+    }
+
+    .direction_text {
+
+        padding-bottom: 20px;
+    }
+
+    /* Teachers */
+
+    .teachers_image {
+        width: 220px;
+    }
+
+    .slider_img {
+        margin: 0 8px 20px 8px;
+    }
+
+    .slider_name {
+        font-size: 20px
+    }
+
+    /* Concerts */
+
+    .concerts_video {
+        width: 408px;
+    }
+
+    /* Answers */
+
+    .answers_title {
+        font-size: 15px;
+    }
+
+    .answers_toggle {
+        top: 9px;
+    }
+
+    .answers_text {
+        width: 97%;
+    }
+
+
+    .footer_nav-top {
+        padding-right: 18px;
+    }
+
+   
+    .buttons-wrapper {
+        left: 50% ;
+        transform: translate(-50%, -50%);
+        right: auto;
+    }
+
+
+@media (max-width: 600px) {
+
+    /* Intro */
+
+    .buttons_slider {
+        display: none;
+    }
+
+    /* Trial */
+
+    .item_top-firs {
+        width: 183px;
+        align-items: center;
+        text-align: center;
+        margin-top: 41px;
+        margin-bottom: 15px;
+    }
+
+    .item_top-second {
+        position: inherit;
+        align-items: center;
+    }
+
+    .footer_number-adress {
+        align-items: center;
+    }
+
+    .footer_img {
+        width: 183px;
+    }
+
+    .footer_nav {
+        display: none;
+    }
+
+    .footer_item-bottom {
+        padding-top: 87px;
+    }
+
+    .footer_item-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer_item-bottom {
+        padding-top: 7px;
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    /* Intro */
+    .intro-slider_text {
+        font-size: 28px;
+    }
+ 
+    .section_header {
+        flex-direction: column;
+    }
+
+
+  /* Second */
+
+  .description {
+    grid-template-columns: 47% 48%;
+    grid-template-rows: 40% 20% 18% 18%;
+    grid-template-areas: "description-text description-text"
+                         "description-col1_img description-col1_img"
+                         "description-col3_text description-col3_img"
+                         "description-col3_text description-col3_img-2";
+    grid-row-gap: 20px;
+    row-gap: 20px;
+}
+
+.description-text {
+    grid-area: description-text;
+
+}
+
+.description-col1_img {
+    grid-area: description-col1_img;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.description-col3_img {
+    grid-area: description-col3_img;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.description-col3_text {
+    grid-area: description-col3_text;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.description-col3_img-2 {
+    display:block;
+    display: flex;
+    align-items: flex-end;
+}
+   
+    /* Directon */
+
+   
+
+    .directions_icon {
+        display: none;
+    }
+
+
+    .direction_info {
+         padding-left: 10px; 
+        align-items: center;
+    }
+
+    .direction_item::after {
+        height: 45px;
+    }
+
+    /* Teachers */
+
+    .teachers_image {
+        width: 220px;
+    }
+
+    .slider_img {
+        margin: 0 0px 20px 9px;
+    }
+
+    .slider_name {
+        font-size: 20px
+    }
+
+    .buttons_slide-2 {
+        right: 120px;
+    }
+
+    /* Trial */
+
+
+    .trial_title {
+        font-size: 21px;
+    }
+
+    /* Lessons */
+
+
+    .lessons-inner {
+        grid-template-columns:  70% 25%;
+        grid-template-rows: 14% 37% 17% 22%;
+        grid-template-areas: "lessons-item_1 lessons-item_1"
+                             "lessons-item_2 lessons-item_5"
+                             "lessons-item_2 lessons-item_4"
+                             "lessons-item_7 lessons-item_7";    
+    
+    }
+
+
+    .lessons-item_1 {
+        grid-area: lessons-item_1;
+    }
+    
+    .lessons-item_2 {
+        grid-area: lessons-item_2;
+        display: flex;
+        align-items: inherit;
+    }
+    
+    
+    .lessons-item_4 {
+        grid-area: lessons-item_4;
+        display: flex;
+        align-items: inherit;
+    }
+    
+    .lessons-item_5 {
+        grid-area: lessons-item_5;
+        display: flex;
+        align-items: inherit;
+    }
+
+
+    .lessons-item_3 {
+       display: none;
+    }
+    
+    
+    .lessons-item_6 {
+        display: none;
+    }
+    .lessons-item_7 {
+        grid-area: lessons-item_7;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+
+
+    .img_five {
+        display: none;
+    }
+
+    .concerts_video {
+        padding-right: 0px;
+        width: 454px;
+    }
+
+    .answers_toggle {
+        top: -34px;
+        right: 211px;
+    }
+
+    .plus-toggle {
+        right: 50%;
+        top: -25px;
+        transform: translate(50%, 50%);
+    }
+
+    .answers_item {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+
+
+}
+
+@media (max-width: 414px) {
+
+    .nav-list {
+        width: 270px;
+    }
+
+    /* Directon */
+
+    .direction_info--last {
+        margin-left: 81px;
+    }
+
+
+    /* Teachers */
+
+    .teacher--header {
+        flex-direction: column;
+    }
+
+    .teacher--title {
+        padding-bottom: 10px;
+    }
+
+    .slider_img {
+        margin: 0 14px 20px 5px;
+    }
+
+    .buttons_slide-2 {
+        right: 85px;
+    }
+
+    /* Trial */
+
+  
+    .trial_title {
+        font-size: 21px;
+    }
+
+    .trial_subtitle {
+        padding-bottom: 16px;
+    }
+
+
+    .trial_window {
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;      
+   }
+
+    .answers_toggle {
+
+        right: 171px;
+    }
+
+    .answers_header--title {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 40px;
+    }
+
+    .answers_item {
+      padding: 15px 0;
+    }
+
+    .lessons-inner {
+        grid-template-columns:  43% 50%;
+        grid-template-rows: 71px 27% 35% 22%;
+        grid-template-areas: "lessons-item_1 lessons-item_1"
+                             "lessons-item_2 lessons-item_2"
+                             "lessons-item_4 lessons-item_5"
+                             "lessons-item_7 lessons-item_7";    
+    
+    }
+
+    .lessons-item_1 {
+        grid-area: lessons-item_1;
+    }
+    
+    .lessons-item_2 {
+        grid-area: lessons-item_2;
+        display: flex;
+        align-items: inherit;
+    }
+    
+    
+    .lessons-item_4 {
+        grid-area: lessons-item_4;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .lessons-item_5 {
+        grid-area: lessons-item_5;
+        display: flex;
+        align-items: inherit;
+    }
+
+
+    .lessons-item_3 {
+       display: none;
+    }
+    
+    
+    .lessons-item_6 {
+        display: none;
+    }
+    .lessons-item_7 {
+        grid-area: lessons-item_7;
+    }
+
+    .concert_video::before {
+        background: url("../img/second/play.png") no-repeat 38% 50%;
+    }
+
+    .section_title {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 736px) and (min-width: 414px) and (orientation: landscape) {
+  
+
+    .buttons_slider {
+        bottom: -19px;
+    }
+
+    .second_column {
+        margin-top: 100px;
+    }
+
+
+    /* Teachers */
+
+    .teachers_image {
+        width: 220px;
+    }
+
+    .slider_img {
+       margin: 0 8px 20px 8px;
+    }
+
+    .slider_name {
+        font-size: 20px
+    }
+
+    .buttons_slide-2 {
+        margin-top: 14px;
+    }
+
+    .concerts_video {
+        width: 515px;
+    }
+}
+
+
+
+
+@media (max-width: 375px) {
+
+    /* Intro */
+    .intro-slider_text {
+        font-size: 24px;
+    }
+
+
+    /* Teachers */
+
+    .slider_img {
+       margin: 0 14px 20px 5px;
+    }
+
+    .buttons_slide-2 {
+        margin-top: 30px;
+        right: 65px;
+    }
+
+    /* Trial */
+
+  
+    .trial_img {
+        width: 100%;
+    }
+
+    .trial_title {
+        font-size: 21px;
+    }
+
+    .trial_subtitle {
+        padding-bottom: 16px;
+    }
+
+
+    .concerts_title {
+        font-size: 20px;
+    }
+
+
+    .answers_toggle {
+        right: 153px;
+    }
+
+
+    .footer--btn {
+        width: 44px;
+        font-size: 0px;
+    }
+
+    .arrow_btn {
+        display: block;
+    }
+
+    .trial_btn-arrow {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .adress {
+        font-size: 12px;
+    }
+
+    .concert_video::before {
+        background: url("../img/second/play.png") no-repeat 34% 50%;
+    }
+
+}
+
+
+@media only screen and (max-width: 667px) and (min-width: 375px) and (orientation: landscape) {
+
+    .first_item-text {
+        width: 135%;
+    }
+
+    .tihrd_stats-item {
+        padding-bottom: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+
+
+   .burger {
+       left: 10px;
+   }
+
+    /* Intro */
+
+    .nav_toggle {
+        left: 0;
+    }
+
+    .nav-list {
+        width: 320px;
+        text-align: center;
+    }
+
+    .header_logo {
+        margin-left: 40px;
+    }
+
+    .header_btn {
+        right: 10px;
+    }
+
+
+    /* Second */
+
+    .description {
+        grid-template-rows: 40% 20% 15% 15%;
+    }
+
+    /* Teachers */
+
+
+    .buttons_slide-2 {
+        right: 36px;
+    }
+
+    /* Trial */
+
+    .trial_title {
+        font-size: 20px;
+    }
+
+    .trial_subtitle {
+        padding-bottom: 14px;
+    }
+
+    .concerts_title {
+        font-size: 17px;
+    }
+
+    .answers_title {
+        text-align: center;
+    }
+
+    .answers_toggle {
+
+        right: 125px;
+    }
+
+    .concert_video::before {
+        background: url("../img/second/play.png") no-repeat 28% 50%;
+    }
+}
+
+@media only screen and (max-width: 568px) and (min-width: 320px) and (orientation: landscape) {
+
+ 
+
+    .first_item-text {
+        width: 146%;
+        font-size: 13px;
+    }
+
+    .second_column {
+        margin: 123px 5px 0 5px;
+    }
+
+    .aqua--stats {
+        font-size: 24px;
+    }
+
+    .third_item-img {
+        padding-bottom: 16px;
+    }
+
+}

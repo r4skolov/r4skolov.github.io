@@ -1,0 +1,72 @@
+@import "/mars/css/_global.css";
+@import "/mars/css/_overall.css";
+@import "/mars/css/_media.css";
+@import "/mars/css/slider.css";
+
+
+
+/* Components */
+
+@import "/mars/css/components/header.css";
+@import "/mars/css/components/intro.css";
+@import "/mars/css/components/second.css";
+@import "/mars/css/components/directions.css";
+@import "/mars/css/components/teachers.css";
+@import "/mars/css/components/trial.css";
+@import "/mars/css/components/lessons.css";
+@import "/mars/css/components/concerts.css";
+@import "/mars/css/components/answers.css";
+@import "/mars/css/components/footer.css";
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/** Контейнер */
+.container {
+    max-width: 1190px;
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.page {
+    overflow: hidden;
+}
+
+.section_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 130%;
+    color: #0E0E0E;
+}
+

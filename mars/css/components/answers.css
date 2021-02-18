@@ -1,0 +1,98 @@
+.answers {
+    padding-bottom: 97px;
+}
+
+
+.answers--title {
+    padding-bottom: 50px;
+}
+
+.answers_item {
+    padding: 30px 0;
+}
+
+.answers_title {
+    position: relative;
+    font-size: 20px;
+    line-height: 1.1rem;
+    color: #0E0E0E;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.answers_title:hover {
+    color: #73C7D2;
+}
+
+.answers_text {
+    width: 75%;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #0E0E0E;
+    display: none;
+}
+
+.answers_text.active {
+    display: block;
+ 
+}
+
+.answers_toggle {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    z-index: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+}
+
+.plus-toggle {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #73C7D2;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.plus-toggle:before,
+.plus-toggle:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #73C7D2;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    transition: transform .2s linear;
+}
+
+.plus-toggle::before {
+    transform: rotate(90deg) translateX(0px);
+}
+
+.answers_title.active .plus-toggle::before {
+    transform-origin:  top;
+    transform: rotate(0deg)
+    translateY(0px);
+    background-color: #D2D2D2;
+    z-index: 1;
+}
+
+.answers_title.active {
+    color: #73C7D2;
+} 
+
+
+.testtts {
+    padding-right: 40px;
+}

@@ -1,0 +1,163 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #f1f0f11c;
+}
+
+.header_info {
+    display: flex;
+}
+
+.info {
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 40px;
+    color: #fff;
+}
+
+.aqua {
+    color: #8BD3DD;
+}
+
+.header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;    
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav_link {
+    position: relative;
+    margin-right: 43px;    
+}
+
+.nav_link:after {
+    content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+  
+   
+   background-color:#8BD3DD;
+   opacity: 0;
+   
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1;
+   
+   transition: opacity .1s linear;
+   
+   
+}
+
+.nav_link:hover {
+   
+   color:#8BD3DD;
+}
+
+.nav_link:hover:after {
+   opacity: 1;
+}
+
+.header_btn {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    color: #8BD3DD;
+    padding: 12px 28px;
+    border: 1px solid #8BD3DD;
+    border-radius: 3px;
+}
+
+.header_btn:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: color 0.3s linear, border 0.3s linear;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    top: 25px;
+    outline: none;
+}
+
+.burger_toggle-item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+
+    color: transparent;
+
+    position: relative;
+    
+}
+
+.burger_toggle-item:before,
+.burger_toggle-item:after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.burger_toggle-item:before {
+    top: 8px;
+}
+
+.burger_toggle-item:after {
+    bottom: 8px;
+}
+
+.burger.active .burger_toggle-item {
+    background: none;
+    }
+
+    .burger.active .burger_toggle-item::before {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-3px);
+   
+    }
+
+    .burger.active .burger_toggle-item::after {
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-2px);
+    }
