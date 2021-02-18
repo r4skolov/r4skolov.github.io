@@ -213,6 +213,12 @@
 
 @media (max-width: 768px) {
 
+
+    .intro {
+        padding-bottom: 90px;
+    }
+
+
     .description-text {
         font-size: 14px;
     }
@@ -695,7 +701,9 @@
         padding-bottom: 0;
     }
 
-
+    .answers__item {
+        padding: 30px 0;
+    }
 
 }
 
@@ -760,9 +768,6 @@
         padding-bottom: 40px;
     }
 
-    .answers__item {
-      padding: 15px 0;
-    }
 
     .lessons-inner {
         grid-template-columns:  43% 50%;
