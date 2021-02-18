@@ -3,7 +3,7 @@
          grid-gap: 20px;
     }
 
-    .trial_title {
+    .trial__title {
         font-size: 26px;
     }
 
@@ -22,7 +22,7 @@
 
 @media (max-width: 963px) {
 
-    .slider_img {
+    .slider__img {
         margin: 0 11px 20px 5px;
     }
 
@@ -32,31 +32,31 @@
 
     /* Trial */
 
-    .trial_title {
+    .trial__title {
         font-size: 26px;
     }
 
-    .trial_subtitle {
+    .trial__subtitle {
         font-size: 14px;
         padding-bottom: 44px;
     }
 
-    .trial_form {
+    .trial__form {
         padding-left: 0;
     }
 
-    .lessons-item_1 {
+    .lessons-item__1 {
         font-size: 14px;
     }
 
      /* Trial */
 
-     .trial_image {
+     .trial__image {
         width: 100%;
     }
 
 
-    .trial_window {
+    .trial__window {
          position: absolute;
          top: 20px;
          left: 20px;
@@ -64,12 +64,12 @@
          right: 20px;      
     }
 
-    .trial_window-inner {
+    .trial__window-inner {
         padding: 68px 5px 0 5px;
         width: 100%;
     }
 
-    .input_mail {
+    .input__mail {
         margin-bottom: 24px;
     }
 
@@ -77,26 +77,26 @@
 
 
 @media (max-width: 907px) {
-    .footer_nav {
+    .footer__nav {
         display: flex;
     }
 
-    .footer_nav-top {
+    .footer__nav-top {
         flex-direction: column;
         padding-right: 60px;
     }
 
-    .footer_nav-bottom {
+    .footer__nav-bottom {
         flex-direction: column;
         padding-top: 0;
         padding-left: 0;
     }
 
-    .footer_nav-item {
+    .footer__nav-item {
         padding: 30px 0;
     }
 
-    .footer_nav-item:first-child {
+    .footer__nav-item:first-child {
         padding-top: 0;
     }
 
@@ -113,7 +113,7 @@
         top: 10px;
     }
 
-    .header_top {
+    .header__top {
         border-bottom: none;
     }
 
@@ -125,30 +125,30 @@
         display: none;
     }
 
-    .header_btn {
+    .header__btn {
         position: absolute;
         top: 10px;
         right: 15px;
         z-index: 1;
     }
 
-    .header_info {
+    .header__info {
         margin-right: 150px;
     }
 
     /* Direction */
 
-    .direction_info {
+    .direction__info {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 180px;
     }
 
-    .direction_title {
+    .direction__title {
         margin-left: 0;
     }
 
-    .directions_icon {
+    .directions__icon {
         position: absolute;
         top: 20px;
         left: 40px;
@@ -156,13 +156,13 @@
         padding-left: 0px;
     }
 
-    .direction_text {
+    .direction__text {
         width: 100%;
         padding: 5px 0 20px 0;
         margin-left: 0;
     }
 
-    .direction_item::after {
+    .direction__item::after {
         top: 0;
     }
 
@@ -171,7 +171,7 @@
 
 @media (max-width: 801px) {
 
-    .item_top-second {
+    .item__top-second {
         width: auto;
         flex-direction: column-reverse;
         position: absolute;
@@ -179,20 +179,20 @@
         top: 53px;
     }
 
-    .footer_icons {
+    .footer__icons {
         padding-top: 32px;
     }
 
-    .footer_item-bottom {
+    .footer__item-bottom {
         flex-direction: column;
         padding-top: 32px;
     }
 
-    .footer_nav-item {
+    .footer__nav-item {
         padding: 18px 0;
     }
 
-    .footer_form {
+    .footer__form {
         margin-top: 30px;
     }
 
@@ -200,11 +200,11 @@
         width: 80%;
     }
 
-    .input_mail {
+    .input__mail {
         width: 100%;
     }
 
-    .answers_title {
+    .answers__title {
         font-size: 18px;
     }
 }
@@ -232,7 +232,7 @@
     /* Lessons */
 
     
-    .answers_item {
+    .answers__item {
         padding: 15px 0;
     }
 }
@@ -240,11 +240,11 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .first_item-text {
+    .first__item-text {
         width: 100%;
     }
 
-    .second_item-img {
+    .second__item-img {
         padding: 20px 9px 30px;
     }
 
@@ -255,7 +255,7 @@
 
     /* Intro */
 
-    .intro_inner {
+    .intro__inner {
         padding-top: 102px;
     }
 
@@ -285,7 +285,7 @@
         background-color: #181817;
     }
 
-    .nav_link {
+    .nav__link {
          margin-right:0;
     }
 
@@ -303,23 +303,23 @@
         left: 0;
     }
 
-    .nav_toggle {
+    .nav__toggle {
         display: block;
     }
 
-    .header_logo {
+    .header__logo {
         margin-left: 50px;
     }
 
-    .intro-slider_text {
+    .intro-slider__text {
         font-size: 34px;
     }
     
-    .intro-slider_subtext {
+    .intro-slider__subtext {
         font-size: 14px;
     }
 
-    .intro-slider_wrapper {
+    .intro-slider__wrapper {
         top: 10px;
         width: 100%;
         text-align: center;
@@ -333,12 +333,12 @@
 @media (max-width: 640px) {
 
 
-    .section_title {
+    .section__title {
         font-size: 28px;
     }
 
     /* Intro */
-    .intro-img_wrapper::before {
+    .intro-img__wrapper::before {
         content: "";
         position: absolute;
         top: 0;
@@ -349,7 +349,7 @@
         background: rgba(0, 0, 0, 0.7);
     }
  
-    .header_info {
+    .header__info {
         display: none;
     }
   
@@ -359,9 +359,9 @@
         display: grid;
         grid-template-columns: 65% 31%;
         grid-template-rows: 18% auto;
-        grid-template-areas: "description-text  description-col3_text"
-                             "description-col1_img  description-col3_text"
-                             "description-col1_img  description-col3_img";
+        grid-template-areas: "description-text  description-col3__text"
+                             "description-col1__img  description-col3__text"
+                             "description-col1__img  description-col3__img";
          grid-gap: 20px;
         grid-row-gap: 20px;
         row-gap: 20px;
@@ -371,31 +371,31 @@
         grid-area: description-text;
     }
     
-    .description-col1_img {
-        grid-area: description-col1_img;
+    .description-col1__img {
+        grid-area: description-col1__img;
         display: flex;
         align-items: flex-end;
 
     }
     
-    .description-col3_img {
-        grid-area: description-col3_img;
+    .description-col3__img {
+        grid-area: description-col3__img;
         display: flex;
         align-items: flex-end;
    
     }
     
-    .description-col3_text {
-        grid-area: description-col3_text;
+    .description-col3__text {
+        grid-area: description-col3__text;
         display: flex;
         flex-direction: column;
     }
 
-    .description-col2_img {
+    .description-col2__img {
         display: none;
     }
 
-    .description-col3_img-2 {
+    .description-col3__img-2 {
         display: none;
     }
 
@@ -405,51 +405,51 @@
      
     }
 
-    .direction_item {
+    .direction__item {
         margin: 77px auto;
     }
 
-    .direction_text {
+    .direction__text {
 
         padding-bottom: 20px;
     }
 
     /* Teachers */
 
-    .teachers_image {
+    .teachers__image {
         width: 220px;
     }
 
-    .slider_img {
+    .slider__img {
         margin: 0 8px 20px 8px;
     }
 
-    .slider_name {
+    .slider__name {
         font-size: 20px
     }
 
     /* Concerts */
 
-    .concerts_video {
+    .concerts__video {
         width: 408px;
     }
 
     /* Answers */
 
-    .answers_title {
+    .answers__title {
         font-size: 15px;
     }
 
-    .answers_toggle {
+    .answers__toggle {
         top: 9px;
     }
 
-    .answers_text {
+    .answers__text {
         width: 97%;
     }
 
 
-    .footer_nav-top {
+    .footer__nav-top {
         padding-right: 18px;
     }
 
@@ -465,13 +465,13 @@
 
     /* Intro */
 
-    .buttons_slider {
+    .buttons__slider {
         display: none;
     }
 
     /* Trial */
 
-    .item_top-firs {
+    .item__top-firs {
         width: 183px;
         align-items: center;
         text-align: center;
@@ -479,34 +479,34 @@
         margin-bottom: 15px;
     }
 
-    .item_top-second {
+    .item__top-second {
         position: inherit;
         align-items: center;
     }
 
-    .footer_number-adress {
+    .footer__number-adress {
         align-items: center;
     }
 
-    .footer_img {
+    .footer__img {
         width: 183px;
     }
 
-    .footer_nav {
+    .footer__nav {
         display: none;
     }
 
-    .footer_item-bottom {
+    .footer__item-bottom {
         padding-top: 87px;
     }
 
-    .footer_item-top {
+    .footer__item-top {
         flex-direction: column;
         align-items: center;
     }
 
 
-    .footer_item-bottom {
+    .footer__item-bottom {
         padding-top: 7px;
     }
 
@@ -518,11 +518,11 @@
 @media (max-width: 480px) {
 
     /* Intro */
-    .intro-slider_text {
+    .intro-slider__text {
         font-size: 28px;
     }
  
-    .section_header {
+    .section__header {
         flex-direction: column;
     }
 
@@ -533,9 +533,9 @@
     grid-template-columns: 47% 48%;
     grid-template-rows: 40% 20% 18% 18%;
     grid-template-areas: "description-text description-text"
-                         "description-col1_img description-col1_img"
-                         "description-col3_text description-col3_img"
-                         "description-col3_text description-col3_img-2";
+                         "description-col1__img description-col1__img"
+                         "description-col3__text description-col3__img"
+                         "description-col3__text description-col3__img-2";
     grid-row-gap: 20px;
     row-gap: 20px;
 }
@@ -545,28 +545,28 @@
 
 }
 
-.description-col1_img {
-    grid-area: description-col1_img;
+.description-col1__img {
+    grid-area: description-col1__img;
     display: flex;
     align-items: flex-end;
 
 }
 
-.description-col3_img {
-    grid-area: description-col3_img;
+.description-col3__img {
+    grid-area: description-col3__img;
     display: flex;
     align-items: flex-end;
 
 }
 
-.description-col3_text {
-    grid-area: description-col3_text;
+.description-col3__text {
+    grid-area: description-col3__text;
     display: flex;
     flex-direction: column;
 }
 
 
-.description-col3_img-2 {
+.description-col3__img-2 {
     display:block;
     display: flex;
     align-items: flex-end;
@@ -576,42 +576,42 @@
 
    
 
-    .directions_icon {
+    .directions__icon {
         display: none;
     }
 
 
-    .direction_info {
+    .direction__info {
          padding-left: 10px; 
         align-items: center;
     }
 
-    .direction_item::after {
+    .direction__item::after {
         height: 45px;
     }
 
     /* Teachers */
 
-    .teachers_image {
+    .teachers__image {
         width: 220px;
     }
 
-    .slider_img {
+    .slider__img {
         margin: 0 0px 20px 9px;
     }
 
-    .slider_name {
+    .slider__name {
         font-size: 20px
     }
 
-    .buttons_slide-2 {
+    .buttons__slide-2 {
         right: 120px;
     }
 
     /* Trial */
 
 
-    .trial_title {
+    .trial__title {
         font-size: 21px;
     }
 
@@ -621,65 +621,65 @@
     .lessons-inner {
         grid-template-columns:  70% 25%;
         grid-template-rows: 14% 37% 17% 22%;
-        grid-template-areas: "lessons-item_1 lessons-item_1"
-                             "lessons-item_2 lessons-item_5"
-                             "lessons-item_2 lessons-item_4"
-                             "lessons-item_7 lessons-item_7";    
+        grid-template-areas: "lessons-item__1 lessons-item__1"
+                             "lessons-item__2 lessons-item__5"
+                             "lessons-item__2 lessons-item__4"
+                             "lessons-item__7 lessons-item__7";    
     
     }
 
 
-    .lessons-item_1 {
-        grid-area: lessons-item_1;
+    .lessons-item__1 {
+        grid-area: lessons-item__1;
     }
     
-    .lessons-item_2 {
-        grid-area: lessons-item_2;
+    .lessons-item__2 {
+        grid-area: lessons-item__2;
         display: flex;
         align-items: inherit;
     }
     
     
-    .lessons-item_4 {
-        grid-area: lessons-item_4;
+    .lessons-item__4 {
+        grid-area: lessons-item__4;
         display: flex;
         align-items: inherit;
     }
     
-    .lessons-item_5 {
-        grid-area: lessons-item_5;
+    .lessons-item__5 {
+        grid-area: lessons-item__5;
         display: flex;
         align-items: inherit;
     }
 
 
-    .lessons-item_3 {
+    .lessons-item__3 {
        display: none;
     }
     
     
-    .lessons-item_6 {
+    .lessons-item__6 {
         display: none;
     }
-    .lessons-item_7 {
-        grid-area: lessons-item_7;
+    .lessons-item__7 {
+        grid-area: lessons-item__7;
     }
 
-    .section_title {
+    .section__title {
         font-size: 28px;
     }
 
 
-    .img_five {
+    .img__five {
         display: none;
     }
 
-    .concerts_video {
+    .concerts__video {
         padding-right: 0px;
         width: 454px;
     }
 
-    .answers_toggle {
+    .answers__toggle {
         top: -34px;
         right: 211px;
     }
@@ -690,7 +690,7 @@
         transform: translate(50%, 50%);
     }
 
-    .answers_item {
+    .answers__item {
         padding-top: 40px;
         padding-bottom: 0;
     }
@@ -707,7 +707,7 @@
 
     /* Directon */
 
-    .direction_info--last {
+    .direction__info--last {
         margin-left: 81px;
     }
 
@@ -722,99 +722,99 @@
         padding-bottom: 10px;
     }
 
-    .slider_img {
+    .slider__img {
         margin: 0 14px 20px 5px;
     }
 
-    .buttons_slide-2 {
+    .buttons__slide-2 {
         right: 85px;
     }
 
     /* Trial */
 
   
-    .trial_title {
+    .trial__title {
         font-size: 21px;
     }
 
-    .trial_subtitle {
+    .trial__subtitle {
         padding-bottom: 16px;
     }
 
 
-    .trial_window {
+    .trial__window {
         top: 10px;
         left: 10px;
         bottom: 10px;
         right: 10px;      
    }
 
-    .answers_toggle {
+    .answers__toggle {
 
         right: 171px;
     }
 
-    .answers_header--title {
+    .answers__header--title {
         text-align: center;
         font-size: 24px;
         padding-bottom: 40px;
     }
 
-    .answers_item {
+    .answers__item {
       padding: 15px 0;
     }
 
     .lessons-inner {
         grid-template-columns:  43% 50%;
         grid-template-rows: 71px 27% 35% 22%;
-        grid-template-areas: "lessons-item_1 lessons-item_1"
-                             "lessons-item_2 lessons-item_2"
-                             "lessons-item_4 lessons-item_5"
-                             "lessons-item_7 lessons-item_7";    
+        grid-template-areas: "lessons-item__1 lessons-item__1"
+                             "lessons-item__2 lessons-item__2"
+                             "lessons-item__4 lessons-item__5"
+                             "lessons-item__7 lessons-item__7";    
     
     }
 
-    .lessons-item_1 {
-        grid-area: lessons-item_1;
+    .lessons-item__1 {
+        grid-area: lessons-item__1;
     }
     
-    .lessons-item_2 {
-        grid-area: lessons-item_2;
+    .lessons-item__2 {
+        grid-area: lessons-item__2;
         display: flex;
         align-items: inherit;
     }
     
     
-    .lessons-item_4 {
-        grid-area: lessons-item_4;
+    .lessons-item__4 {
+        grid-area: lessons-item__4;
         display: flex;
         align-items: flex-start;
     }
     
-    .lessons-item_5 {
-        grid-area: lessons-item_5;
+    .lessons-item__5 {
+        grid-area: lessons-item__5;
         display: flex;
         align-items: inherit;
     }
 
 
-    .lessons-item_3 {
+    .lessons-item__3 {
        display: none;
     }
     
     
-    .lessons-item_6 {
+    .lessons-item__6 {
         display: none;
     }
-    .lessons-item_7 {
-        grid-area: lessons-item_7;
+    .lessons-item__7 {
+        grid-area: lessons-item__7;
     }
 
-    .concert_video::before {
+    .concert__video::before {
         background: url("../img/second/play.png") no-repeat 38% 50%;
     }
 
-    .section_title {
+    .section__title {
         text-align: center;
     }
 }
@@ -822,34 +822,34 @@
 @media only screen and (max-width: 736px) and (min-width: 414px) and (orientation: landscape) {
   
 
-    .buttons_slider {
+    .buttons__slider {
         bottom: -19px;
     }
 
-    .second_column {
+    .second__column {
         margin-top: 100px;
     }
 
 
     /* Teachers */
 
-    .teachers_image {
+    .teachers__image {
         width: 220px;
     }
 
-    .slider_img {
+    .slider__img {
        margin: 0 8px 20px 8px;
     }
 
-    .slider_name {
+    .slider__name {
         font-size: 20px
     }
 
-    .buttons_slide-2 {
+    .buttons__slide-2 {
         margin-top: 14px;
     }
 
-    .concerts_video {
+    .concerts__video {
         width: 515px;
     }
 }
@@ -860,18 +860,18 @@
 @media (max-width: 375px) {
 
     /* Intro */
-    .intro-slider_text {
+    .intro-slider__text {
         font-size: 24px;
     }
 
 
     /* Teachers */
 
-    .slider_img {
+    .slider__img {
        margin: 0 14px 20px 5px;
     }
 
-    .buttons_slide-2 {
+    .buttons__slide-2 {
         margin-top: 30px;
         right: 65px;
     }
@@ -879,25 +879,25 @@
     /* Trial */
 
   
-    .trial_img {
+    .trial__img {
         width: 100%;
     }
 
-    .trial_title {
+    .trial__title {
         font-size: 21px;
     }
 
-    .trial_subtitle {
+    .trial__subtitle {
         padding-bottom: 16px;
     }
 
 
-    .concerts_title {
+    .concerts__title {
         font-size: 20px;
     }
 
 
-    .answers_toggle {
+    .answers__toggle {
         right: 153px;
     }
 
@@ -907,11 +907,11 @@
         font-size: 0px;
     }
 
-    .arrow_btn {
+    .arrow__btn {
         display: block;
     }
 
-    .trial_btn-arrow {
+    .trial__btn-arrow {
         display: block;
         margin: 0 auto;
     }
@@ -920,7 +920,7 @@
         font-size: 12px;
     }
 
-    .concert_video::before {
+    .concert__video::before {
         background: url("../img/second/play.png") no-repeat 34% 50%;
     }
 
@@ -929,11 +929,11 @@
 
 @media only screen and (max-width: 667px) and (min-width: 375px) and (orientation: landscape) {
 
-    .first_item-text {
+    .first__item-text {
         width: 135%;
     }
 
-    .tihrd_stats-item {
+    .tihrd__stats-item {
         padding-bottom: 8px;
     }
 }
@@ -947,7 +947,7 @@
 
     /* Intro */
 
-    .nav_toggle {
+    .nav__toggle {
         left: 0;
     }
 
@@ -956,11 +956,11 @@
         text-align: center;
     }
 
-    .header_logo {
+    .header__logo {
         margin-left: 40px;
     }
 
-    .header_btn {
+    .header__btn {
         right: 10px;
     }
 
@@ -974,34 +974,34 @@
     /* Teachers */
 
 
-    .buttons_slide-2 {
+    .buttons__slide-2 {
         right: 36px;
     }
 
     /* Trial */
 
-    .trial_title {
+    .trial__title {
         font-size: 20px;
     }
 
-    .trial_subtitle {
+    .trial__subtitle {
         padding-bottom: 14px;
     }
 
-    .concerts_title {
+    .concerts__title {
         font-size: 17px;
     }
 
-    .answers_title {
+    .answers__title {
         text-align: center;
     }
 
-    .answers_toggle {
+    .answers__toggle {
 
         right: 125px;
     }
 
-    .concert_video::before {
+    .concert__video::before {
         background: url("../img/second/play.png") no-repeat 28% 50%;
     }
 }
@@ -1010,12 +1010,12 @@
 
  
 
-    .first_item-text {
+    .first__item-text {
         width: 146%;
         font-size: 13px;
     }
 
-    .second_column {
+    .second__column {
         margin: 123px 5px 0 5px;
     }
 
@@ -1023,7 +1023,7 @@
         font-size: 24px;
     }
 
-    .third_item-img {
+    .third__item-img {
         padding-bottom: 16px;
     }
 
