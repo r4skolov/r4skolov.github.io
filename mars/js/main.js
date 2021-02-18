@@ -13,7 +13,7 @@ $("[data-collapse]").on("click", function(event) {
 /* slider */
 
 $(function(){ 
-    $('.intro_slider').slick({
+    $('.intro__slider').slick({
         infinite: true,
         adaptiveHeight: true,
         touchMove:true,
@@ -25,13 +25,13 @@ $(function(){
         prevArrow: '.intro-btn__prev',
         nextArrow: '.intro-btn__next',
     })
-    $(".intro_slider").on('afterChange', function(event, slick, currentSlide){
+    $(".intro__slider").on('afterChange', function(event, slick, currentSlide){
         $(".countsSlides_1").text(currentSlide + 1);
      });
     
 
 
- $('.teacher_slider').slick({
+ $('.teacher__slider').slick({
     infinite: true,
     adaptiveHeight: true,
     touchMove:true,
@@ -42,11 +42,11 @@ $(function(){
      prevArrow: '.teacher__btn',
     nextArrow:  '.teacher__btn ',
     })
-    $(".teacher_slider").on('afterChange', function(event, slick, currentSlide){
+    $(".teacher__slider").on('afterChange', function(event, slick, currentSlide){
         $(".countsSlides_2").text(currentSlide + 1);
     });
 
-    $('.concerts_slider').slick({
+    $('.concerts__slider').slick({
         infinite: true,
         adaptiveHeight: true,
         touchMove:true,
@@ -58,7 +58,7 @@ $(function(){
         nextArrow: ' .concerts__btn',
     })
 
-    $(".concerts_slider").on('afterChange', function(event, slick, currentSlide){
+    $(".concerts__slider").on('afterChange', function(event, slick, currentSlide){
         $(".countsSlides_3").text(currentSlide + 1);
      });
 });
