@@ -401,9 +401,7 @@
 
     /* Direction  */
 
-    .direction--title {
-     
-    }
+
 
     .direction_item {
         margin: 77px auto;
@@ -1008,8 +1006,6 @@
 
 @media only screen and (max-width: 568px) and (min-width: 320px) and (orientation: landscape) {
 
- 
-
     .first_item-text {
         width: 146%;
         font-size: 13px;
@@ -1027,4 +1023,5 @@
         padding-bottom: 16px;
     }
 
+}
 }
