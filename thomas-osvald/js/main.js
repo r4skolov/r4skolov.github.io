@@ -143,7 +143,6 @@ const CLASS_LIST = {
 document.addEventListener('click', (event) => {
     //open
     if (event.target.closest(`.${CLASS_LIST.TRIGGER_OPEN}`)) {
-      console.log('open');
       event.preventDefault();
 
       const target = event.target.closest(`.${CLASS_LIST.TRIGGER_OPEN}`);
@@ -159,7 +158,6 @@ document.addEventListener('click', (event) => {
       event.target.closest(`.${CLASS_LIST.TRIGGER_CLOSE}`) ||
       event.target.classList.contains(CLASS_LIST.MODAL_ACTIVE)
     ) {
-      console.log('close');
       event.preventDefault();
 
       const modal = event.target.closest(`.${CLASS_LIST.MODAL}`);

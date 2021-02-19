@@ -140,10 +140,12 @@
 
 .tab {
     opacity: 0.4;
-    transition: all .3s;
+    transition: .3s ease;
+    outline: none;
 }
 
 .tab--active {
     opacity: 1;
-    transition: all .3s;
+    transition: .3s ease;
+    outline: none;
 }

@@ -802,14 +802,16 @@ a {
 
 .tab {
   opacity: 0.4;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  outline: none;
 }
 
 .tab--active {
   opacity: 1;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  outline: none;
 }
 
 .social-link {
