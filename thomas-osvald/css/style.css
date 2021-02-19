@@ -805,6 +805,8 @@ a {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   outline: none;
+  background: none;
+  border: none;
 }
 
 .tab--active {
