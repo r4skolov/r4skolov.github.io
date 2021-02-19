@@ -811,8 +811,6 @@ a {
 
 .tab--active {
   opacity: 1;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
   outline: none;
 }
 
