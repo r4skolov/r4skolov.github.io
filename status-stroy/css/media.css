@@ -494,6 +494,10 @@
         padding: 20px 87px;
     }
 
+    .question--btn {
+         padding: 20px 27px;
+    }
+
     .about-info__btn::before {
         width: 271px;
     }
