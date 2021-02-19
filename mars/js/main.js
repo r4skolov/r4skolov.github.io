@@ -21,7 +21,7 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth:false,
-        autoplay: false,
+        autoplay: true,
         prevArrow: '.intro-btn__prev',
         nextArrow: '.intro-btn__next',
     })
