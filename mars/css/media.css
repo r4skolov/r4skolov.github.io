@@ -188,6 +188,12 @@
         padding-top: 32px;
     }
 
+    .footer-nav__list-item {
+        width: 34%;
+        margin-bottom: 33px;
+        white-space: nowrap;
+    }
+
     .footer__nav-item {
         padding: 18px 0;
     }
