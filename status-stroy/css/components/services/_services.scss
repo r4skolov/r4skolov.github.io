@@ -218,3 +218,76 @@
 .projects-content:hover .projects-content__hover {
     opacity: 1;
 } 
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all .3s;
+    visibility: hidden;
+    opacity: 0;
+
+    &__dialog {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        transition: all .3s;
+        
+     
+    }
+
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s;
+    }
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 500px;
+    height: 442px;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: $yellow;
+}
+
+.js-modal-close {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+
+.calculator {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.calculator-tetxt {
+    width: 50%;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.calculator-item {
+    width: 50%;
+    background-color: #000000;
+}
