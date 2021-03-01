@@ -1039,7 +1039,7 @@ a {
 
 .send::before {
   content: "";
-  width: 276px;
+  width: 275px;
   height: 60px;
   border: 1px solid #FFFFFF;
   position: absolute;
