@@ -395,7 +395,7 @@ a {
   margin-right: 20px;
   -webkit-transition: all .1s;
   transition: all .1s;
-  -webkit-transition: all linear .2s;
+  -webkit-transition: all linear .1s;
   z-index: 2;
   cursor: pointer;
   cursor: url("../img/cur.png"), default;
@@ -407,13 +407,22 @@ a {
 
 .about-info__btn::before {
   content: "";
-  width: 280px;
+  width: 276px;
   height: 60px;
   border: 1px solid #FFFFFF;
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: -1;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.about-info__btn:hover::before {
+  -webkit-transform: translate3d(-15px, -15px, 0);
+          transform: translate3d(-15px, -15px, 0);
 }
 
 .title {
@@ -575,13 +584,22 @@ a {
 
 .question--btn::before {
   content: "";
-  width: 280px;
+  width: 276px;
   height: 60px;
   border: 1px solid #FFFFFF;
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: -1;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.question--btn:hover::before {
+  -webkit-transform: translate3d(-15px, -15px, 0);
+          transform: translate3d(-15px, -15px, 0);
 }
 
 .question-wrapper {
