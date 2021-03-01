@@ -1728,7 +1728,7 @@ input:focus {
     left: -18px;
     width: 14px;
     height: 14px;
-    background-image: url("/img/icons/phone-call.svg");
+    background-image: url("../img/icons/phone-call.svg");
 }
 
 .connection-list__item:nth-child(2)::after {
@@ -1738,7 +1738,7 @@ input:focus {
     left: -18px;
     width: 14px;
     height: 14px;
-    background-image: url("/img/icons/phone-call.svg");
+    background-image: url("../img/icons/phone-call.svg");
 }
 
 .connection-list__item:nth-child(3)::after {
@@ -1748,7 +1748,7 @@ input:focus {
     left: -18px;
     width: 14px;
     height: 14px;
-    background-image: url("/img/icons/mail.svg");
+    background-image: url("../img/icons/mail.svg");
 }
 
 .trial-call {
@@ -1787,7 +1787,7 @@ input:focus {
     left: 0;
     width: 10px;
     height: 14px;
-    background-image: url("/img/icons/geo.svg");
+    background-image: url("../img/icons/geo.svg");
 }
 
 .underground-list li {
@@ -1870,7 +1870,7 @@ input:focus {
     left: -23px;
     width: 14px;
     height: 14px;
-    background-image: url("/img/icons/clock.svg");
+    background-image: url("../img/icons/clock.svg");
 }
 
 input:focus{
