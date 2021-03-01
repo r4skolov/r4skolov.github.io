@@ -1,0 +1,1328 @@
+@media (max-width: 1200px) {
+    .description {
+         grid-gap: 20px;
+    }
+
+    .trial__title {
+        font-size: 26px;
+    }
+
+    .lessons-inner {
+        grid-gap: 20px;
+        grid-row-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .info {
+        padding-left: 30px;
+    }
+
+    .teacher-name {
+        font-size: 38px;
+    }
+
+    .about-teacher {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .teacher-info__inner {
+        grid-gap: 20px;
+    }
+}
+
+
+
+@media (max-width: 963px) {
+
+    .slider__img {
+        margin: 0 11px 20px 5px;
+    }
+
+    .info {
+        padding-left: 10px;
+    }
+
+    /* Trial */
+
+    .trial__title {
+        font-size: 26px;
+    }
+
+    .trial__subtitle {
+        font-size: 14px;
+        padding-bottom: 44px;
+    }
+
+    .trial__form {
+        padding-left: 0;
+    }
+
+    .lessons-item__1 {
+        font-size: 14px;
+    }
+
+     /* Trial */
+
+     .trial__image {
+        width: 100%;
+    }
+
+
+    .trial__window {
+         position: absolute;
+         top: 20px;
+         left: 20px;
+         bottom: 20px;
+         right: 20px;      
+    }
+
+    .trial__window-inner {
+        padding: 68px 5px 0 5px;
+        width: 100%;
+    }
+
+    .input__mail {
+        margin-bottom: 24px;
+    }
+
+    .about-teacher {
+        display: grid;
+        grid-template-columns: 1fr 25% 30%;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas: 'teacher-header__name  teacher-header__name teacher-header__name'
+                             'about-teacher__descr about-teacher__col2 about-teacher__col2'
+                             'about-teacher__descr about-teacher__col3 about-teacher__col4'
+                            
+                             ;
+    }
+
+    .teacher-header__name {
+        grid-area: teacher-header__name;
+    }
+
+    .about-teacher__descr {
+        grid-area: about-teacher__descr;
+    }
+
+    .about-teacher__col2 {
+        grid-area: about-teacher__col2;
+    }
+
+    .about-teacher__col3 {
+        grid-area: about-teacher__col3;
+    }
+
+    .about-teacher__col4 {
+        grid-area: about-teacher__col4;
+    } 
+    
+    .teacher-name {
+        font-size: 34px;
+    }
+    
+    .teacher-prof {
+        font-size: 15px;
+    }
+    
+    .teacher-text {
+        font-size: 16px;
+    }
+
+    .teacher-subtext {
+        font-size: 14px;
+    }
+
+    .teacher-info__inner {
+        grid-template-columns: 20% 25% 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 'teacher-info__col1 teacher-info__col2 teacher-info__row2'
+                             'teacher-info__descr teacher-info__descr teacher-info__descr';
+    }
+
+
+    .toget-wrapper {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+    }
+   
+    .conenction-list {
+        display: flex;
+        padding-left: 0;
+    }
+
+    .conenction-list li {
+        margin-left: 35px;
+    }
+
+    .underground-list {
+        display: flex;
+    }
+
+    .underground-list li {
+        margin-left: 20px;
+    }
+
+    .time-work {
+        flex-direction: row;
+    }
+
+    .time-work span:nth-child(2){
+        margin-left: 30px;
+    }
+
+    .time-work span:nth-child(2)::before{
+        content: "/";
+        position: absolute;
+        top: 0;
+        left: -16px;
+    }
+}
+
+
+@media (max-width: 907px) {
+    .footer__nav {
+        display: flex;
+    }
+
+    .footer__nav-top {
+        flex-direction: column;
+        padding-right: 60px;
+    }
+
+    .footer__nav-bottom {
+        flex-direction: column;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .footer__nav-item {
+        padding: 30px 0;
+    }
+
+    .footer__nav-item:first-child {
+        padding-top: 0;
+    }
+
+    
+}
+
+
+
+@media (max-width: 896px) {
+
+    /* Intro */
+
+    .header {
+        top: 10px;
+    }
+
+    .header__top {
+        border-bottom: none;
+    }
+
+    .info:nth-child(2) {
+        display: none;
+    }
+
+    .info:nth-child(3) {
+        display: none;
+    }
+
+    .header__btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 1;
+    }
+
+    .header__info {
+        margin-right: 150px;
+    }
+
+    /* Direction */
+
+    .direction__info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 180px;
+    }
+
+    .direction__title {
+        margin-left: 0;
+    }
+
+    .directions__icon {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        z-index: 1;
+        padding-left: 0px;
+    }
+
+    .direction__text {
+        width: 100%;
+        padding: 5px 0 20px 0;
+        margin-left: 0;
+    }
+
+    .direction__item::after {
+        top: 0;
+    }
+
+}
+
+
+@media (max-width: 801px) {
+
+    .item__top-second {
+        width: auto;
+        flex-direction: column-reverse;
+        position: absolute;
+        right: 0;
+        top: 53px;
+    }
+
+    .footer__icons {
+        padding-top: 32px;
+    }
+
+    .footer__item-bottom {
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .footer-nav__list-item {
+        width: 34%;
+        margin-bottom: 33px;
+        white-space: nowrap;
+    }
+
+    .footer__nav-item {
+        padding: 18px 0;
+    }
+
+    .footer__form {
+        margin-top: 30px;
+    }
+
+    .mail-form {
+        width: 80%;
+    }
+
+    .input__mail {
+        width: 100%;
+    }
+
+    .answers__title {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .intro {
+        padding-bottom: 90px;
+    }
+
+
+    .description-text {
+        font-size: 14px;
+    }
+
+    .descriptuon-stats__num {
+        font-size: 28px;
+    }
+
+    .descriptuon-stats__num {
+        font-size: 28px;
+    }
+
+    .description-stats {
+        font-size: 14px;
+    }
+
+    /* Lessons */
+
+    
+    .answers__item {
+        padding: 15px 0;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .first__item-text {
+        width: 100%;
+    }
+
+    .second__item-img {
+        padding: 20px 9px 30px;
+    }
+
+}
+
+
+@media (max-width: 746px) {
+
+
+    .header__top {
+        padding: 15px 0;
+         margin-bottom: 0; 
+    }
+
+
+
+    /* Intro */
+
+    .intro__inner {
+        padding-top: 0;
+    }
+
+   
+    body.lock {
+        overflow: hidden;
+    }
+
+    .nav {
+        display: block;
+        color: #fff;
+        position: fixed;
+        top: 70px;
+        left: -110%;
+        z-index: 9999;
+        width: 100%;
+        height: 100vh;
+        background-color:  #000000d6;;
+        transition: .3s cubic-bezier(0.4, 0, 1, 1);
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 350px;
+        height: 100vh;
+        background-color: #181817;
+    }
+
+    .nav__link {
+         margin-right:0;
+    }
+
+    .burger {
+        display: block;
+        top: 32px;
+    }
+
+    .nav-list__item {
+        margin: 0;
+        padding: 15px 0 15px 15px;
+        border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .header__logo {
+        margin-left: 50px;
+    }
+
+    .intro-slider__text {
+        font-size: 34px;
+    }
+    
+    .intro-slider__subtext {
+        font-size: 14px;
+    }
+
+    .intro-slider__wrapper {
+        top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .lessons-inner {
+        grid-template-rows: 76px 29% 7% 1fr 1fr;;
+    }
+
+    .header {
+         padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 640px) {
+
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    /* Intro */
+    .intro-img__wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+ 
+    .header__info {
+        display: none;
+    }
+  
+    /* Second */
+
+    .description {
+        display: grid;
+        grid-template-columns: 65% 31%;
+        grid-template-rows: 18% auto;
+        grid-template-areas: "description-text  description-col3__text"
+                             "description-col1__img  description-col3__text"
+                             "description-col1__img  description-col3__img";
+         grid-gap: 20px;
+        grid-row-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .description-text {
+        grid-area: description-text;
+    }
+    
+    .description-col1__img {
+        grid-area: description-col1__img;
+        display: flex;
+        align-items: flex-end;
+
+    }
+    
+    .description-col3__img {
+        grid-area: description-col3__img;
+        display: flex;
+        align-items: flex-end;
+   
+    }
+    
+    .description-col3__text {
+        grid-area: description-col3__text;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description-col2__img {
+        display: none;
+    }
+
+    .description-col3__img-2 {
+        display: none;
+    }
+
+    /* Direction  */
+
+    .direction--title {
+     
+    }
+
+    .direction__item {
+        margin: 77px auto;
+    }
+
+    .direction__text {
+
+        padding-bottom: 20px;
+    }
+
+    /* Teachers */
+
+    .teachers__image {
+        width: 220px;
+    }
+
+    .slider__img {
+        margin: 0 8px 20px 8px;
+    }
+
+    .slider__name {
+        font-size: 20px
+    }
+
+    /* Concerts */
+
+    .concerts__video {
+        width: 408px;
+    }
+
+    /* Answers */
+
+    .answers__title {
+        font-size: 15px;
+    }
+
+    .answers__toggle {
+        top: 9px;
+    }
+
+    .answers__text {
+        width: 97%;
+    }
+
+
+    .footer__nav-top {
+        padding-right: 18px;
+    }
+
+   
+    .buttons-wrapper {
+        left: 50% ;
+        transform: translate(-50%, -50%);
+        right: auto;
+    }
+
+    .about-teacher {
+        grid-template-columns: 1fr 17% 16%;
+        grid-template-areas: 'teacher-header__name  teacher-header__name teacher-header__name'
+                             'about-teacher__descr about-teacher__col2 about-teacher__col2'
+                             'about-teacher__descr about-teacher__col3 about-teacher__col3'
+                             ;
+    }
+
+    .about-teacher__col4 {
+        display: none;
+    }  
+
+
+    .teacher-info__inner {
+        grid-template-columns: 26% 70%;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas: 'teacher-info__col1  teacher-info__row2'
+                             'teacher-info__col2   teacher-info__row2 '
+                             'teacher-info__descr teacher-info__descr ';
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    /* Intro */
+
+    .buttons__slider {
+        display: none;
+    }
+
+    /* Trial */
+
+    .item__top-firs {
+        width: 183px;
+        align-items: center;
+        text-align: center;
+        margin-top: 41px;
+        margin-bottom: 15px;
+    }
+
+    .item__top-second {
+        position: inherit;
+        align-items: center;
+    }
+
+    .footer__number-adress {
+        align-items: center;
+    }
+
+    .footer__img {
+        width: 183px;
+    }
+
+    .footer__nav {
+        display: none;
+    }
+
+    .footer__item-bottom {
+        padding-top: 87px;
+    }
+
+    .footer__item-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer__item-bottom {
+        padding-top: 7px;
+    }
+
+    .connection {
+            padding-left: 0;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+
+    .conenction-list li {
+         margin-left: 0;
+    }
+
+    .conenction-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .underground-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .undergorund-title {
+        padding-left: 0; 
+    }
+
+    .underground-list li {
+         margin-left: 0;
+    }
+
+    .undergorund-title::after {
+        left: -14px;
+    }
+
+    .working-hours {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .connection-title {
+        text-align: center;
+    }
+
+    .undergorund-title {
+       text-align: center;
+    }
+
+    .working-hours__title {
+       text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    /* Intro */
+    .intro-slider__text {
+        font-size: 28px;
+    }
+ 
+    .section__header {
+        flex-direction: column;
+    }
+
+
+  /* Second */
+
+  .description {
+    grid-template-columns: 47% 48%;
+    grid-template-rows: 40% 20% 18% 18%;
+    grid-template-areas: "description-text description-text"
+                         "description-col1__img description-col1__img"
+                         "description-col3__text description-col3__img"
+                         "description-col3__text description-col3__img-2";
+    grid-row-gap: 20px;
+    row-gap: 20px;
+}
+
+.description-text {
+    grid-area: description-text;
+
+}
+
+.description-col1__img {
+    grid-area: description-col1__img;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.description-col3__img {
+    grid-area: description-col3__img;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.description-col3__text {
+    grid-area: description-col3__text;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.description-col3__img-2 {
+    display:block;
+    display: flex;
+    align-items: flex-end;
+}
+   
+    /* Directon */
+
+   
+
+    .directions__icon {
+        display: none;
+    }
+
+
+    .direction__info {
+         padding-left: 10px; 
+        align-items: center;
+    }
+
+    .direction__item::after {
+        height: 45px;
+    }
+
+    /* Teachers */
+
+    .teachers__image {
+        width: 220px;
+    }
+
+    .slider__img {
+        margin: 0 0px 20px 9px;
+    }
+
+    .slider__name {
+        font-size: 20px
+    }
+
+    .buttons__slide-2 {
+        right: 120px;
+    }
+
+    /* Trial */
+
+
+    .trial__title {
+        font-size: 21px;
+    }
+
+    /* Lessons */
+
+
+    .lessons-inner {
+        grid-template-columns:  70% 25%;
+        grid-template-rows: 14% 37% 17% 22%;
+        grid-template-areas: "lessons-item__1 lessons-item__1"
+                             "lessons-item__2 lessons-item__5"
+                             "lessons-item__2 lessons-item__4"
+                             "lessons-item__7 lessons-item__7";    
+    
+    }
+
+
+    .lessons-item__1 {
+        grid-area: lessons-item__1;
+    }
+    
+    .lessons-item__2 {
+        grid-area: lessons-item__2;
+        display: flex;
+        align-items: inherit;
+    }
+    
+    
+    .lessons-item__4 {
+        grid-area: lessons-item__4;
+        display: flex;
+        align-items: inherit;
+    }
+    
+    .lessons-item__5 {
+        grid-area: lessons-item__5;
+        display: flex;
+        align-items: inherit;
+    }
+
+
+    .lessons-item__3 {
+       display: none;
+    }
+    
+    
+    .lessons-item__6 {
+        display: none;
+    }
+    .lessons-item__7 {
+        grid-area: lessons-item__7;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+
+    .img__five {
+        display: none;
+    }
+
+    .concerts__video {
+        padding-right: 0px;
+        width: 454px;
+    }
+
+    .answers__toggle {
+        top: -34px;
+        right: 211px;
+    }
+
+    .plus-toggle {
+        right: 50%;
+        top: -25px;
+        transform: translate(50%, 50%);
+    }
+
+    .answers__item {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .answers__item {
+        padding: 30px 0;
+    }
+
+
+    .about-teacher {
+        grid-template-columns: 100%;
+        grid-template-areas: 'teacher-header__name'
+                             'about-teacher__col2'
+                             'about-teacher__descr'
+                             ;
+        text-align: center;
+        align-items: center;
+    }
+    
+
+    .teacher-header__name {
+        grid-area:teacher-header__name;
+    }
+
+    .about-teacher__col2 {
+        grid-area:about-teacher__col2;
+    }
+
+    .about-teacher__descr {
+        grid-area:about-teacher__descr;
+    }
+    .teacher-name {
+        font-size: 29px;
+    }
+
+    .about-teacher__descr {
+        grid-area: about-teacher__descr;
+        display: flex;
+        align-items: center;
+    }
+
+    .teacher-info__inner {
+        grid-template-columns: 38% 57%;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas: 'teacher-info__col1  teacher-info__row2'
+                             'teacher-info__col2   teacher-info__row2 '
+                             'teacher-info__descr teacher-info__descr ';
+        text-align: center;
+    }
+
+    .teacher-info__row2 {
+        display: flex;
+    }
+
+    .scroll-x {
+        overflow-x: scroll;
+    }
+
+    .mobile-overflow {
+        width: 1000px;
+    }
+
+    .direction__inner {
+        display: flex;
+         flex-wrap:nowrap;
+        justify-content:start;
+    }
+
+    .direction_page__item {
+        white-space: nowrap;
+    }
+
+    .undergorund-title::after {
+        display: none;
+    }
+
+    .working-hours__title::after {
+        display: none;
+    }
+
+    .time-work {
+        flex-direction: column;
+    }
+
+    .time-work span:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .time-work span:nth-child(2)::before {
+        display: none;
+    }
+
+    .map {
+        height: 300px;
+    }
+    
+}
+
+@media (max-width: 414px) {
+
+    .nav-list {
+        width: 270px;
+    }
+
+    /* Directon */
+
+    .direction__info--last {
+        margin-left: 81px;
+    }
+
+
+    /* Teachers */
+
+    .teacher--header {
+        flex-direction: column;
+    }
+
+    .teacher--title {
+        padding-bottom: 10px;
+    }
+
+    .slider__img {
+        margin: 0 14px 20px 5px;
+    }
+
+    .buttons__slide-2 {
+        right: 85px;
+    }
+
+    /* Trial */
+
+  
+    .trial__title {
+        font-size: 21px;
+    }
+
+    .trial__subtitle {
+        padding-bottom: 16px;
+    }
+
+
+    .trial__window {
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;      
+   }
+
+    .answers__toggle {
+
+        right: 171px;
+    }
+
+    .answers__header--title {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 40px;
+    }
+
+
+    .lessons-inner {
+        grid-template-columns:  43% 50%;
+        grid-template-rows: 71px 27% 35% 22%;
+        grid-template-areas: "lessons-item__1 lessons-item__1"
+                             "lessons-item__2 lessons-item__2"
+                             "lessons-item__4 lessons-item__5"
+                             "lessons-item__7 lessons-item__7";    
+    
+    }
+
+    .lessons-item__1 {
+        grid-area: lessons-item__1;
+    }
+    
+    .lessons-item__2 {
+        grid-area: lessons-item__2;
+        display: flex;
+        align-items: inherit;
+    }
+    
+    
+    .lessons-item__4 {
+        grid-area: lessons-item__4;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .lessons-item__5 {
+        grid-area: lessons-item__5;
+        display: flex;
+        align-items: inherit;
+    }
+
+
+    .lessons-item__3 {
+       display: none;
+    }
+    
+    
+    .lessons-item__6 {
+        display: none;
+    }
+    .lessons-item__7 {
+        grid-area: lessons-item__7;
+    }
+
+    .concert__video::before {
+        background: url("../img/second/play.png") no-repeat 38% 50%;
+    }
+
+    .section__title {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 736px) and (min-width: 414px) and (orientation: landscape) {
+  
+
+    .buttons__slider {
+        bottom: -19px;
+    }
+
+    .second__column {
+        margin-top: 100px;
+    }
+
+
+    /* Teachers */
+
+    .teachers__image {
+        width: 220px;
+    }
+
+    .slider__img {
+       margin: 0 8px 20px 8px;
+    }
+
+    .slider__name {
+        font-size: 20px
+    }
+
+    .buttons__slide-2 {
+        margin-top: 14px;
+    }
+
+    .concerts__video {
+        width: 515px;
+    }
+}
+
+
+
+
+@media (max-width: 375px) {
+
+    /* Intro */
+    .intro-slider__text {
+        font-size: 24px;
+    }
+
+
+    /* Teachers */
+
+    .slider__img {
+       margin: 0 14px 20px 5px;
+    }
+
+    .buttons__slide-2 {
+        margin-top: 30px;
+        right: 65px;
+    }
+
+    /* Trial */
+
+  
+    .trial__img {
+        width: 100%;
+    }
+
+    .trial__title {
+        font-size: 21px;
+    }
+
+    .trial__subtitle {
+        padding-bottom: 16px;
+    }
+
+
+    .concerts__title {
+        font-size: 20px;
+    }
+
+
+    .answers__toggle {
+        right: 153px;
+    }
+
+
+    .footer--btn {
+        width: 44px;
+        font-size: 0px;
+    }
+
+    .arrow__btn {
+        display: block;
+    }
+
+    .trial__btn-arrow {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .adress {
+        font-size: 12px;
+    }
+
+    .concert__video::before {
+        background: url("../img/second/play.png") no-repeat 34% 50%;
+    }
+
+}
+
+
+@media only screen and (max-width: 667px) and (min-width: 375px) and (orientation: landscape) {
+
+    .first__item-text {
+        width: 135%;
+    }
+
+    .tihrd__stats-item {
+        padding-bottom: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+
+
+   .burger {
+       left: 10px;
+   }
+
+    /* Intro */
+
+    .nav__toggle {
+        left: 0;
+    }
+
+    .nav-list {
+        width: 320px;
+        text-align: center;
+    }
+
+    .header__logo {
+        margin-left: 40px;
+    }
+
+    .header__btn {
+        right: 10px;
+    }
+
+
+    /* Second */
+
+    .description {
+        grid-template-rows: 40% 20% 15% 15%;
+    }
+
+    /* Teachers */
+
+
+    .buttons__slide-2 {
+        right: 36px;
+    }
+
+    /* Trial */
+
+    .trial__title {
+        font-size: 20px;
+    }
+
+    .trial__subtitle {
+        padding-bottom: 14px;
+    }
+
+    .concerts__title {
+        font-size: 17px;
+    }
+
+    .answers__title {
+        text-align: center;
+    }
+
+    .answers__toggle {
+
+        right: 125px;
+    }
+
+    .concert__video::before {
+        background: url("../img/second/play.png") no-repeat 28% 50%;
+    }
+
+
+    .teacher-info__item li {
+        padding-left: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 568px) and (min-width: 320px) and (orientation: landscape) {
+
+ 
+
+    .first__item-text {
+        width: 146%;
+        font-size: 13px;
+    }
+
+    .second__column {
+        margin: 123px 5px 0 5px;
+    }
+
+    .aqua--stats {
+        font-size: 24px;
+    }
+
+    .third__item-img {
+        padding-bottom: 16px;
+    }
+
+}

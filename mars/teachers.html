@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="preload" href="js/slick.js" as="script">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/441acdde87.js" crossorigin="anonymous"></script>
+    <title>Марс</title>
+</head>
+
+<body>
+    <svg style="display: none">
+        <symbol id="vk" viewBox="0 0 512 512">
+            <g>
+                <path d="M440.649,295.361c16.984,16.582,34.909,32.182,50.142,50.436
+                c6.729,8.112,13.099,16.482,17.973,25.896c6.906,13.382,0.651,28.108-11.348,28.907l-74.59-0.034
+                c-19.238,1.596-34.585-6.148-47.489-19.302c-10.327-10.519-19.891-21.714-29.821-32.588c-4.071-4.444-8.332-8.626-13.422-11.932
+                c-10.182-6.609-19.021-4.586-24.84,6.034c-5.926,10.802-7.271,22.762-7.853,34.8c-0.799,17.564-6.108,22.182-23.751,22.986
+                c-37.705,1.778-73.489-3.926-106.732-22.947c-29.308-16.768-52.034-40.441-71.816-67.24
+                C58.589,258.194,29.094,200.852,2.586,141.904c-5.967-13.281-1.603-20.41,13.051-20.663c24.333-0.473,48.663-0.439,73.025-0.034
+                c9.89,0.145,16.437,5.817,20.256,15.16c13.165,32.371,29.274,63.169,49.494,91.716c5.385,7.6,10.876,15.201,18.694,20.55
+                c8.65,5.923,15.236,3.96,19.305-5.676c2.582-6.11,3.713-12.691,4.295-19.234c1.928-22.513,2.182-44.988-1.199-67.422
+                c-2.076-14.001-9.962-23.065-23.933-25.714c-7.129-1.351-6.068-4.004-2.616-8.073c5.995-7.018,11.634-11.387,22.875-11.387h84.298
+                c13.271,2.619,16.218,8.581,18.035,21.934l0.072,93.637c-0.145,5.169,2.582,20.51,11.893,23.931
+                c7.452,2.436,12.364-3.526,16.836-8.251c20.183-21.421,34.588-46.737,47.457-72.951c5.711-11.527,10.622-23.497,15.381-35.458
+                c3.526-8.875,9.059-13.242,19.056-13.049l81.132,0.072c2.406,0,4.84,0.035,7.17,0.434c13.671,2.33,17.418,8.211,13.195,21.561
+                c-6.653,20.945-19.598,38.4-32.255,55.935c-13.53,18.721-28.001,36.802-41.418,55.634
+                C424.357,271.756,425.336,280.424,440.649,295.361L440.649,295.361z" />
+            </g>
+
+        </symbol>
+
+        <symbol id="telegram" viewBox="0 0 24 24">
+            <g>
+                <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564
+                1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 
+                8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394
+                 1.136-.176.691.218z" />
+            </g>
+        </symbol>
+
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path d="M384,176h-96v-64c0-17.664,14.336-32,32-32h32V0h-64l0,
+                0c-53.024,0-96,42.976-96,96v80h-64v80h64v256
+                h96V256h64L384,176z" />
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 511 511.9">
+            <g>
+                <path
+                    d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+                <path
+                    d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+                <path
+                    d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+            </g>
+        </symbol>
+
+        <symbol id="arrow__right" viewBox="0 0 89 16" width="89" height="16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M82.3431 0.928941L88.7071 7.2929C89.0976 7.68343 89.0976 8.31659 88.7071 8.70712L82.3431 15.0711C81.9526 15.4616 81.3195 15.4616 80.9289
+                 15.0711C80.5384 14.6806 80.5384 14.0474 80.9289 13.6569L85.5858 9.00001L0 9.00001L0 7.00001L85.5858 7.00001L80.9289 2.34315C80.5384 1.95263 
+                 80.5384 1.31947 80.9289 0.928941C81.3195 0.538416 81.9526 0.538416 82.3431 0.928941Z" />
+            </g>
+        </symbol>
+
+        <symbol id="arrow__left" width="89" height="16" viewBox="0 0 89 16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65685 15.0711L0.292893 8.70709C-0.0976327 8.31657 -0.0976327 
+                7.6834 0.292893 7.29288L6.65685 0.928916C7.04738 0.538392 7.68054 0.538392 8.07107 0.928917C8.46159 1.31944 8.46159
+                 1.95261 8.07107 2.34313L3.41422 6.99998L89 6.99999L89 8.99999L3.41422 8.99998L8.07107 13.6568C8.46159 14.0474 8.46159 
+                 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711Z" />
+            </g>
+        </symbol>
+
+        <symbol id="arrow__btn" width="21" height="15" viewBox="0 0 21 15">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3431 0.292895L20.7071 6.65686C21.0976 7.04738 21.0976 7.68055 20.7071 8.07107L14.3431 14.435C13.9526 14.8256 13.3195 14.8256 12.9289 14.435C12.5384 14.0445 12.5384 13.4113 12.9289 13.0208L17.5858 8.36396L0.999999 8.36396C0.447715 8.36396 -6.9206e-07 7.91625 -6.43778e-07 7.36396C-5.95496e-07 6.81168 0.447713 6.36396 0.999998 6.36396L17.5858 6.36396L12.9289 1.70711C12.5384 1.31658 12.5384 0.683419 12.9289 0.292894C13.3195 -0.0976299 13.9526 -0.0976299 14.3431 0.292895Z"/>
+            </g>
+        </symbol>
+
+    </svg>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <button class="burger" type="button" id="burger">
+                        <span class="burger__toggle-item">burger</span>
+                    </button>
+                        <a class="header__logo" href="index.html">
+                            <img src="/mars/img/logo/logo_1.svg" alt="логотип">
+                        </a>
+                    <div class="header__info">
+                        <div class="info"><span class="aqua">телефон –</span> +7 ( 499 ) 709 84 59</div>
+                        <div class="info"><span class="aqua">работаем –</span> ежедневно с 10:00 до 22:00</div>
+                        <div class="info"><span class="aqua">адрес –</span> Москва, 2-ой Троицкий переулок, 6А, стр. 3
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <nav class="nav" id="nav">
+                        <ul class="nav-list" >
+                            <li class="nav-list__item"><a class="nav__link" href="directions.html">Направления</a></li>
+                            <li class="nav-list__item"><a class="nav__link" href="tickets.html">Абонименты</a></li>
+                            <li class="nav-list__item"><a class="nav__link" href="teachers.html">Педагоги</a></li>
+                            <li class="nav-list__item"><a class="nav__link" href="students.html">Студенты</a></li>
+                            <li class="nav-list__item"><a class="nav__link" href="certificates.html">Сертификаты</a></li>
+                            <li class="nav-list__item"> <a class="nav__link" href="locationt.html">Как добраться</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a class="header__btn" href="#">mars.online</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="teachers teachers--page">
+            <div class="container">
+                <div class="teachers__inner">
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_1.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Виктория Тихорова</div>
+                            <div class="slider__prof">Фортепиано</div>
+                        </a>
+                        </div>
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_2.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Валерия Скороходова</div>
+                            <div class="slider__prof">Вокал</div>
+                        </a>
+                        </div>
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_3.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Вероника Иванова</div>
+                            <div class="slider__prof">Гитара</div>
+                        </a>
+                         </div>
+                         <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_4.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Власова Юстина</div>
+                            <div class="slider__prof">Эстрадный вокал / Джаз / Соул</div>
+                        </a>
+                        </div>
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_5.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Зиновьева Лия</div>
+                            <div class="slider__prof">Эстрадный вокал / Джаз</div>
+                        </a>
+                        </div>
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_6.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Рыбакова Бронислава</div>
+                            <div class="slider__prof">Джаз</div>
+                        </a>
+                         </div>
+                         <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_7.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Попова Глория</div>
+                            <div class="slider__prof">Джаз / Соул / Фанк / Альтернатива</div>
+                        </a>
+                        </div>
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_8.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Никитина Адельфина</div>
+                            <div class="slider__prof">Фанк / Альтернатива</div>
+                        </a>
+                        </div>
+                        <div class="teachers__item">
+                            <a class="teacher-link" href="teacher.html">
+                            <div class="slider__img">
+                                <img class="teachers__image" src="/mars/img/teachers/teacher_9.jpg" alt="учитель">
+                            </div>
+                            <div class="slider__name">Филатова Индира</div>
+                            <div class="slider__prof">Соул</div>
+                        </a>
+                         </div> 
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="trial">
+            <div class="container">
+                <div class="trial__wrapper">
+                    <div class="trial__wrapper-inner">
+                        <img class="trial__image" src="/mars/img/Frame_55.jpg" alt="картинка" >
+                        <div class="trial__window">
+                            <div class="trial__window-inner">
+                                <div class="trial__title">Запишитесь на пробное занятие</div>
+                                <div class="trial__subtitle">Мы вместе пройдем путь от самых основ до вашего первого <br>
+                                    уверенного выступления на сцене.</div>
+                                <div class="trial__forms">
+                                    <form class="trial__form" action="" method="post">
+                                        <div class="input__name">
+                                            <input class="name" type="text" placeholder="ваше имя" required pattern="[а-яА-Я]+" title="Имя может содержать только буквы">
+                                        </div>
+                                        <div class="input__number">
+                                            <input class="number" type="tel" placeholder="+7(___) ___-__-__" required pattern="[1-9]+" title="Телефон может содежрать только цифры">
+                                        </div>
+                                        <div class="chekbox">
+                                            <label class="chekbox__group">
+                                                <input class="chekbox__real" type="checkbox">
+                                                <span class="chekbox__fake"></span>
+                                                <span class="chekbox__title"> Даю свое согласие на обработку своих <a
+                                                        class="aqua" href="#"> персональных
+                                                        данных</a> </span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <button class="trial__btn " type="button">записаться на пробный</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__item">
+                    <div class="footer__item-top">
+                        <div class="item__top-firs">
+                            <div class="footer__logo">
+                                 <img class="footer__img" src="/mars/img/logo/logo_1.svg" alt="Марс">
+                                <br><span class="footer__subtitle">© «Марс», 2013–2020</span>
+                            </div>
+                        </div>
+                        <div class="item__top-second">
+                            <div class="footer__icons">
+                                <a href="#" target="_blank">
+                                    <svg class="icons__style">
+                                        <use xlink:href="#vk"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icons__style">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icons__style telegram--hove">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icons__style facebook--hove">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer__number-adress">
+                                <a class="footer__number" href="tel:+74997098459">
+                                    +7 ( 499 ) 709 84 59
+                                </a>
+                                <div class="adress">
+                                    <span class="aqua"> адрес</span> – Москва, 2-ой Троицкий переулок, 6А, стр. 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item-bottom">
+                        <div class="item__bottom-first">
+                            <div class="footer__nav">
+                                <ul class="footer-nav__list">
+                                    <li class="footer-nav__list-item">
+                                        <a class="footer_nav-link" href="#">Направления</a>
+                                    </li>
+                                    <li class="footer-nav__list-item">
+                                        <a class="footer_nav-link" href="#">Педагоги</a>
+                                    </li>
+                                    <li class="footer-nav__list-item">
+                                        <a class="footer_nav-link" href="#">Сертификаты</a>
+                                    </li>
+                                    <li class="footer-nav__list-item">
+                                        <a class="footer_nav-link" href="#">Абонименты</a>
+                                    </li>
+                                    <li class="footer-nav__list-item">
+                                        <a class="footer_nav-link" href="#">Студенты</a>
+                                    </li>
+                                    <li class="footer-nav__list-item">
+                                        <a class="footer_nav-link" href="#">Как добраться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item__bottom-second">
+                            <form class="footer__form" method="post">
+                                <label class="mail-form">
+                                    <div class="form__title">Получать новости на почту</div>
+                                    <input class="input__mail" type="email" placeholder="ваш E-mail" required>
+                                </label>
+
+                                    <button class="trial__btn footer--btn">
+                                        <svg class="arrow__btn">
+                                            <use xlink:href="#arrow__btn"></use>
+                                        </svg>
+                                        отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/mars/js/jquery-3.5.1.min.js"></script>
+    <script src="/mars/js/slick.js"></script>
+    <script src="/mars/js/slick.min.js"></script>
+    <script src="/mars/js/main.js"></script>
+</body>
+
+</html>
