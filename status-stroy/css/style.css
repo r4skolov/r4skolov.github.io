@@ -584,7 +584,7 @@ a {
   z-index: -1;
 }
 
-.test {
+.question-wrapper {
   position: relative;
 }
 
@@ -1223,6 +1223,10 @@ a {
 .calculator-item {
   width: 50%;
   background-color: #000000;
+}
+
+.info-telephone {
+  margin-bottom: 10px;
 }
 
 .section-contacts {

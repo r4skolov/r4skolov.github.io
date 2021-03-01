@@ -405,6 +405,14 @@
     .services-item__icon {
         width: 80px;
     }
+
+    .consult-info {
+        flex-direction: column;
+    }
+
+    .info-item {
+        padding-left: 0;
+    }
  }
 
 @media (max-width: 414px) {
