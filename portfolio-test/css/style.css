@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue Cyr Roman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr Italic';
+  src: url("HelveticaNeueCyr-Italic.eot");
+  src: url("HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueCyr-Italic.woff") format("woff"), url("HelveticaNeueCyr-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  padding: 30px 0;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 40px;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-contacts__link + .header-contacts__link {
+  margin-left: 60px;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 10px;
+}
+
+.css-typing {
+  width: 30em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 5s steps(50, end);
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes type {
+  from {
+    width: 00px;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 100px;
+  }
+}
+
+.about {
+  margin-bottom: 120px;
+}
+
+.about-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-name {
+  margin-left: 30px;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 18px;
+  color: #B1B1B1;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 31px;
+  width: 42%;
+}
+
+.projects-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.projects-item {
+  padding: 80px 0;
+}
+
+.projects-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects-item__link {
+  position: relative;
+}
+
+.projects-item__link-img {
+  position: relative;
+}
+
+.projects-item__link-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #1D673B;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.projects-item__link-img:hover::before {
+  opacity: .9;
+  width: 100%;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.projects-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects-about__name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.projects-about__subtitle {
+  font-size: 18px;
+  line-height: 18px;
+  color: #B1B1B1;
+}
+
+.text-test {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.projects-item__link-img:hover .text-test {
+  opacity: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  -webkit-transform: translate3d(0px, 15px, 15px);
+          transform: translate3d(0px, 15px, 15px);
+}
+/*# sourceMappingURL=style.css.map */

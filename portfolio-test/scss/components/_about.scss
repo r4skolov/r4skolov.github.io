@@ -1,0 +1,37 @@
+.about {
+    margin-bottom: 120px;
+    
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &-name {
+        margin-left: 30px;
+    }
+
+    &-title {
+        font-weight: 400;
+        font-size: 47px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+
+    &-subtitle {
+        font-size: 18px;
+        line-height: 18px;
+        color: #B1B1B1;
+    }
+
+    &-text {
+        font-size: 16px;
+        line-height: 31px;
+        width: 42%;
+    }
+}
