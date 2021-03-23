@@ -1,0 +1,20 @@
+.text-subtitle {
+    position: absolute;
+    bottom: 80px;
+    left: 105px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0;
+    transition:  .4s ease ;
+    transition-delay: .3s;
+    transform: translate3d(0px, -15px, -15px)
+}
+
+.projects-item__link-img:hover .text-subtitle {
+    opacity: 1;
+    transition-property: all;
+    transition-duration: .8s;
+    transition-delay: .8s;
+    transform: translate3d(0px, 15px, 15px)
+}
