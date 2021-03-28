@@ -35,7 +35,7 @@ a {
 }
 
 .container {
-  max-width: 1115px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -43,3 +43,8 @@ a {
 .page {
     overflow: hidden;
 }
+
+::selection {
+  background: #000000; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+ }

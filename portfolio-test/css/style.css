@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -35,13 +36,27 @@ a {
 }
 
 .container {
-  max-width: 1115px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .page {
   overflow: hidden;
+}
+
+::-moz-selection {
+  background: #000000;
+  /* Цвет фона */
+  color: #fff;
+  /* Цвет текста */
+}
+
+::selection {
+  background: #000000;
+  /* Цвет фона */
+  color: #fff;
+  /* Цвет текста */
 }
 
 @font-face {
@@ -208,6 +223,7 @@ a {
 }
 
 .projects-item__link {
+  display: block;
   position: relative;
 }
 
@@ -253,7 +269,7 @@ a {
 
 .projects-item__name {
   position: absolute;
-  bottom: 100px;
+  bottom: 200px;
   left: 100px;
   font-size: 50px;
   font-weight: 600;
@@ -285,6 +301,112 @@ a {
   font-size: 18px;
   line-height: 18px;
   color: #B1B1B1;
+}
+
+.btn--position {
+  position: absolute;
+  bottom: 125px;
+  left: 104px;
+}
+
+.the-button {
+  font-size: .875em;
+  letter-spacing: 3px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 5;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transform: translate3d(0px, -10px, -10px);
+          transform: translate3d(0px, -10px, -10px);
+}
+
+.button-text {
+  position: relative;
+  z-index: 15;
+}
+
+.the-button .button-mask {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.the-button .button-mask:after, .the-button .button-mask:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: translateX(-110%);
+  transform: translateX(-110%);
+}
+
+.the-button .button-mask:before {
+  width: 100%;
+  background-color: #000000;
+  background: -webkit-gradient(linear, right top, left top, from(#313030), color-stop(#464647), to(0.3));
+  background: linear-gradient(270deg, #313030, #464647, 0.3);
+  transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s, -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  z-index: 1;
+}
+
+.the-button .button-mask:after {
+  width: 80%;
+  background-color: #000000;
+  background: -webkit-gradient(linear, right top, left top, from(#141414), color-stop(0.3, #535252));
+  background: linear-gradient(270deg, #141414, #535252 0.3);
+  transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
+  z-index: 2;
+}
+
+.the-button:hover .button-mask:after, .the-button:hover .button-mask:before {
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+}
+
+.the-button:hover .button-mask:before {
+  transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+  transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s, -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+}
+
+.the-button:hover .button-mask:after {
+  transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.projects-item__link-img:hover .the-button {
+  opacity: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+  -webkit-transform: translate3d(0px, 10px, 10px);
+          transform: translate3d(0px, 10px, 10px);
 }
 
 .preloader {
@@ -399,8 +521,8 @@ a {
 
 .text-subtitle {
   position: absolute;
-  bottom: 80px;
-  left: 105px;
+  bottom: 185px;
+  left: 103px;
   font-size: 19px;
   font-weight: 400;
   color: #fff;
