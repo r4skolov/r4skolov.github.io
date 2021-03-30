@@ -41,7 +41,7 @@
                 transition-property: all;
                 transition-duration: .5s;
                 transition-delay: .4s;
-                transform: translate3d(0px, 15px, 15px)
+                transform: translate3d(-3px, 15px, 15px)
             }
 
           
@@ -76,7 +76,7 @@
             opacity: 0;
             transition:  .4s ease ;
             transition-delay: .1s;
-            transform: translate3d(0px, -15px, -15px);
+            transform: translate3d(-3px, -15px, -15px);
             
         }
     }

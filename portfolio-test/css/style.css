@@ -175,7 +175,7 @@ a {
 
 .about-title {
   font-weight: 400;
-  font-size: 47px;
+  font-size: calc(23px + 9 * ((100vw - 320px) / (1180 - 320)));
   line-height: 55px;
   margin-bottom: 10px;
 }
@@ -280,8 +280,8 @@ a {
           transition-duration: .5s;
   -webkit-transition-delay: .4s;
           transition-delay: .4s;
-  -webkit-transform: translate3d(0px, 15px, 15px);
-          transform: translate3d(0px, 15px, 15px);
+  -webkit-transform: translate3d(-3px, 15px, 15px);
+          transform: translate3d(-3px, 15px, 15px);
 }
 
 .projects-item__link::before {
@@ -317,8 +317,8 @@ a {
   transition: .4s ease;
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
-  -webkit-transform: translate3d(0px, -15px, -15px);
-          transform: translate3d(0px, -15px, -15px);
+  -webkit-transform: translate3d(-3px, -15px, -15px);
+          transform: translate3d(-3px, -15px, -15px);
 }
 
 .projects-about {
@@ -589,29 +589,64 @@ a {
           transform: translate3d(0px, 15px, 15px);
 }
 
-.projects-item--testt {
-  background-image: url("../img/project1_02.jpg");
-}
-
 .projects-page__item {
   position: relative;
   margin-bottom: 135px;
   -webkit-box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
   border-radius: 5px;
-  background-image: url("../img/project1_01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 550px;
 }
 
-.projects-page__item:nth-child(2) {
+.background--roscafe {
+  background-image: url("../img/project1_01.jpg");
+}
+
+.background--roscafe:nth-child(2) {
   background-image: url("../img/project1_02.jpg");
 }
 
-.projects-page__item:nth-child(3) {
+.background--roscafe:nth-child(3) {
   background-image: url("../img/project1_03.jpg");
+}
+
+.background--mars {
+  background-image: url("../img/project2.jpg");
+}
+
+.background--mars:nth-child(2) {
+  background-image: url("../img/project2_02.jpg");
+}
+
+.background--mars:nth-child(3) {
+  background-image: url("../img/project2_03.jpg");
+}
+
+.background--status {
+  background-image: url("../img/project3.jpg");
+}
+
+.background--status:nth-child(2) {
+  background-image: url("../img/project3_02.jpg");
+}
+
+.background--status:nth-child(3) {
+  background-image: url("../img/project3_03.jpg");
+}
+
+.background--pahu {
+  background-image: url("../img/project4.jpg");
+}
+
+.background--pahu:nth-child(2) {
+  background-image: url("../img/project4_02.jpg");
+}
+
+.background--pahu:nth-child(3) {
+  background-image: url("../img/project4_03.jpg");
 }
 
 .other-projects {

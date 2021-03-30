@@ -15,11 +15,12 @@
 
     &-title {
         font-weight: 400;
-        font-size: 47px;
+        font-size: calc(23px + 9 * ((100vw - 320px) / (1180 - 320)));
         line-height: 55px;
         margin-bottom: 10px;
     }
 
+   
     &-subtitle {
         font-size: 18px;
         line-height: 18px;

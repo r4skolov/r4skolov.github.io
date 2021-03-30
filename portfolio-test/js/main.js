@@ -14,5 +14,5 @@ document.body.onload = function() {
 };
 
 AOS.init({
-  disable: 'mobile',
+  disable: 'moblle' 
 });

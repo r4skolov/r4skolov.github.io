@@ -17,9 +17,6 @@
     transform: translate3d(0px, 15px, 15px)
 }
 
-.projects-item--testt {
-    background-image: url("../img/project1_02.jpg");
-}
 
 
 .projects-page__item {
@@ -27,11 +24,14 @@
     margin-bottom: 135px;
     box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
     border-radius: 5px;
-    background-image: url("../img/project1_01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 550px;
+}
+
+.background--roscafe {
+    background-image: url("../img/project1_01.jpg");
 
     &:nth-child(2) {
         background-image: url("../img/project1_02.jpg");
@@ -41,3 +41,40 @@
         background-image: url("../img/project1_03.jpg");
     }
 }
+
+.background--mars {
+    background-image: url("../img/project2.jpg");
+
+    &:nth-child(2) {
+        background-image: url("../img/project2_02.jpg");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../img/project2_03.jpg");
+    }
+}
+
+.background--status {
+    background-image: url("../img/project3.jpg");
+
+    &:nth-child(2) {
+        background-image: url("../img/project3_02.jpg");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../img/project3_03.jpg");
+    }
+}
+
+.background--pahu {
+    background-image: url("../img/project4.jpg");
+
+    &:nth-child(2) {
+        background-image: url("../img/project4_02.jpg");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../img/project4_03.jpg");
+    }
+}
+
