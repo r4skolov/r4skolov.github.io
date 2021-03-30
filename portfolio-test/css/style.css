@@ -98,7 +98,7 @@ a {
   position: absolute;
   top: -3px;
   left: 0px;
-  background-image: url("/img/home.svg");
+  background-image: url("../img/home.svg");
   width: 20px;
   height: 20px;
   z-index: 1;
@@ -246,7 +246,7 @@ a {
   -webkit-box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
   border-radius: 5px;
-  background-image: url("/img/project1_01.jpg");
+  background-image: url("../img/project1_01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -254,15 +254,15 @@ a {
 }
 
 .projects-item:nth-child(3) {
-  background-image: url("/img/project2.jpg");
+  background-image: url("../img/project2.jpg");
 }
 
 .projects-item:nth-child(4) {
-  background-image: url("/img/project3.jpg");
+  background-image: url("../img/project3.jpg");
 }
 
 .projects-item:nth-child(5) {
-  background-image: url("/img/project4.jpg");
+  background-image: url("../img/project4.jpg");
 }
 
 .projects-item__link {
@@ -590,7 +590,7 @@ a {
 }
 
 .projects-item--testt {
-  background-image: url("/img/project1_02.jpg");
+  background-image: url("../img/project1_02.jpg");
 }
 
 .projects-page__item {
@@ -599,7 +599,7 @@ a {
   -webkit-box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
   border-radius: 5px;
-  background-image: url("/img/project1_01.jpg");
+  background-image: url("../img/project1_01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -607,11 +607,11 @@ a {
 }
 
 .projects-page__item:nth-child(2) {
-  background-image: url("/img/project1_02.jpg");
+  background-image: url("../img/project1_02.jpg");
 }
 
 .projects-page__item:nth-child(3) {
-  background-image: url("/img/project1_03.jpg");
+  background-image: url("../img/project1_03.jpg");
 }
 
 .other-projects {
@@ -656,7 +656,7 @@ a {
   right: 40px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url("/img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   width: 40px;
   height: 40px;
   z-index: 3;
