@@ -302,6 +302,10 @@ a {
   margin: 20px auto;
 }
 
+.choice__item {
+  width: 100%;
+}
+
 .choice__items {
   display: -webkit-box;
   display: -ms-flexbox;
