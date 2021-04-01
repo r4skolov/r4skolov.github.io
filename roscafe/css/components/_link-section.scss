@@ -73,9 +73,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 400px;
+    width: 500px;
 
         &__item {
+            width: 250px;
             margin-bottom: 20px;
             font-size: 20px;
             line-height: 28px;

@@ -749,10 +749,11 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 400px;
+  width: 500px;
 }
 
 .categories-list__item {
+  width: 250px;
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 28px;
