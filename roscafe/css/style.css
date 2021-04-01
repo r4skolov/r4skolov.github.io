@@ -1868,13 +1868,11 @@ body.lock {
   z-index: 2;
   background-color: #342509c9;
   border-radius: 4px;
-  width: 114px;
-  min-width: 80px;
-  height: 32px;
   padding: 6px 10px;
   text-align: center;
   font-size: 14px;
   color: #fff;
+  white-space: nowrap;
 }
 
 .reccomend-list__item:nth-child(2):hover:before {
