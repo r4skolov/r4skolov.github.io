@@ -96,6 +96,10 @@
     display: none;
 }
 
+.product-card--catalog:hover .rating-star {
+    display: none;
+}
+
 .product-card--catalog:hover .product-card__hover .card-filter__buttons {
     margin-top: 16px;
 }
@@ -193,12 +197,16 @@
 }
 
 .catalog-product__item.catalog-product__item--list .product-card__title{
-        white-space:normal;
-        
+     white-space:normal; 
 }
 
 .catalog-product__item.catalog-product__item--list .sale {
     display: none;
+}
+
+.catalog-product__item.catalog-product__item--list .rating-star__rating {
+    padding-top: 0;
+    padding-left: 5px;
 }
 
 .catalog-product__item.catalog-product__item--list .product-card--catalog:hover .product-card--sale__week::before {
@@ -239,7 +247,6 @@
     display: flex;
     align-items: flex-start;
 }
-
 
 
 .product-card__rating {
