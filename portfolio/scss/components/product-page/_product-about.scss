@@ -1,0 +1,36 @@
+.product-about__text {
+    font-size: 16px;
+    line-height: 27px;
+    color: $main;
+    margin-bottom: 30px;
+}
+
+.product-table {
+    display: flex;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    &__item {
+        width: 25%;
+        padding: 25px 25px;
+        border: 1px solid #E3E3E3;
+        border-left: none;
+
+        &:first-child {
+            border-left: 1px solid #E3E3E3;
+        }
+    }
+
+    &__type-name {
+        font-size: 18px;
+        line-height: 18px;
+        color: #B1B1B1;
+        font-weight: 300;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 18px;
+        color: $main;
+    }
+}
