@@ -25,13 +25,13 @@ const multiDefault = () => {
 multiDefault();
 
 document.querySelector('.custom-checkbox__field').onclick = () => {
-  let out9 = document.querySelector('.temp--wrapper');
-  let r9 = document.querySelector('.custom-checkbox__field');
-  if (r9.checked) {
-      out9.classList.add('active');
+  let out = document.querySelector('.temp--wrapper');
+  let check = document.querySelector('.custom-checkbox__field');
+  if (check.checked) {
+      out.classList.add('active');
   }
   else  {
-    out9.classList.remove('active');
+    out.classList.remove('active');
   }
 }
 
