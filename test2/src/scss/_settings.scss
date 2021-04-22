@@ -1,0 +1,31 @@
+html,
+body {
+	height: 100%;
+	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-size: 14px;
+  background-color: #343539;
+  font-weight: 400;
+}
+
+.site-container {
+  overflow: hidden;
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+

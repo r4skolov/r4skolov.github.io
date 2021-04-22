@@ -1,0 +1,113 @@
+    <div class="container">
+        <div class="main-inner">
+            <div class="main-item">
+            <h1 class="main-title">FTL: Прямая машина</h1>
+            <div class="main-form__wrapper">
+                <h3 class="main-input__title "> <span class="input-number">1</span> Маршрут</h3>
+                <label class="main-label" for="#">
+                    <span class="main-label__name">Откуда</span>
+                    <input class="main-input" type="text">
+                </label>
+                <label class="main-label" for="#">
+                    <span class="main-label__name">Откуда</span>
+                    <input class="main-input" type="text">
+                </label>
+            </div>
+            <div class="main-form__wrapper">
+                <h3 class="main-input__title "> <span class="input-number">2</span> Транспорт</h3>
+                <div class="main-item__wrapper">
+                    <label class="main-label transport__label" for="">
+                        <span class="main-label__name">Грузоподъемность</span>
+                        <select class="default" name="default" id="default">
+                            <option value="">Не выбрана</option>
+                            <option value="400">400 кг.</option>
+                            <option value="600">600 кг.</option>
+                            <option value="800">800 кг.</option>
+                            <option value="1100">1100 кг.</option>
+                        </select>
+                    </label>
+
+                    <label class="main-label transport__label" for="">
+                        <span class="main-label__name">Способ погрузки</span>
+                        <select class="multi-default" name="default" id="default">
+                            <option value="">Не выбрана</option>
+                            <option value="1">Выбор 1</option>
+                            <option value="2">Выбор 2</option>
+                            <option value="3">Выбор 3</option>
+                            <option value="4">Выбор 4</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div class="main-form__wrapper">
+                <h3 class="main-input__title "> <span class="input-number">3</span>Груз</h3>
+                <label class="main-label cargo__label" for="">
+                    <span class="main-label__name">Тип груза</span>
+                    <select class="test multi-default" name="default" id="default">
+                        <option value="">Не выбран</option>
+                        <option value="1">Выбор 1</option>
+                        <option value="2">Выбор 2</option>
+                        <option value="3">Выбор 3</option>
+                        <option value="4">Выбор 4</option>
+                    </select>
+                </label>
+                <div class="main-item__wrapper">
+                    <label class="main-label transport__label">
+                        <span class="main-label__name">Класс опастности</span>
+                        <select class="multi-default" name="default" id="default">
+                            <option value="">Не выбрана</option>
+                            <option value="1">Выбор 1</option>
+                            <option value="2">Выбор 2</option>
+                            <option value="3">Выбор 3</option>
+                            <option value="4">Выбор 4</option>
+                        </select>
+                    </label>
+                    <label class="main-label transport__label">
+                        <span class="main-label__name">Объявленная ценность, ₽</span>
+                        <input class="main-input value-input" type="text" placeholder="≥ 1">
+                    </label>
+                </div>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Требуется температурный режим</span>
+                </label>
+                <div class="main-item__wrapper temp--wrapper">
+                    <label class="main-label temp__label" for="#">
+                        <span class="main-label__name">От, °C</span>
+                        <input class="main-input value-input" type="text">
+                    </label>
+                    <label class="main-label temp__label" for="#">
+                        <span class="main-label__name">До, °C</span>
+                        <input class="main-input value-input" type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="main-form__wrapper time--wrapper">
+                <h3 class="main-input__title "> <span class="input-number">4</span>Время</h3>
+                <div class="main-label__name time--lable__name"><span> Когда прибыть в точку</span> <span> 700 км в
+                        день</span> </div>
+                <div class="main-checkbox__wrapper">
+                    <label class="custom-radiob">
+                        <input type="radio" class="custom-radiob__field" name="time" id="checked">
+                        <span class="custom-radiob__content">Слишком длинный адресс</span>
+                        <span class="custom-checkbox__time-content">Не выбрано</span>
+                    </label>
+
+                </div>
+                <div class="main-checkbox__wrapper">
+                    <label class="custom-radiob">
+                        <input type="radio" class="custom-radiob__field" name="time" id="checked2">
+                        <span class="custom-radiob__content">Адрес не указан</span>
+                        <span class="custom-checkbox__time-content">Не выбрано</span>
+                    </label>
+                </div>
+                <label class="main-label time--lable" for="">
+                    <span class="main-label__name">Комментарий к заказу</span>
+                    <textarea class="main-comments" name="" cols="40" rows="3"
+                        placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+                </label>
+            </div>
+            </div>
+            <div class="table">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</div>
+        </div>   
+    </div>
