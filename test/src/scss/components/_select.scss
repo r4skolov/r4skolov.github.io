@@ -1,0 +1,64 @@
+ .choices__inner {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 7.5px 7.5px 3.75px;
+    border: 1px solid #ddd;
+    border-radius: 2.5px;
+    font-size: 14px;
+    min-height: 44px;
+    overflow: hidden;
+}
+
+.choices__list--dropdown .choices__item {
+    position: relative;
+    padding: 5px 13px;
+    font-size: 14px;
+}
+
+.choices[data-type*=select-one]:after {
+    content: '';
+    height: 5px;
+    width: 8px;
+    border-style: none;
+    border-color: none;
+    border-width: none;
+    position: absolute;
+    right: 11.5px;
+    top: 50%;
+    margin-top: -2.5px;
+    pointer-events: none;
+    font-size: 0;
+    background-image: url("/img/arrow.png");
+}
+
+.choices__list--dropdown .choices__item--selectable {
+     padding-right: 0; 
+}
+
+.choices[data-type*=select-one].is-open:after {
+   margin-top: -5px;
+   transform: rotate(180deg);
+}
+
+.is-focused .choices__inner, .is-open .choices__inner {
+ 
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+   display: none;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #EF483E;
+    color: #fff;
+}
+
+#choices--default-item-choice-5{
+    display: none;
+}
+
+
+
+
