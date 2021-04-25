@@ -266,6 +266,10 @@ a {
   background-image: url("../img/project4.jpg");
 }
 
+.projects-item:nth-child(6) {
+  background-image: url("../img/project5.jpg");
+}
+
 .projects-item__link {
   display: block;
   position: relative;
