@@ -654,6 +654,10 @@ a {
   background-image: url("../img/project4_03.jpg");
 }
 
+.background--expert5 {
+  background-image: url("../img/project5.jpg");
+}
+
 .other-projects {
   margin-bottom: 100px;
 }
