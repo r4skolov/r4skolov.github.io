@@ -13,6 +13,3 @@ document.body.onload = function() {
     })
 };
 
-AOS.init({
-  disable: 'moblle' 
-});
