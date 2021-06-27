@@ -1,3 +1,5 @@
+// Sliders
+
 $(function(){
     $('.banner-slider').slick({
         infinite: true,
@@ -105,6 +107,7 @@ $(function(){
 });
 
 
+// Burger
 
 $("#burger").on("click", function(event) {
     event.preventDefault();
@@ -117,7 +120,7 @@ $("#burger").on("click", function(event) {
 
 
 
-
+// Button-filter
 $("#filter-button").on("click", function(event) {
   event.preventDefault();
 
@@ -127,8 +130,7 @@ $("#filter-button").on("click", function(event) {
 });
 
 
-
-
+//Mobile filter btn 
 $("#close-catalog__filter").on("click", function(event) {
   event.preventDefault();
 
@@ -141,7 +143,7 @@ $("#close-catalog__filter").on("click", function(event) {
 
 
 
-
+// Drop search
 $("#search").on("click", function(event) {
     event.preventDefault();
     $(this).toggleClass("active");
@@ -149,20 +151,20 @@ $("#search").on("click", function(event) {
 });
 
 
-
+// 
 $("[data-collapse]").on("click", function(event) {
     event.preventDefault();
 
     var $this = $(this);
-        blockid = $this.data('collapse');
-        $this.toggleClass('active');
-        $('.mobile-button__toggle--active').toggleClass('active');
-        $(blockid).slideToggle();
+      blockid = $this.data('collapse');
+      $this.toggleClass('active');
+      $('.mobile-button__toggle--active').toggleClass('active');
+      $(blockid).slideToggle();
 });
 
 
 
-
+//Input style
 (function($) {
   $(function() {
     $('input, select').styler();
@@ -190,7 +192,7 @@ $(function () {
   });
 });
 
-
+//Catalog list
 $('.catalog-filter__grid').on('click', function(){
   $(this).addClass('catalog-filter__button--active');
   $('.catalog-filter__list').removeClass('catalog-filter__button--active');
@@ -209,7 +211,7 @@ $('.card-favorite__btn').on('click', function(){
 });
 
 
-
+//Tabs
 $('.tab').on('click', function(e){
   e.preventDefault();
 
