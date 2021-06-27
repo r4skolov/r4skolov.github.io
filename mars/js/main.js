@@ -1,3 +1,5 @@
+//Accardion
+
 $("[data-collapse]").on("click", function (event) {
     event.preventDefault();
 
@@ -97,7 +99,7 @@ $(function () {
 
 
 
-
+//Burger
 $("#burger").on("click", function(event) {
     event.preventDefault();
   
@@ -108,10 +110,10 @@ $("#burger").on("click", function(event) {
     $('#nav').on('wheel', function (e) {
       e.stopPropagation();
     });
-  });
+});
 
 
-  $("[data-scroll").on("click", function(event) {
+$("[data-scroll").on("click", function(event) {
     event.preventDefault();
 
     var blockId = $(this).data('scroll'),
