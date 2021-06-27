@@ -1,3 +1,5 @@
+//Slider
+
 $(function(){
     $('.main-slider').slick({
         infinite: true,
@@ -55,28 +57,6 @@ $(function(){
     });
 });
 
-
-
-$('.tab').on('click', function(e){
-    e.preventDefault();
-
-   $('.tab').removeClass('tab--active');
-   $('.tabs-content').removeClass('tabs-content--active');
-   $(this).addClass('tab--active');
-   $($(this).attr('href')).addClass('tabs-content--active')
-
-});
-
-$("#burger").on("click", function(event) {
-    event.preventDefault();
-
-    $(this).toggleClass("active");
-    $("#mobile__menu").toggleClass("active");
-    $('body').toggleClass('lock');
-    $('.header-transparent').toggleClass('active');
-
-});
-
 $(window).on('load resize', function() {
     if ($(window).width() < 558) {
       $('.clients-slider:not(.slick-initialized)').slick({
@@ -96,21 +76,43 @@ $(window).on('load resize', function() {
       });
     } else {
       $(".clients-slider.slick-initialized").slick("unslick");
-    }
-  });
+    };
+});
+
+//Tabs
+$('.tab').on('click', function(e){
+    e.preventDefault();
+
+   $('.tab').removeClass('tab--active');
+   $('.tabs-content').removeClass('tabs-content--active');
+   $(this).addClass('tab--active');
+   $($(this).attr('href')).addClass('tabs-content--active')
+
+});
 
 
-  const CLASS_LIST = {
+// Burger
+$("#burger").on("click", function(event) {
+    event.preventDefault();
+
+    $(this).toggleClass("active");
+    $("#mobile__menu").toggleClass("active");
+    $('body').toggleClass('lock');
+    $('.header-transparent').toggleClass('active');
+
+});
+
+
+
+//Modal
+const CLASS_LIST = {
     MODAL: 'modal',
     MODAL_ACTIVE: 'modal--active',
     MODAL_HAS_SCROLL: 'modal--has-scroll',
     MODAL_DIALOG_BODY: 'modal__dialog-body',
     TRIGGER_OPEN: 'js-modal-open',
-    TRIGGER_CLOSE: 'js-modal-close'
-    
+    TRIGGER_CLOSE: 'js-modal-close'  
 };
-
-
 
 document.addEventListener('click', (event) => {
     //open
