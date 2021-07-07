@@ -267,11 +267,11 @@ a {
 }
 
 .projects-item:nth-child(5) {
-  background-image: url("../img/project6.jpg");
+  background-image: url("../img/project5.jpg");
 }
 
-.projects-item:nth-child(6) {
-  background-image: url("../img/project5.jpg");
+.projects-item:nth-child(7) {
+  background-image: url("../img/project6.jpg");
 }
 
 .projects-item__link {
