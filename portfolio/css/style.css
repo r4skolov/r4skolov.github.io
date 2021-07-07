@@ -247,54 +247,34 @@ a {
   -webkit-box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
   border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
 }
 
 .projects-item__roscafe {
-  background-image: url("../img/project1_01");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
+  background-image: url("../img/project1_01.jpg");
 }
 
 .projects-item__mars {
-  background-image: url("../img/project2");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
+  background-image: url("../img/project2.jpg");
 }
 
 .projects-item__status-stroy {
-  background-image: url("../img/project3");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
+  background-image: url("../img/project3.jpg");
 }
 
 .projects-item__pahu {
-  background-image: url("../img/project4");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
+  background-image: url("../img/project4.jpg");
 }
 
 .projects-item__expert5 {
-  background-image: url("../img/project5");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
+  background-image: url("../img/project5.jpg");
 }
 
 .projects-item__xone {
-  background-image: url("../img/project6");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
+  background-image: url("../img/project6.jpg");
 }
 
 .projects-item__link {

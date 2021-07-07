@@ -13,54 +13,38 @@
         margin-bottom: 135px;
         box-shadow: 4px 5px 32px 4px rgba(34, 60, 80, 0.2);
         border-radius: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
      
 
         &__roscafe {
             background-image: url("../img/project1_01");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 550px;
         }
 
         &__mars {
             background-image: url("../img/project2");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 550px;
         }
 
         &__status-stroy {
             background-image: url("../img/project3");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 550px;
+        
         }
 
         &__pahu {
             background-image: url("../img/project4");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 550px;
+  
         }
 
         &__expert5 {
             background-image: url("../img/project5");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 550px;
+       
         }
 
         &__xone {
             background-image: url("../img/project6");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 550px;
+     
         }
 
         &__link {
