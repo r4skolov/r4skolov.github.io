@@ -254,16 +254,20 @@ a {
   height: 550px;
 }
 
-.projects-item:nth-child(3) {
+.projects-item:nth-child(2) {
   background-image: url("../img/project2.jpg");
 }
 
-.projects-item:nth-child(4) {
+.projects-item:nth-child(3) {
   background-image: url("../img/project3.jpg");
 }
 
+.projects-item:nth-child(4) {
+  background-image: url("../img/project6.jpg");
+}
+
 .projects-item:nth-child(5) {
-  background-image: url("../img/project4.jpg");
+  background-image: url("../img/project6.jpg");
 }
 
 .projects-item:nth-child(6) {
