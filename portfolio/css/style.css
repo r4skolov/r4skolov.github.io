@@ -253,28 +253,28 @@ a {
   height: 550px;
 }
 
-.projects-item:first-child {
-  background-image: url("../img/project1_01.jpg");
+.projects-item__roscafe {
+  background-image: url("../img/project1_01");
 }
 
-.projects-item:nth-child(2) {
-  background-image: url("../img/project2.jpg");
+.projects-item__mars {
+  background-image: url("../img/project2");
 }
 
-.projects-item:nth-child(3) {
-  background-image: url("../img/project3.jpg");
+.projects-item__status-stroy {
+  background-image: url("../img/project3");
 }
 
-.projects-item:nth-child(4) {
-  background-image: url("../img/project4.jpg");
+.projects-item__pahu {
+  background-image: url("../img/project4");
 }
 
-.projects-item:nth-child(5) {
-  background-image: url("../img/project5.jpg");
+.projects-item__expert5 {
+  background-image: url("../img/project5");
 }
 
-.projects-item:nth-child(6) {
-  background-image: url("../img/project6.jpg");
+.projects-item__xone {
+  background-image: url("../img/project6");
 }
 
 .projects-item__link {
