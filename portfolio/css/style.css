@@ -253,7 +253,7 @@ a {
   height: 550px;
 }
 
-.projects-item:nth-child(1) {
+.projects-item:first-child {
   background-image: url("../img/project1_01.jpg");
 }
 
