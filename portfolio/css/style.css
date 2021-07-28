@@ -354,27 +354,27 @@ a {
 }
 
 .projects-item__roscafe {
-  background-image: url("/img/project1_01.jpg");
+  background-image: url("../img/project1_01.jpg");
 }
 
 .projects-item__mars {
-  background-image: url("/img/project2.jpg");
+  background-image: url("../img/project2.jpg");
 }
 
 .projects-item__status-stroy {
-  background-image: url("/img/project3.jpg");
+  background-image: url("../img/project3.jpg");
 }
 
 .projects-item__pahu {
-  background-image: url("/img/project4.jpg");
+  background-image: url("../img/project4.jpg");
 }
 
 .projects-item__expert5 {
-  background-image: url("/img/project5.jpg");
+  background-image: url("../img/project5.jpg");
 }
 
 .projects-item__xone {
-  background-image: url("/img/project6.jpg");
+  background-image: url("../img/project6.jpg");
 }
 
 .projects-item__link {
@@ -718,55 +718,55 @@ a {
 }
 
 .background--roscafe {
-  background-image: url("/img/project1_01.jpg");
+  background-image: url("../img/project1_01.jpg");
 }
 
 .background--roscafe:nth-child(2) {
-  background-image: url("/img/project1_02.jpg");
+  background-image: url("../img/project1_02.jpg");
 }
 
 .background--roscafe:nth-child(3) {
-  background-image: url("/img/project1_03.jpg");
+  background-image: url("../img/project1_03.jpg");
 }
 
 .background--mars {
-  background-image: url("/img/project2.jpg");
+  background-image: url("../img/project2.jpg");
 }
 
 .background--mars:nth-child(2) {
-  background-image: url("/img/project2_02.jpg");
+  background-image: url("../img/project2_02.jpg");
 }
 
 .background--mars:nth-child(3) {
-  background-image: url("/img/project2_03.jpg");
+  background-image: url("../img/project2_03.jpg");
 }
 
 .background--status {
-  background-image: url("/img/project3.jpg");
+  background-image: url("../img/project3.jpg");
 }
 
 .background--status:nth-child(2) {
-  background-image: url("/img/project3_02.jpg");
+  background-image: url("../img/project3_02.jpg");
 }
 
 .background--status:nth-child(3) {
-  background-image: url("/img/project3_03.jpg");
+  background-image: url("../img/project3_03.jpg");
 }
 
 .background--pahu {
-  background-image: url("/img/project4.jpg");
+  background-image: url("../img/project4.jpg");
 }
 
 .background--pahu:nth-child(2) {
-  background-image: url("/img/project4_02.jpg");
+  background-image: url("../img/project4_02.jpg");
 }
 
 .background--pahu:nth-child(3) {
-  background-image: url("/img/project4_03.jpg");
+  background-image: url("../img/project4_03.jpg");
 }
 
 .background--expert5 {
-  background-image: url("/img/project5.jpg");
+  background-image: url("../img/project5.jpg");
 }
 
 .other-projects {
@@ -811,7 +811,7 @@ a {
   right: 40px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url("/img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   width: 40px;
   height: 40px;
   z-index: 3;
