@@ -769,6 +769,22 @@ a {
   background-image: url("../img/project5.jpg");
 }
 
+.background--xone {
+  background-image: url("../img/project6.jpg");
+}
+
+.video {
+  display: block;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .other-projects {
   margin-bottom: 100px;
 }
