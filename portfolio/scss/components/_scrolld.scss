@@ -1,3 +1,5 @@
+
+
 .scroll-downs {
     position: absolute;
     right: 0;
@@ -7,6 +9,10 @@
     
     width :34px;
     height: 55px;
+
+    @media(max-width: 768px) {
+        display: none;
+    }
 }
 
 .mousey {

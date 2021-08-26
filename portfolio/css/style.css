@@ -864,6 +864,12 @@ a {
   height: 55px;
 }
 
+@media (max-width: 768px) {
+  .scroll-downs {
+    display: none;
+  }
+}
+
 .mousey {
   width: 3px;
   padding: 10px 15px;
