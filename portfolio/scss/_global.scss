@@ -55,21 +55,25 @@ a {
   
 }
 
-.dark p{
-  color: inherit;
-}
+.dark {
+  p{
+    color: inherit;
+  }
+  h2  {
+    color: inherit;
+  }
 
-.dark h2  {
-  color: inherit;
-}
+  .mousey {
+    border: 2px solid #fff;
+  }
 
-.dark .mousey {
-  border: 2px solid #fff;
-  
-}
+  .scroller {
+    background-color: #fff;
+  }
 
-.dark .scroller {
-  background-color: #fff;
+  .header-contacts__link svg{
+    fill: #fff;
+  }
 }
 
 .themetoggle {

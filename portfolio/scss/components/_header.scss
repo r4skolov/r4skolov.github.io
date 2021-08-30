@@ -23,6 +23,8 @@
         &:hover {
             color: rgb(212, 16, 16);
         }
+
+
     }
 
     &-contacts {
@@ -34,9 +36,16 @@
             display: flex;
             align-items: center;
 
+            svg {
+                width: 32px;
+                height: 32px;
+                fill: #000;
+            }
+           
             & + & {
                 margin-left: 60px;
             }
+            
         }
         
     }
@@ -46,6 +55,8 @@
         align-items: center;
     }
 }
+
+
 
 .contacts-title {
     font-size: 18px;
