@@ -174,7 +174,7 @@ a {
       top: 3px;
       right: -12px;
       z-index: 1;
-      background-image: url("/img/up-chevron.svg");
+      background-image: url("../img/up-chevron.svg");
       width: 8px;
       height: 8px; }
 
