@@ -425,14 +425,16 @@
         justify-content: center;
         text-align: center;
         text-transform: uppercase; }
+        @media (max-width: 1146px) {
+          .collection__item-sneaker::after {
+            top: 0px;
+            right: 0px; }}
       @media (max-width: 1025px) {
         .collection__item-sneaker {
           max-width: 100%;
           grid-column: 2 span;
           margin-left: 0;}
-          .collection__item-sneaker::after {
-            top: 0px;
-            right: 0px; } }
+         }
       @media (max-width: 576px) {
         .collection__item-sneaker::after {
           width: 75px;
