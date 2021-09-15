@@ -405,7 +405,8 @@
     .collection__item-sneaker {
       max-width: 950px;
       grid-area: collection__item-sneaker;
-      position: relative; }
+      position: relative;
+      margin-left: 120px; }
       .collection__item-sneaker::after {
         content: "Sale";
         position: absolute;
@@ -427,7 +428,8 @@
       @media (max-width: 1025px) {
         .collection__item-sneaker {
           max-width: 100%;
-          grid-column: 2 span; }
+          grid-column: 2 span;
+          margin-left: 0;}
           .collection__item-sneaker::after {
             top: 0px;
             right: 0px; } }
