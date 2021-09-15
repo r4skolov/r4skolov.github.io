@@ -1,31 +1,4 @@
 "use strict";
-
-document.addEventListener('DOMContentLoaded', function () {
-  var accordions = document.querySelectorAll('.accardion'); //находим все аккардионы
-
-  accordions.forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      var self = e.currentTarget;
-      var control = self.querySelector('.accardion__control'); //
-
-      var content = self.querySelector('.accardion__content'); //то что будем открывать
-
-      self.classList.toggle('open'); // если открыт аккордеон
-
-      if (self.classList.contains('open')) {
-        control.setAttribute('aria-expanded', true);
-        content.setAttribute('aria-hidden', false);
-        content.style.maxHeight = content.scrollHeight + 'px';
-      } else {
-        control.setAttribute('aria-expanded', false);
-        content.setAttribute('aria-hidden', true);
-        content.style.maxHeight = null;
-      }
-    });
-  });
-});
-"use strict";
-
 function disableScroll() {
   var pagePosition = window.scrollY;
   document.body.classList.add('scroll');
