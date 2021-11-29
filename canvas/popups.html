@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Verst</title>
+    <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+    <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__wrap">
+                <div class="logo  mr-tb-26">
+                    <a href="index.html" class="logo__link">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="nav js-burger" id="nav">
+                    <div class="nav__wrap">
+                        <ul class="nav__list">
+                            <li class="nav__item ">
+                                <a href="index.html" class="nav__link  ">Home</a>
+                            </li>
+                            <li class="nav__item ml-wd-15">
+                                <a href="#" class="nav__link ">Now on Sale</a>
+                            </li>
+                            <li class="nav__item ml-wd-15">
+                                <a href="#" class="nav__link ">Popular templates</a>
+                            </li>
+                            <li class="nav__item   ml-wd-15">
+                                <a href="#" class="nav__link ">FAQ</a>
+                            </li>
+                        </ul>
+
+                        <form class="form" id="form-contact" method="POST" action="#">
+                            <div class="form__group">
+                                <div class="form__group-wrap">
+                                    <input class="form__input-search" type="search" name="search" id="search"
+                                        placeholder="Shop, business or keyword...">
+                                    <button type="submit" class="form__btn-search">
+                                        <span class="form__img-search">
+                                            <img src="assets/images/search.svg" alt="">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+
+                <div class="account ml-tb-10">
+                    <div class="account__wrap">
+                        <div class="account__basket">
+                            <button type="button" class="account-btn p-6">
+                                <span class="account__img">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.1276 14.8436L15.3238 4.71452C15.2737 4.06195 14.7218 3.55075 14.0673 3.55075H12.4796V3.47938C12.4796 1.56083 10.9187 0 9.0002 0C7.08165 0 5.52082 1.56083 5.52082 3.47938V3.55075H3.93309C3.27859 3.55075 2.72667 4.06192 2.67675 4.71315L1.87265 14.845C1.81043 15.6562 2.09185 16.4638 2.64472 17.0607C3.19759 17.6576 3.98132 18 4.79495 18H13.2054C14.019 18 14.8028 17.6576 15.3557 17.0607C15.9085 16.4638 16.1899 15.6562 16.1276 14.8436ZM6.57515 3.47938C6.57515 2.14221 7.66306 1.05434 9.0002 1.05434C10.3373 1.05434 11.4252 2.14225 11.4252 3.47938V3.55075H6.57515V3.47938ZM14.5821 16.3443C14.2229 16.7321 13.734 16.9457 13.2054 16.9457H4.79498C4.26637 16.9457 3.77749 16.7321 3.41826 16.3443C3.05907 15.9565 2.8835 15.4526 2.92386 14.927L3.72788 4.79514C3.73604 4.68854 3.82618 4.60508 3.93309 4.60508H5.52082V5.90358C5.52082 6.19471 5.75686 6.43075 6.04798 6.43075C6.33911 6.43075 6.57515 6.19471 6.57515 5.90358V4.60508H11.4252V5.90358C11.4252 6.19471 11.6613 6.43075 11.9524 6.43075C12.2435 6.43075 12.4796 6.19471 12.4796 5.90358V4.60508H14.0673C14.1742 4.60508 14.2644 4.68858 14.2726 4.79654L15.0765 14.9256C15.1169 15.4526 14.9413 15.9565 14.5821 16.3443Z" fill="#212A4D"/>
+                                        <path d="M11.3732 8.93956C11.1674 8.73369 10.8336 8.73369 10.6277 8.93956L8.27381 11.2935L7.36868 10.3884C7.16284 10.1825 6.82903 10.1825 6.62316 10.3884C6.41728 10.5942 6.41728 10.928 6.62316 11.1339L7.90105 12.4118C8.00399 12.5147 8.13892 12.5662 8.27378 12.5662C8.40864 12.5662 8.5436 12.5147 8.6465 12.4118L11.3732 9.68512C11.5791 9.47921 11.5791 9.14544 11.3732 8.93956Z" fill="#212A4D"/>
+                                        </svg>
+    
+                                </span>
+                            </button>
+                            <span class="account__text">2</span>
+                        </div>
+                        <div class="account__avatar ml-5 ml-tb-10">
+                            <button type="button" class="account-btn p-6">
+                                <span class="account__img">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.93487 9.6989C8.9535 9.6989 8.97214 9.6989 8.99451 9.6989C9.00196 9.6989 9.00942 9.6989 9.01687 9.6989C9.02805 9.6989 9.04296 9.6989 9.05415 9.6989C10.1463 9.68027 11.0297 9.29634 11.682 8.56202C13.1171 6.94429 12.8785 4.17105 12.8524 3.9064C12.7593 1.91965 11.8199 0.969145 11.0446 0.525575C10.4669 0.193829 9.79219 0.0149099 9.03924 0H9.01314C9.00942 0 9.00196 0 8.99823 0H8.97587C8.56212 0 7.74953 0.0670946 6.97048 0.510665C6.18771 0.954235 5.23348 1.90474 5.14029 3.9064C5.1142 4.17105 4.87564 6.94429 6.31072 8.56202C6.9593 9.29634 7.84271 9.68027 8.93487 9.6989ZM6.13553 3.99959C6.13553 3.9884 6.13926 3.97722 6.13926 3.96977C6.26226 1.29716 8.15955 1.01015 8.97214 1.01015H8.98705C8.99451 1.01015 9.00569 1.01015 9.01687 1.01015C10.0233 1.03251 11.7342 1.44253 11.8498 3.96977C11.8498 3.98095 11.8498 3.99213 11.8535 3.99959C11.8572 4.02568 12.1181 6.56037 10.9328 7.8948C10.4631 8.4241 9.83692 8.68503 9.01314 8.69248C9.00569 8.69248 9.00196 8.69248 8.99451 8.69248C8.98705 8.69248 8.98332 8.69248 8.97587 8.69248C8.15582 8.68503 7.52588 8.4241 7.05994 7.8948C5.87833 6.56782 6.1318 4.02195 6.13553 3.99959Z" fill="white"/>
+                                        <path d="M16.6544 14.2987C16.6544 14.295 16.6544 14.2912 16.6544 14.2875C16.6544 14.2577 16.6507 14.2279 16.6507 14.1943C16.6283 13.4563 16.5799 11.7304 14.9621 11.1788C14.951 11.175 14.9361 11.1713 14.9249 11.1676C13.2438 10.7389 11.846 9.76978 11.8311 9.7586C11.6037 9.59832 11.2906 9.65423 11.1303 9.88161C10.97 10.109 11.0259 10.4221 11.2533 10.5824C11.3167 10.6271 12.8002 11.6596 14.6565 12.1367C15.525 12.4461 15.6219 13.3743 15.648 14.2241C15.648 14.2577 15.648 14.2875 15.6517 14.3173C15.6555 14.6528 15.6331 15.1709 15.5735 15.4691C14.9696 15.812 12.6027 16.9974 9.00191 16.9974C5.41607 16.9974 3.03421 15.8083 2.42663 15.4654C2.36699 15.1672 2.3409 14.6491 2.34836 14.3136C2.34836 14.2838 2.35208 14.2539 2.35208 14.2204C2.37818 13.3705 2.47509 12.4424 3.34359 12.133C5.19988 11.6559 6.68342 10.6196 6.74678 10.5786C6.97416 10.4184 7.03007 10.1053 6.86979 9.87788C6.70951 9.6505 6.3964 9.59459 6.16902 9.75487C6.15411 9.76606 4.76376 10.7352 3.07522 11.1639C3.06031 11.1676 3.04912 11.1713 3.03794 11.175C1.42021 11.7304 1.37176 13.4563 1.34939 14.1906C1.34939 14.2241 1.34939 14.254 1.34566 14.2838C1.34566 14.2875 1.34566 14.2912 1.34566 14.295C1.34194 14.4888 1.33821 15.484 1.53577 15.9835C1.57304 16.0804 1.64014 16.1624 1.7296 16.2183C1.84142 16.2929 4.52148 18.0001 9.00564 18.0001C13.4898 18.0001 16.1699 16.2892 16.2817 16.2183C16.3674 16.1624 16.4382 16.0804 16.4755 15.9835C16.6619 15.4877 16.6582 14.4925 16.6544 14.2987Z" fill="white"/>
+                                        </svg>
+    
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger js-burger-open ml-10">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <button type="button" class="btn secondary mb-10 js-show-popup" data-trigger="basket-popup">Basket</button>
+            <button type="button" class="btn secondary mb-10 js-show-popup" data-trigger="login-popup">Login</button>
+            <button type="button" class="btn secondary mb-10 js-show-popup" data-trigger="registration-popup">registration</button>
+            <button type="button" class="btn secondary mb-10 js-show-popup" data-trigger="forgot-popup">forgot</button>
+            <button type="button" class="btn secondary mb-10 js-show-popup" data-trigger="completed-popup">completed</button>
+
+            <div class="overlay js-overlay"></div>
+            <div class="popup popup--basket scroll-wrap" data-popup="basket-popup">
+                <button type="button" class="popup__close js-popup-close"></button>
+                <div class="popup__wrap px-5 py-20 p-tb-20">
+                    <div class="popup__scroll">
+                        <div class="popup__head pb-10 mb-5 pb-tb-10 mb-tb-10">
+                            <div class="popup__head-col ">
+                                <span class="popup__text ml-30">My basket</span>
+                                <span class="popup__text popup-color">(4)</span>
+                            </div>
+                            <div class="popup__head-col">
+                                <button type="button" class="popup__btn">Clear all</button>
+                            </div>
+                        </div>
+                        <div class="popup__body pb-5 mb-5 pb-tb-18 mb-tb-10">
+                            <div class="popup__body-row">
+                                <div class="popup__body-img mr-tb-7">
+                                    <img src="assets/images/card2.png" alt="">
+                                </div>
+                                <div class="popup__body-col mr-tb-20 ">
+                                    <span class="popup__body-text">INSTAGRAM PUZZLE CANVA </span>
+                                    <span class="popup__body-text mb-10">TEMPLATE – ROSE GOLD...</span>
+                                    <span class="popup__body-subtext">#Social Media</span>
+                                </div>
+                                <div class="popup__body-col mr-tb-17">
+                                    <span class="popup__body-color mb-7">$ 28.90</span>
+                                    <span class="popup__body-subtext subtext-color">$ 38.50</span>
+                                </div>
+                                <button type="button" class="popup__body-btn">
+                                    <span class="popup__body-icon">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.242064 10.7569C-0.0805914 10.4343 -0.0805914 9.91121 0.242064 9.58858L9.58957 0.241968C9.91223 -0.0806563 10.4354 -0.080656 10.758 0.241969C11.0807 0.564593 11.0807 1.08767 10.758 1.4103L1.4105 10.7569C1.08785 11.0795 0.564719 11.0795 0.242064 10.7569Z" fill="white"/>
+                                            <path d="M0.241992 0.243091C0.564647 -0.0795339 1.08777 -0.0795337 1.41043 0.243091L10.7579 9.58971C11.0806 9.91233 11.0806 10.4354 10.7579 10.758C10.4353 11.0807 9.91215 11.0807 9.5895 10.758L0.241991 1.41142C-0.0806639 1.08879 -0.0806637 0.565715 0.241992 0.243091Z" fill="white"/>
+                                            </svg>
+    
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup__body pb-5 mb-5 pb-tb-10 mb-tb-10">
+                            <div class="popup__body-row">
+                                <div class="popup__body-img mr-tb-7">
+                                    <img src="assets/images/card2.png" alt="">
+                                </div>
+                                <div class="popup__body-col mr-tb-20 ">
+                                    <span class="popup__body-text">INSTAGRAM PUZZLE CANVA </span>
+                                    <span class="popup__body-text mb-10">TEMPLATE – ROSE GOLD...</span>
+                                    <span class="popup__body-subtext">#Social Media</span>
+                                </div>
+                                <div class="popup__body-col mr-tb-17">
+                                    <span class="popup__body-color mb-7">$ 28.90</span>
+                                    <span class="popup__body-subtext subtext-color">$ 38.50</span>
+                                </div>
+                                <button type="button" class="popup__body-btn">
+                                    <span class="popup__body-icon">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.242064 10.7569C-0.0805914 10.4343 -0.0805914 9.91121 0.242064 9.58858L9.58957 0.241968C9.91223 -0.0806563 10.4354 -0.080656 10.758 0.241969C11.0807 0.564593 11.0807 1.08767 10.758 1.4103L1.4105 10.7569C1.08785 11.0795 0.564719 11.0795 0.242064 10.7569Z" fill="white"/>
+                                            <path d="M0.241992 0.243091C0.564647 -0.0795339 1.08777 -0.0795337 1.41043 0.243091L10.7579 9.58971C11.0806 9.91233 11.0806 10.4354 10.7579 10.758C10.4353 11.0807 9.91215 11.0807 9.5895 10.758L0.241991 1.41142C-0.0806639 1.08879 -0.0806637 0.565715 0.241992 0.243091Z" fill="white"/>
+                                            </svg>
+    
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup__body pb-5 mb-5 pb-tb-10 mb-tb-10">
+                            <div class="popup__body-row">
+                                <div class="popup__body-img mr-tb-7">
+                                    <img src="assets/images/card2.png" alt="">
+                                </div>
+                                <div class="popup__body-col mr-tb-20 ">
+                                    <span class="popup__body-text">INSTAGRAM PUZZLE CANVA </span>
+                                    <span class="popup__body-text mb-10">TEMPLATE – ROSE GOLD...</span>
+                                    <span class="popup__body-subtext">#Social Media</span>
+                                </div>
+                                <div class="popup__body-col mr-tb-17">
+                                    <span class="popup__body-color mb-7">$ 28.90</span>
+                                    <span class="popup__body-subtext subtext-color">$ 38.50</span>
+                                </div>
+                                <button type="button" class="popup__body-btn">
+                                    <span class="popup__body-icon">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.242064 10.7569C-0.0805914 10.4343 -0.0805914 9.91121 0.242064 9.58858L9.58957 0.241968C9.91223 -0.0806563 10.4354 -0.080656 10.758 0.241969C11.0807 0.564593 11.0807 1.08767 10.758 1.4103L1.4105 10.7569C1.08785 11.0795 0.564719 11.0795 0.242064 10.7569Z" fill="white"/>
+                                            <path d="M0.241992 0.243091C0.564647 -0.0795339 1.08777 -0.0795337 1.41043 0.243091L10.7579 9.58971C11.0806 9.91233 11.0806 10.4354 10.7579 10.758C10.4353 11.0807 9.91215 11.0807 9.5895 10.758L0.241991 1.41142C-0.0806639 1.08879 -0.0806637 0.565715 0.241992 0.243091Z" fill="white"/>
+                                            </svg>
+    
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup__body pb-5 mb-5 pb-tb-10 mb-tb-10">
+                            <div class="popup__body-row">
+                                <div class="popup__body-img mr-tb-7">
+                                    <img src="assets/images/card2.png" alt="">
+                                </div>
+                                <div class="popup__body-col mr-tb-20 ">
+                                    <span class="popup__body-text">INSTAGRAM PUZZLE CANVA </span>
+                                    <span class="popup__body-text mb-10">TEMPLATE – ROSE GOLD...</span>
+                                    <span class="popup__body-subtext">#Social Media</span>
+                                </div>
+                                <div class="popup__body-col mr-tb-17">
+                                    <span class="popup__body-color mb-7">$ 28.90</span>
+                                    <span class="popup__body-subtext subtext-color">$ 38.50</span>
+                                </div>
+                                <button type="button" class="popup__body-btn">
+                                    <span class="popup__body-icon">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.242064 10.7569C-0.0805914 10.4343 -0.0805914 9.91121 0.242064 9.58858L9.58957 0.241968C9.91223 -0.0806563 10.4354 -0.080656 10.758 0.241969C11.0807 0.564593 11.0807 1.08767 10.758 1.4103L1.4105 10.7569C1.08785 11.0795 0.564719 11.0795 0.242064 10.7569Z" fill="white"/>
+                                            <path d="M0.241992 0.243091C0.564647 -0.0795339 1.08777 -0.0795337 1.41043 0.243091L10.7579 9.58971C11.0806 9.91233 11.0806 10.4354 10.7579 10.758C10.4353 11.0807 9.91215 11.0807 9.5895 10.758L0.241991 1.41142C-0.0806639 1.08879 -0.0806637 0.565715 0.241992 0.243091Z" fill="white"/>
+                                            </svg>
+    
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup__footer pb-7 pb-tb-14 ">
+                            <span class="popup__footer-text mr-4">Total:</span>
+                            <span class="popup__footer-subtext">$ 128.90</span>
+                        </div>
+                        <button type="button" class="btn primary">Place your order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay js-overlay"></div>
+            <div class="popup scroll-wrap popup--login" data-popup="login-popup">
+                <button type="button" class="popup__close js-popup-close"></button>
+                <form class="form form--login mb-10" id="form-login" method="POST" action="#" name="form-login" novalidate>
+                    <div class="form__wrap px-5 py-20 p-tb-20">
+                        <div class="form__head pb-8 mb-10 pb-tb-18 mb-tb-20">
+                            <span class="popup__text ml-30">My Account</span>
+                        </div>
+                        <div class="form__body">
+                            <h2 class="form-title mb-10">Login</h2>
+                            <span class="form-text mb-20">Register and get access to your personal account</span>
+                            <div class="form__field mb-10">
+                                <label class="form__name mb-7" for="email">E-mail</label>
+                                <input class="form__input mb-5" type="email" name="email-login" id="email-login"
+                                    placeholder="myemail@gmail.com" data-mask="email" required>
+                                <span class="form__error-text">This email was not found</span>
+                            </div>
+                            <div class="form__field mb-7">
+                                <label class="form__name mb-7" for="email">Password</label>
+                                <input class="form__input mb-5" type="password" name="password" id="password"
+                                    placeholder="Enter password" data-mask="password" required>
+                                <span class="form__error-text">Wrong password</span>
+                            </div>
+                            <div class="form__col mb-13">
+                                <div class="form__checkbox">
+                                    <input type="checkbox" class="form__input-checkbox" id="checkbox" name="checkbox">
+                                    <label for="checkbox" class="form__label-checkbox">
+                                        <span class="form__text ml-15">Remember me</span>
+                                    </label>
+                                </div>
+                                <div class="form-btn">
+                                    <button type="button" class="form__btn">Forgot password?</button>
+                                </div>
+                            </div>
+                            <div class="form__btn-wrap mb-15">
+                                <button type="button" class="btn tertiary mb-12">Login</button>
+                                <button type="button" class="btn login-btn mb-12">Not registered yet?</button>
+                                <button type="button" class="btn secondary">Create an Account</button>
+                            </div>
+                        </div>
+                        <div class="form__footer">
+                            <span class="form__subtext">©2021, NameSite. All rights reserved</span>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="overlay js-overlay"></div>
+            <div class="popup scroll-wrap popup--registration" data-popup="registration-popup">
+                <button type="button" class="popup__close js-popup-close"></button>
+                <form class="form form--registration mb-10" id="form-registration" method="POST" action="#" name="form-registration"
+                    novalidate>
+                    <div class="form__wrap px-5 py-20 p-tb-20">
+                        <div class="form__head pb-8 mb-10 pb-tb-18 mb-tb-20">
+                            <span class="popup__text ml-30">My Account</span>
+                        </div>
+                        <div class="form__body">
+                            <h2 class="form-title mb-10">Registration</h2>
+                            <span class="form-text mb-20">Register and get access to your personal account</span>
+                            <div class="form__field mb-10">
+                                <label class="form__name mb-7" for="email">E-mail</label>
+                                <input class="form__input" type="email" name="email-registration" id="email-registration"
+                                    placeholder="myemail@gmail.com" data-mask="email-registration" required>
+                            </div>
+                            <div class="form__field mb-12">
+                                <label class="form__name mb-7" for="email">Password</label>
+                                <input class="form__input" type="password" name="registration" id="registration"
+                                    placeholder="Enter password" data-mask="registration" required>
+                            </div>
+                            <div class="form__btn-wrap mb-15">
+                                <button type="button" class="btn tertiary">Create an Account</button>
+                            </div>
+                        </div>
+                        <div class="form__footer">
+                            <span class="form__subtext">©2021, NameSite. All rights reserved</span>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="overlay js-overlay"></div>
+            <div class="popup scroll-wrap popup--forgot" data-popup="forgot-popup">
+                <button type="button" class="popup__close js-popup-close"></button>
+                <form class="form form--forgot mb-10" id="form-forgot" method="POST" action="#" name="form-forgot" novalidate>
+                    <div class="form__wrap px-5 py-20 p-tb-20">
+                        <div class="form__head pb-8 mb-10 pb-tb-18 mb-tb-20">
+                            <span class="popup__text ml-30">My Account</span>
+                        </div>
+                        <div class="form__body">
+                            <h2 class="form-title mb-10">Forgot password</h2>
+                            <span class="form-text mb-20">Register and get access to your personal account</span>
+                            <div class="form__field mb-12">
+                                <label class="form__name mb-7" for="email">E-mail</label>
+                                <input class="form__input" type="email" name="email-forgot" id="email-forgot"
+                                    placeholder="myemail@gmail.com" data-mask="email-forgot" required>
+                            </div>
+                            <div class="form__btn-wrap mb-15">
+                                <button type="button" class="btn secondary">Restore password</button>
+                            </div>
+                        </div>
+                        <div class="form__footer">
+                            <span class="form__subtext">©2021, NameSite. All rights reserved</span>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="overlay js-overlay"></div>
+            <div class="popup scroll-wrap popup--completed" data-popup="completed-popup">
+                <button type="button" class="popup__close js-popup-close"></button>
+                <form class="form form--completed" id="form-completed" method="POST" action="#" name="form-completed" novalidate>
+                    <div class="form__wrap px-5 py-20 p-tb-20">
+                        <div class="form__head pb-10 mb-26 pb-tb-10 mb-tb-53">
+                            <span class="popup__text ml-30">My Account</span>
+                        </div>
+                        <span class="form__img mb-14">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.85356 0.146455C9.65831 -0.0488184 9.34175 -0.0488184 9.14645 0.146455L3.15614 6.13683L0.853564 3.83425C0.658311 3.63897 0.341748 3.63899 0.146455 3.83425C-0.0488184 4.0295 -0.0488184 4.34606 0.146455 4.54134L2.80259 7.19743C2.99778 7.39268 3.31458 7.39255 3.5097 7.19743L9.85356 0.853564C10.0488 0.65831 10.0488 0.341728 9.85356 0.146455Z" fill="white"/>
+                            </svg>
+
+                        </span>
+                        <h2 class="form-title mb-14">Registration completed successfully</h2>
+                        <span class="form-text mb-20">Thank you for registering</span>
+                        <div class="form__btn-wrap mb-15">
+                            <button type="button" class="btn tertiary mb-6">Go to shop</button>
+                            <button type="button" class="btn secondary">My Account</button>
+                        </div>
+
+                        <div class="form__footer">
+                            <span class="form__subtext">©2021, NameSite. All rights reserved</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__col">
+                        <div class="logo">
+                            <a href="index.html" class="logo__link">
+                                <img src="assets/images/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="address">
+                            <div class="address__img">
+                                <img src="assets/images/loc.svg" alt="">
+                            </div>
+                            <div class="address__text">
+                                <span class=" base-text">71-75 Shelton Street Covent Garden, </span>
+                                <span class=" base-text">WC2H 9JQ, London, United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="pay">
+                            <div class="pay__img">
+                                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;" version="1.1" viewBox="0 0 900 575" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="matrix(4.16667,0,0,4.16667,0,0)"><rect height="137.21" style="fill:white;fill-rule:nonzero;" width="216" x="0" y="0.79"/><rect height="18.72" style="fill:rgb(252,179,21);fill-rule:nonzero;" width="208.802" x="3.597" y="115.705"/><rect height="18.72" style="fill:rgb(13,53,127);fill-rule:nonzero;" width="208.802" x="3.597" y="4.389"/><path d="M106.197,43.734L95.191,95.189L81.879,95.189L92.886,43.734L106.197,43.734ZM162.201,76.959L169.209,57.636L173.24,76.959L162.201,76.959ZM177.061,95.189L189.369,95.189L178.615,43.734L167.261,43.734C164.701,43.734 162.545,45.218 161.59,47.506L141.615,95.189L155.596,95.189L158.371,87.504L175.447,87.504L177.061,95.189ZM142.309,78.39C142.367,64.811 123.537,64.058 123.662,57.991C123.703,56.147 125.461,54.183 129.307,53.681C131.213,53.435 136.473,53.237 142.436,55.984L144.768,45.068C141.564,43.91 137.443,42.794 132.316,42.794C119.156,42.794 109.898,49.784 109.824,59.802C109.74,67.21 116.438,71.34 121.473,73.807C126.664,76.329 128.404,77.947 128.379,80.2C128.343,83.652 124.238,85.18 120.418,85.238C113.721,85.342 109.84,83.428 106.746,81.986L104.33,93.266C107.445,94.692 113.186,95.933 119.129,95.997C133.119,95.997 142.268,89.088 142.309,78.39ZM87.176,43.734L65.607,95.189L51.537,95.189L40.922,54.124C40.279,51.599 39.718,50.671 37.761,49.604C34.56,47.865 29.275,46.239 24.629,45.227L24.943,43.734L47.595,43.734C50.48,43.734 53.076,45.654 53.736,48.977L59.343,78.754L73.191,43.734L87.176,43.734Z" style="fill:rgb(13,53,127);fill-rule:nonzero;"/></g></svg>
+                            </div>
+                            <div class="pay__img">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="33" height="21" viewBox="0 0 482.51 374">
+                                    <title>mastercard</title>
+                                    <g>
+                                      <path d="M220.13,421.67V396.82c0-9.53-5.8-15.74-15.32-15.74-5,0-10.35,1.66-14.08,7-2.9-4.56-7-7-13.25-7a14.07,14.07,0,0,0-12,5.8v-5h-7.87v39.76h7.87V398.89c0-7,4.14-10.35,9.94-10.35s9.11,3.73,9.11,10.35v22.78h7.87V398.89c0-7,4.14-10.35,9.94-10.35s9.11,3.73,9.11,10.35v22.78Zm129.22-39.35h-14.5v-12H327v12h-8.28v7H327V408c0,9.11,3.31,14.5,13.25,14.5A23.17,23.17,0,0,0,351,419.6l-2.49-7a13.63,13.63,0,0,1-7.46,2.07c-4.14,0-6.21-2.49-6.21-6.63V389h14.5v-6.63Zm73.72-1.24a12.39,12.39,0,0,0-10.77,5.8v-5h-7.87v39.76h7.87V399.31c0-6.63,3.31-10.77,8.7-10.77a24.24,24.24,0,0,1,5.38.83l2.49-7.46a28,28,0,0,0-5.8-.83Zm-111.41,4.14c-4.14-2.9-9.94-4.14-16.15-4.14-9.94,0-16.15,4.56-16.15,12.43,0,6.63,4.56,10.35,13.25,11.6l4.14.41c4.56.83,7.46,2.49,7.46,4.56,0,2.9-3.31,5-9.53,5a21.84,21.84,0,0,1-13.25-4.14l-4.14,6.21c5.8,4.14,12.84,5,17,5,11.6,0,17.81-5.38,17.81-12.84,0-7-5-10.35-13.67-11.6l-4.14-.41c-3.73-.41-7-1.66-7-4.14,0-2.9,3.31-5,7.87-5,5,0,9.94,2.07,12.43,3.31Zm120.11,16.57c0,12,7.87,20.71,20.71,20.71,5.8,0,9.94-1.24,14.08-4.56l-4.14-6.21a16.74,16.74,0,0,1-10.35,3.73c-7,0-12.43-5.38-12.43-13.25S445,389,452.07,389a16.74,16.74,0,0,1,10.35,3.73l4.14-6.21c-4.14-3.31-8.28-4.56-14.08-4.56-12.43-.83-20.71,7.87-20.71,19.88h0Zm-55.5-20.71c-11.6,0-19.47,8.28-19.47,20.71s8.28,20.71,20.29,20.71a25.33,25.33,0,0,0,16.15-5.38l-4.14-5.8a19.79,19.79,0,0,1-11.6,4.14c-5.38,0-11.18-3.31-12-10.35h29.41v-3.31c0-12.43-7.46-20.71-18.64-20.71h0Zm-.41,7.46c5.8,0,9.94,3.73,10.35,9.94H364.68c1.24-5.8,5-9.94,11.18-9.94ZM268.59,401.79V381.91h-7.87v5c-2.9-3.73-7-5.8-12.84-5.8-11.18,0-19.47,8.7-19.47,20.71s8.28,20.71,19.47,20.71c5.8,0,9.94-2.07,12.84-5.8v5h7.87V401.79Zm-31.89,0c0-7.46,4.56-13.25,12.43-13.25,7.46,0,12,5.8,12,13.25,0,7.87-5,13.25-12,13.25-7.87.41-12.43-5.8-12.43-13.25Zm306.08-20.71a12.39,12.39,0,0,0-10.77,5.8v-5h-7.87v39.76H532V399.31c0-6.63,3.31-10.77,8.7-10.77a24.24,24.24,0,0,1,5.38.83l2.49-7.46a28,28,0,0,0-5.8-.83Zm-30.65,20.71V381.91h-7.87v5c-2.9-3.73-7-5.8-12.84-5.8-11.18,0-19.47,8.7-19.47,20.71s8.28,20.71,19.47,20.71c5.8,0,9.94-2.07,12.84-5.8v5h7.87V401.79Zm-31.89,0c0-7.46,4.56-13.25,12.43-13.25,7.46,0,12,5.8,12,13.25,0,7.87-5,13.25-12,13.25-7.87.41-12.43-5.8-12.43-13.25Zm111.83,0V366.17h-7.87v20.71c-2.9-3.73-7-5.8-12.84-5.8-11.18,0-19.47,8.7-19.47,20.71s8.28,20.71,19.47,20.71c5.8,0,9.94-2.07,12.84-5.8v5h7.87V401.79Zm-31.89,0c0-7.46,4.56-13.25,12.43-13.25,7.46,0,12,5.8,12,13.25,0,7.87-5,13.25-12,13.25C564.73,415.46,560.17,409.25,560.17,401.79Z" transform="translate(-132.74 -48.5)"/>
+                                      <g>
+                                        <rect x="169.81" y="31.89" width="143.72" height="234.42" fill="#ff5f00"/>
+                                        <path d="M317.05,197.6A149.5,149.5,0,0,1,373.79,80.39a149.1,149.1,0,1,0,0,234.42A149.5,149.5,0,0,1,317.05,197.6Z" transform="translate(-132.74 -48.5)" fill="#eb001b"/>
+                                        <path d="M615.26,197.6a148.95,148.95,0,0,1-241,117.21,149.43,149.43,0,0,0,0-234.42,148.95,148.95,0,0,1,241,117.21Z" transform="translate(-132.74 -48.5)" fill="#f79e1b"/>
+                                      </g>
+                                    </g>
+                                  </svg>
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="navigation">
+                            <h3 class="section-title">Navigation</h3>
+                            <div class="navigation__wrap">
+
+                                <ul class="navigation__list">
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link base-text ">Home</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link base-text">Now on Sale</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link base-text">Popular templates</a>
+                                    </li>
+                                </ul>
+                                <ul class="navigation__list">
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link base-text">FAQ</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link base-text">My account</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link base-text">Cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="contact">
+                            <h3 class="section-title">Contact Information</h3>
+                            <div class="contact__mail">
+                                <div class="contact__img">
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04921 0.0474C0.954646 0.072215 0.863405 0.106015 0.846497 0.122517C0.812211 0.155981 7.61033 6.81611 7.75577 6.89159C7.86458 6.94807 8.13542 6.94807 8.24423 6.89159C8.38854 6.81669 15.1878 0.155981 15.1538 0.122853C15.137 0.106503 15.0393 0.0717871 14.9367 0.0457192C14.7707 0.00354596 14.0017 -0.00149649 7.9856 0.000306564C2.12587 0.0020485 1.19815 0.00834394 1.04921 0.0474ZM0.0572994 0.953299C0.00278669 1.10589 0 1.32803 0 5.49914C0 9.67026 0.00278669 9.8924 0.0572994 10.045C0.0888297 10.1332 0.124086 10.2054 0.135671 10.2054C0.147225 10.2054 1.24158 9.14652 2.56751 7.85229L4.97832 5.49914L2.56751 3.146C1.24158 1.85177 0.147225 0.792857 0.135671 0.792857C0.124086 0.792857 0.0888297 0.865041 0.0572994 0.953299ZM13.4325 3.146L11.0217 5.49914L13.4325 7.85229C14.7584 9.14652 15.8528 10.2054 15.8643 10.2054C15.8759 10.2054 15.9112 10.1332 15.9427 10.045C15.9972 9.8924 16 9.67026 16 5.49914C16 1.32803 15.9972 1.10589 15.9427 0.953299C15.9112 0.865041 15.8759 0.792857 15.8643 0.792857C15.8528 0.792857 14.7584 1.85177 13.4325 3.146ZM3.21014 8.5086C1.65818 10.0235 0.826458 10.8562 0.846215 10.8755C0.862998 10.8918 0.960689 10.9265 1.06333 10.9526C1.22918 10.9947 2.00128 11 8 11C13.9987 11 14.7708 10.9947 14.9367 10.9526C15.0393 10.9265 15.137 10.8918 15.1538 10.8754C15.1736 10.8562 14.3408 10.0224 12.783 8.50194L10.3816 6.15815L9.63698 6.87818C8.95565 7.53703 8.87123 7.60836 8.64351 7.71761L8.39465 7.83701H8H7.60535L7.35649 7.71718C7.12955 7.60793 7.0426 7.53455 6.36941 6.88441C5.96337 6.49229 5.62517 6.17147 5.61785 6.17147C5.61052 6.17147 4.52706 7.22317 3.21014 8.5086Z" fill="#B5C5D4"/>
+                                        </svg>
+    
+                                </div>
+                                <a href="mailto:myemail@gmail.com" class="contact__link base-text">myemail@gmail.com</a>
+                            </div>
+                            <div class="contact__tel">
+                                <div class="contact__img">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.57057 0.338783C8.42184 0.317464 8.27246 0.361434 8.15361 0.456035C8.03145 0.55197 7.9551 0.690541 7.9385 0.845768C7.90331 1.15955 8.12971 1.44336 8.44309 1.47867C10.6042 1.71983 12.284 3.40334 12.527 5.57119C12.5595 5.86166 12.8031 6.08084 13.094 6.08084C13.1159 6.08084 13.1371 6.07951 13.159 6.07684C13.3111 6.06019 13.4465 5.98491 13.5421 5.86499C13.637 5.74507 13.6802 5.59584 13.6629 5.44328C13.3602 2.73847 11.2668 0.639243 8.57057 0.338783ZM8.61201 2.66018C8.29465 2.60155 8.00318 2.80408 7.94276 3.11387C7.88234 3.42366 8.08551 3.72612 8.39424 3.78674C9.32374 3.96795 10.0415 4.68746 10.2234 5.62015V5.62081C10.2752 5.8893 10.5115 6.0845 10.7837 6.0845C10.8203 6.0845 10.8568 6.08117 10.8939 6.0745C11.2027 6.01255 11.4058 5.71075 11.3454 5.4003C11.0739 4.00726 10.0016 2.93133 8.61201 2.66018ZM9.66671 9.06031C9.9677 8.88676 10.3076 8.69075 10.7365 8.78197C11.1249 8.86391 12.4487 9.93851 12.8113 10.3109C13.0489 10.5548 13.1811 10.8066 13.2016 11.0584C13.2375 12.0464 11.895 13.1743 11.6507 13.3149C11.326 13.5487 10.9482 13.6666 10.524 13.6666C10.0904 13.6666 9.6071 13.5434 9.07994 13.2975C6.21971 12.1037 1.85036 7.82063 0.69511 4.98258C0.215749 3.92597 0.212429 3.05457 0.687142 2.39968C0.876364 2.09256 1.95526 0.808776 2.92128 0.849415C3.17822 0.8714 3.42786 1.00331 3.67286 1.24314C4.04333 1.60623 5.09102 2.93398 5.17202 3.32372C5.26165 3.75675 5.06513 4.10118 4.89051 4.40364C4.85327 4.46866 4.80309 4.54582 4.74811 4.63035C4.53947 4.95117 4.26176 5.37818 4.36003 5.65078C5.06446 7.38026 6.69177 8.88923 8.42198 9.59807C8.68955 9.69532 9.11632 9.41563 9.43611 9.20605C9.51942 9.15146 9.59547 9.10162 9.65955 9.06444L9.66671 9.06031Z" fill="#B5C5D4"/>
+                                        </svg>
+    
+                                </div>
+                                <a href="tel:++37259420789" class="contact__link base-text">+372 5942 0789</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="copyright__wrap">
+                        <span class="copyright__text">© 2021 . All Rights Reserved.</span>
+                        <ul class="copyright__list">
+                            <li class="copyright__item">
+                                <a href="" class="copyright__link base-text">Refund Policy</a>
+                            </li>
+                            <li class="copyright__item">
+                                <a href="" class="copyright__link base-text">Privacy Policy</a>
+                            </li>
+                            <li class="copyright__item">
+                                <a href="" class="copyright__link base-text">Terms And Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+</body>
+
+</html>
