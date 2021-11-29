@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kracks</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="/Kracks/assets/images/logo.png" alt="logo cracks">
+            </a>
+          </div>
+          <div class="header__lang">
+            <div class="choices choices--lang">
+              <select class="select js-select" name="lan" id="">
+                <option value="">RU</option>
+                <option value="">UK</option>
+                <option value="">KG</option>
+                <option value="">KZ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link base-text active" href="prizes.html">
+                  Призы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link base-text" href="winners.html">
+                  Победители
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link base-text" href="buy.html">
+                  Где купить
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link base-text" href="rules.html">
+                  Правила
+                </a>
+              </li>
+              <li class="nav__item">
+                <button type="button" class="base-text js-show-popup" data-trigger="coming-popup">
+                  Войти
+                </button>
+                <a class="nav__link nav__link--profile base-text" href="#">
+                  Александр К
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger js-burger-open">
+            <img src="/Kracks/assets/images/burger.svg" alt="burger">
+          </button>
+        </div>
+        <div class="mobile__menu js-burger">
+          <div class="mobile__menu-wrapper">
+            <div class="mobile__menu-top">
+              <button class="close-btn js-burger-close">close btn</button>
+              <div class="mobile__menu-select">
+                <span class="mobile__menu-lang">Язык:</span>
+                <div class="choices choices--lang__mobile__menu">
+                  <select class="select select--two js-select">
+                    <option value="">RU</option>
+                    <option value="">UK</option>
+                    <option value="">KG</option>
+                    <option value="">KZ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <ul class="mobile__menu__list">
+              <li class="mobile__menu__list-item">
+                <a href="prizes.html">
+                  Призы
+                </a>
+              </li>
+              <li class="mobile__menu__list-item">
+                <a href="winners.html">
+                  Победители
+                </a>
+              </li>
+              <li class="mobile__menu__list-item">
+                <a href="buy.html">
+                  Где купить
+                </a>
+              </li>
+              <li class="mobile__menu__list-item">
+                <a href="rules.html">
+                  Правила
+                </a>
+              </li>
+            </ul>
+            <button class="btn-coming primary-text js-show-popup" data-trigger="coming-popup">Войти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="check-section">
+        <div class="container">
+          <h1 class="section-title">Регистрация чека</h1>
+          <div class="js-tabs">
+            <img src="/Kracks/assets/images/chipsbg-1.png" alt="image" class="chips__bg-one" />
+            <img src="/Kracks/assets/images/chipsbg-2.png" alt="image" class="chips__bg-two" />
+            <img src="/Kracks/assets/images/chipsbg-3.png" alt="image" class="chips__bg-three" />
+            <img src="/Kracks/assets/images/chipsbg-4.png" alt="image" class="chips__bg-four" />
+            <div class="progress">
+              <div class="progress__wrap">
+                <div class="progress__count js-step-number desktop">
+                  <span>1</span>
+                  <span>/</span>
+                  <span>3</span>
+                </div>
+                <div class="progress__line-wrap js-progress-bar">
+                  <div class="progress__line active">
+                    <div class="progress__line-bar"></div>
+                  </div>
+                  <div class="progress__line">
+                    <div class="progress__line-bar"></div>
+                  </div>
+                  <div class="progress__line progress__line--last">
+                    <div class="progress__line-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="check-wrap js-steps-wrap">
+              <div class="check js-check active">
+
+                <div class="check__head">
+                  <div class="check__head-wrap">
+                    <div class="progress__count js-step-number mobile__menu">
+                      <span>1</span>
+                      <span>/</span>
+                      <span>3</span>
+                    </div>
+                    <h2 class="h2 check-title">Введи данные чека</h2>
+                  </div>
+                </div>
+
+                <div class="check__form">
+                  <div class="check__header-btn">
+                    <button class="btn-check__tab active" data-tab="tab-one">Ввести вручную</button>
+                    <button class="btn-check__tab" data-tab="tab-two">Отсканировать QR</button>
+                  </div>
+                  <div class="check__content active" data-content="tab-one">
+                    <div class="check__wrapper">
+                      <div class="check__img">
+                        <img class="check__image" src="/Kracks/assets/images/check.jpg" alt="чек" />
+                        <span class="check__arrow-first">
+                          <img src="/Kracks/assets/images/arrow-check_1.svg" alt="image" />
+                        </span>
+                        <span class="check__arrow-two">
+                          <img src="/Kracks/assets/images/arrow-check_2.svg" alt="image" />
+                        </span>
+                        <span class="check__arrow-three">
+                          <img src="/Kracks/assets/images/arrow-check_3.svg" alt="image" />
+                        </span>
+                        <span class="check__arrow-four">
+                          <img src="/Kracks/assets/images/arrow-check_4.svg" alt="image" />
+                        </span>
+                      </div>
+                      <div class="check__manually">
+                        <div class="check__manually-wrap">
+                          <form class="form form--check" id="form-check-registration" method="POST" action="#" name=""
+                            novalidate>
+                            <div class="form__body">
+                              <div class="form__wrap">
+                                <div class="form__group">
+                                  <label class="form__name" for="date-buy">
+                                    Дата и время покупки
+                                    <button type="button" class="check__form-help js-show-popup"
+                                      data-trigger="popup-check-date">
+                                      <img src="/Kracks/assets/images/question.svg" alt="чек дата покупки" />
+                                    </button>
+                                  </label>
+                                  <input class="form__input" type="text" name="date-buy" id="date-buy"
+                                    placeholder="_-__-__" />
+                                </div>
+                                <div class="form__group">
+                                  <label class="form__name" for="sum-buy">Сумма чека (с копейкми)</label>
+                                  <input class="form__input" type="text" name="sum-buy" id="sum-by"
+                                    placeholder="Введите данные" />
+                                </div>
+                              </div>
+                              <div class="form__group">
+                                <label class="form__name" for="fn-num">
+                                  ФН (16 цифр)
+                                  <button type="button" class="check__form-help js-show-popup" data-trigger="popup-check-fn">
+                                    <img src="/Kracks/assets/images/question.svg" alt="чек фн" />
+                                  </button>
+                                </label>
+                                <input class="form__input" type="text" name="fn-num" id="fn-num"
+                                  placeholder="Введите данные" />
+                                <span class="form__error-message"></span>
+                              </div>
+                              <div class="form__group">
+                                <label class="form__name" for="fd-num">
+                                  ФД (3-5 цифр)
+                                  <button type="button" class="check__form-help js-show-popup" data-trigger="popup-check-fd">
+                                    <img src="/Kracks/assets/images/question.svg" alt="" />
+                                  </button>
+                                </label>
+                                <input class="form__input" type="text" name="fd-num" id="fd-num"
+                                  placeholder="Введите данные" />
+                                <span class="form__error-message"></span>
+                              </div>
+                              <div class="form__group">
+                                <label class="form__name" for="fpd-num">
+                                  ФП или ФПД (8-10 цифр)
+                                  <button type="button" class="check__form-help js-show-popup" data-trigger="popup-check-fpd">
+                                    <img src="/Kracks/assets/images/question.svg" alt="чек фп или фпд" />
+                                  </button>
+                                </label>
+                                <input class="form__input" type="text" name="fpd-num" id="fpd-num"
+                                  placeholder="Введите данные" />
+                                <span class="form__error-message"></span>
+                              </div>
+                              <button type="button" class="btn primary js-next-btn">Далее</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="check__content" data-content="tab-two">
+                    <div class="check__qr">
+                      <p class="base-text check__qr-text">Зайди на эту страницу с мобильного телефона или планшета, чтобы
+                        отсканировать QR</p>
+                      <button type="button" class="btn primary primary--qr">Открыть камеру</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="check js-check">
+                <div class="check__head">
+                  <div class="check__head-wrap">
+                    <div class="progress__count js-step-number mobile__menu">
+                      <span>1</span>
+                      <span>/</span>
+                      <span>3</span>
+                    </div>
+                    <h2 class="h2 check-title">Введи номер телефона и придумай пароль</h2>
+                  </div>
+                  <a class="base-link" href="#">У меня уже есть аккаунт</a>
+                </div>
+                <div class="check__form">
+                  <div class="form-wrapper">
+                    <form class="form" id="check-step-two" method="POST" action="#" name="check-step-two" novalidate>
+                      <div class="form__body">
+                        <div class="form__group">
+                          <label class="form__name" for="phone-step2">
+                            Номер телефона
+                          </label>
+                          <input class="form__input" type="text" name="phone-step2" id="phone-step2"
+                            placeholder="Введите данные" />
+                        </div>
+                        <div class="form__wrap">
+                          <div class="form__group">
+                            <label class="form__name" for="password-step2">
+                              Пароль
+                            </label>
+                            <input class="form__input" type="password" name="password-step2" id="password-step2"
+                              placeholder="Введите данные" />
+                          </div>
+                          <div class="form__group">
+                            <label class="form__name" for="password-second-step2">Еще раз пароль</label>
+                            <input class="form__input" type="password" name="password-second-step2" id="password-second-step2"
+                              placeholder="Введите данные" />
+                          </div>
+                        </div>
+                        <p class="check__two-privacy">
+                          Регистрируясь на сайте, вы соглашаетесь с
+                          <a class="base-link" target="_blank" href="privacy-policy.html">Политикой конфиндециальности</a> и
+                          <a class="base-link" target="_blank" href="rules.html">Правилами акции</a>
+                        </p>
+                        <button type="button" class="btn primary js-next-btn">Далее</button>
+                        <button type="button" class="btn-back js-prev-btn">Назад</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="check js-check">
+
+                <div class="check__head">
+                  <div class="check__head-wrap">
+                    <div class="progress__count js-step-number mobile__menu">
+                      <span>1</span>
+                      <span>/</span>
+                      <span>3</span>
+                    </div>
+                    <h2 class="h2 check-title"> Оставь свой почтовый адрес.</h2>
+                  </div>
+                  <p class="base-link"> В случае выигрыша мы отправим на него приз.</p>
+                </div>
+
+                <div class="check__form check__form--three">
+                  <div class="form-wrapper form-wrapper--three">
+                    <form class="form form--three" id="check-step-three" method="POST" action="#" name="check-step-three"
+                      novalidate>
+                      <div class="form__body">
+                        <div class="form__group">
+                          <label class="form__name" for="fio-step3">
+                            ФИО
+                          </label>
+                          <input class="form__input" type="text" name="fio-step3" id="fio-step3" placeholder="Введите данные">
+                          <span class="form__error-message"></span>
+                        </div>
+                        <div class="form__wrap">
+                          <div class="form__group">
+                            <label class="form__name" for="datebirth-step3">
+                              Дата рождения
+                            </label>
+                            <input class="form__input" type="text" name="datebirth-step3" id="datebirth-step3"
+                              placeholder="Введи данные">
+                            <span class="form__error-message"></span>
+                          </div>
+                          <div class="form__group">
+                            <label class="form__name" for="mail-step3">E-mail</label>
+                            <input class="form__input" type="email" name="mail-step3" id="mail-step3"
+                              placeholder="Введи данные">
+                            <span class="form__error-message"></span>
+                          </div>
+                        </div>
+                        <div class="form__wrap">
+                          <div class="form__group">
+                            <label class="form__name" for="city-step3">
+                              Город
+                            </label>
+                            <input class="form__input" type="text" name="city-step3" id="city-step3"
+                              placeholder="Введи данные">
+                            <span class="form__error-message"></span>
+                          </div>
+                          <div class="form__group">
+                            <label class="form__name" for="street-step3">Улица</label>
+                            <input class="form__input" type="text" name="street-step3" id="street-step3"
+                              placeholder="Введи данные">
+                            <span class="form__error-message"></span>
+                          </div>
+                        </div>
+                        <div class="form__wrap">
+                          <div class="form__wrap form__wrap-three">
+                            <div class="form__group">
+                              <label class="form__name" for="house-step3">
+                                Дом
+                              </label>
+                              <input class="form__input" type="text" name="house-step3" id="house-step3"
+                                placeholder="Введи данные">
+                              <span class="form__error-message"></span>
+                            </div>
+                            <div class="form__group">
+                              <label class="form__name" for="apartment-step3">Квартира</label>
+                              <input class="form__input" type="text" name="apartment-step3" id="apartment-step3"
+                                placeholder="Введи данные">
+                              <span class="form__error-message"></span>
+                            </div>
+                          </div>
+                          <div class="form__group">
+                            <label class="form__name" for="index-step3">Индекс</label>
+                            <input class="form__input" type="text" name="index-step3" id="index-step3"
+                              placeholder="Введи данные">
+                            <span class="form__error-message"></span>
+                          </div>
+                        </div>
+                        <button type="button" class="btn primary js-next-btn">Далее</button>
+                        <button type="button" class="btn-back js-prev-btn">Назад</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="check js-check">
+
+                <div class="check__head">
+                  <div class="check__head-wrap">
+                    <div class="progress__count js-step-number mobile__menu">
+                      <span>1</span>
+                      <span>/</span>
+                      <span>3</span>
+                    </div>
+                    <h2 class="h2 check-title"> Введи код из СМС</h2>
+                  </div>
+                </div>
+                <div class="check__form">
+                  <div class="form-wrapper form-wrapper--verif">
+                    <form class="form form__check-verif" id="check-step-verif" method="POST" action="#"
+                      name="check-step-verif" novalidate>
+                      <div class="form__body ">
+                        <div class="form__group">
+                          <label class="form__name" for="">
+                            Код из смс
+                          </label>
+                          <input class="form__input" type="text" name="" id="" placeholder="ХХХХХХ">
+                          <span class="base-text form__verif-text">Почти как «Валар Моргулис»</span>
+                        </div>
+                        <p class="secondary-text form__verif-timer"><span>Отправить повторно</span> через <span
+                            class="verif-timer">2:03</span></p>
+                        <a class="btn primary primary--two" href="check-success.html">Далее</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <img src="/Kracks/assets/images/hbo.svg" alt="HBO">
+                <div class="footer__copyright">
+                    <p>
+                        GAME OF THRONES and all related characters and elements © & ™ Home Box Office, inc. (s21)
+                    </p>
+          
+                 </div>
+            </div>
+            <div class="footer__right">
+                <span class="footer__copyright footer__copyright-right">
+                    Политика конфинденциальности © 2020 Food Empire Ltd. Все права защищены.
+                </span>
+                <div>
+                    <div class="footer__kracks-link">
+                        <span>Написать организатору</span>
+                        <a href="#" target="_blank">kracksplay.ru</a>
+                    </div>
+                    <div class="footer__wow-link">
+                        <span>Разработка сайта</span>
+                        <a href="#" target="_blank">
+                            <img src="/Kracks/assets/images/wow-footer.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay js-overlay">
+      <picture>
+        <source srcset="assets/images/overlay-bg.webp">
+        <img src="/Kracks/assets/images/overlay-bg.webp" alt="img">
+      </picture>
+    </div>
+
+    <div class="popup popup--main js-popup" data-popup="coming-popup">
+      <img class="popup__img" src="/Kracks/assets/images/forpopup.png" alt="">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="popup__header">
+          <h2 class="section-title popup__title">Войти</h2>
+          <a href="check-registration.html" class="base-link">У меня нет аккаунта</a>
+        </div>
+        <form class="form form--coming" id="form-coming" method="POST" action="#" name="form-coming" novalidate>
+          <div class="form__body">
+            <div class="form__group invalid">
+              <label class="form__name" for="coming-phone">Номер телефона</label>
+              <input class="form__input" type="text" name="coming-phone" id="coming-phone" data-format="+* (***) *** - ** - **" data-mask="+7 (___) ___ - __ - __">
+              <span class="form__error-message">ошибка: неверные знаки</span>
+            </div>
+            <div class="form__group">
+              <label class="form__name" for="coming-password">
+                Введи пароль
+                <a class="base-link js-show-popup" data-trigger="restorepass-popup">Забыл</a>
+              </label>
+              <input class="form__input" type="password" name="coming-password" id="coming-password"
+                placeholder="Введите данные">
+            </div>
+            <button type="submit" class="btn primary primary--two">Открыть ворота!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--main js-popup" data-popup="restorepass-popup">
+      <img class="popup__img" src="/Kracks/assets/images/forpopup.png" alt="">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="popup__header">
+          <h2 class="section-title popup__title">Восстановить<br>пароль</h2>
+          <button type="button" class="base-link js-show-popup mobile__menu" data-trigger="coming-popup">Отмена</button>
+        </div>
+        <form class="form form--restorepass" id="form--restore-password" method="POST" action="#"
+          name="form--restore-password" novalidate>
+          <div class="form__body">
+            <div class="form__group">
+              <label class="form__name" for="restore-password-phone">
+                Номер телефона
+                <button type="button" class="base-link js-show-popup desktop" data-trigger="coming-popup">Отмена</button>
+              </label>
+              <input class="form__input" type="text" name="restore-password-phone" id="restore-password-phone"
+                placeholder="+ 7 (___) ___ - __ - __">
+            </div>
+            <button type="button" class="btn primary primary--two js-show-popup"
+              data-trigger="massage-popup">Восстановить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--main js-popup" data-popup="massage-popup">
+      <img class="popup__img" src="/Kracks/assets/images/forpopup.png" alt="">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="popup__header">
+          <h2 class="section-title popup__title">Восстановить<br>пароль</h2>
+        </div>
+        <div class="popup__massege">
+          <p class="base-text">На твой номер придет новый пароль</p>
+          <button type="button" class="btn primary primary--two js-show-popup" data-trigger="coming-popup">Войти</button>
+        </div>
+      </div>
+    </div>
+    <!-- check-popup -->
+
+    <div class="popup popup--check js-popup" data-popup="popup-check-date">
+        <button type="button" class="popup__close js-popup-close"></button>
+        <div class="popup__wrap">
+          <div class="popup__img">
+            <img src="/Kracks/assets/images/check-date.jpg" alt="">
+          </div>
+          <button class="btn primary primary--close__modal js-popup-close">Ok</button>
+        </div>
+      </div>
+  
+      <div class="popup popup--check js-popup" data-popup="popup-check-fn">
+        <button type="button" class="popup__close js-popup-close"></button>
+        <div class="popup__wrap">
+          <div class="popup__img">
+            <img src="/Kracks/assets/images/check-fn.jpg" alt="">
+          </div>
+          <button class="btn primary primary--close__modal js-popup-close">Ok</button>
+        </div>
+      </div>
+  
+      <div class="popup popup--check js-popup" data-popup="popup-check-fd">
+        <button type="button" class="popup__close js-popup-close"></button>
+        <div class="popup__wrap">
+          <div class="popup__img">
+            <img src="/Kracks/assets/images/check-fd.jpg" alt="">
+          </div>
+          <button class="btn primary primary--close__modal js-popup-close">Ok</button>
+        </div>
+      </div>
+  
+      <div class="popup popup--check js-popup" data-popup="popup-check-fpd">
+        <button type="button" class="popup__close js-popup-close"></button>
+        <div class="popup__wrap">
+          <div class="popup__img">
+            <img src="/Kracks/assets/images/check-fpd.jpg" alt="">
+          </div>
+          <button class="btn primary primary--close__modal js-popup-close">Ok</button>
+        </div>
+      </div>
+  </div>
+  <script src="/Kracks/assets/js/vendor.min.js"></script>
+  <script src="/Kracks/assets/js/app.js"></script>
+</body>
+
+</html>

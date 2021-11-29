@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kracks</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+  <div class="wrapper wrapper--throne">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="/Kracks/assets/images/logo.png" alt="logo cracks">
+            </a>
+          </div>
+          <div class="header__lang">
+            <div class="choices choices--lang">
+              <select class="select js-select" name="lan" id="">
+                <option value="">RU</option>
+                <option value="">UK</option>
+                <option value="">KG</option>
+                <option value="">KZ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link base-text active" href="prizes.html">
+                  Призы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link base-text" href="winners.html">
+                  Победители
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link base-text" href="buy.html">
+                  Где купить
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link base-text" href="rules.html">
+                  Правила
+                </a>
+              </li>
+              <li class="nav__item">
+                <button type="button" class="base-text js-show-popup" data-trigger="coming-popup">
+                  Войти
+                </button>
+                <a class="nav__link nav__link--profile base-text" href="#">
+                  Александр К
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger js-burger-open">
+            <img src="/Kracks/assets/images/burger.svg" alt="burger">
+          </button>
+        </div>
+        <div class="mobile__menu js-burger">
+          <div class="mobile__menu-wrapper">
+            <div class="mobile__menu-top">
+              <button class="close-btn js-burger-close">close btn</button>
+              <div class="mobile__menu-select">
+                <span class="mobile__menu-lang">Язык:</span>
+                <div class="choices choices--lang__mobile__menu">
+                  <select class="select select--two js-select">
+                    <option value="">RU</option>
+                    <option value="">UK</option>
+                    <option value="">KG</option>
+                    <option value="">KZ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <ul class="mobile__menu__list">
+              <li class="mobile__menu__list-item">
+                <a href="prizes.html">
+                  Призы
+                </a>
+              </li>
+              <li class="mobile__menu__list-item">
+                <a href="winners.html">
+                  Победители
+                </a>
+              </li>
+              <li class="mobile__menu__list-item">
+                <a href="buy.html">
+                  Где купить
+                </a>
+              </li>
+              <li class="mobile__menu__list-item">
+                <a href="rules.html">
+                  Правила
+                </a>
+              </li>
+            </ul>
+            <button class="btn-coming primary-text js-show-popup" data-trigger="coming-popup">Войти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero-section">
+        <div class="container hero__container">
+          <div class="hero-wrap">
+            <div class="hero__top">
+              <h1 class="hero-title fadeIn">Победоносно <br> хрусти Kracks!</h1>
+              <h2 class="h2 hero-subtitle fadeInUpTwo">
+                Регистрируй чеки и завоевывай призы!
+              </h2>
+            </div>
+            <div class="hero__bottom">
+              <div class="hero-steps fadeInUpTwo">
+                <div class="steps">
+                  <ul class="steps__list">
+                    <li class="steps__item">
+                      <span class="steps__count">01</span>
+                      <span class="base-text steps__text">Покупай 2 и более упаковок Kracks x GoT</span>
+                    </li>
+                    <li class="steps__item">
+                      <span class="steps__count">02</span>
+                      <span class="base-text steps__text">Регистрируй чеки на сайте</span>
+                    </li>
+                    <li class="steps__item">
+                      <span class="steps__count">03</span>
+                      <span class="base-text steps__text">Выигрывай подарки</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hero-crips">
+                <ul class="crips-list">
+                  <li class="crips-list__item">
+                    <a class="js-show-popup" data-trigger="story-popup" data-tab="tab-onion">
+                      <img class="crips__jar" src="/Kracks/assets/images/Kracks_got-v8-FRONT1.png" alt="Cracks Паприка">
+                    </a>
+                  </li>
+                  <li class="crips-list__item">
+                    <a class="js-show-popup" data-trigger="story-popup" data-tab="tab-paprika">
+                      <img class="crips__jar" src="/Kracks/assets/images/Kracks_got-v8-FRONT2.png" alt="Cracks Сметана и лук">
+                    </a>
+                  </li>
+                  <li class="crips-list__item">
+                    <a class="js-show-popup" data-trigger="story-popup" data-tab="tab-chese">
+                      <img class="crips__jar" src="/Kracks/assets/images/Kracks_got-v8-FRONT3.png" alt="Cracks Сыр">
+                    </a>
+                  </li>
+                  <li class="crips-list__item">
+                    <a class="js-show-popup" data-trigger="story-popup" data-tab="tab-original">
+                      <img class="crips__jar" src="/Kracks/assets/images/Kracks_got-v8-FRONT4.png" alt="Cracks Original">
+                    </a>
+                  </li>
+                </ul>
+                <div class="crips-prompt">
+                  <span class="crips-prompt__text">Кликай на тубы, узнавай их легенды</span>
+                  <button class="crips-prompt__btn">Ok</button>
+                </div>
+                <a href="check-registration.html" class="btn secondary secondary--hero">Зарегестрировать чек</a>
+              </div>
+              <div class="hero-prizes fadeInUpTwo">
+                <ul class="prizes-list">
+                  <li class="prizes-list__item">
+                    <div class="prizes-img">
+                      <img src="/Kracks/assets/images/pizessm-1.png" alt="5 футболок каждый день">
+                    </div>
+                    <span class="base-text text-medium prizes-text">
+                      5 футболок с символикой игры престолов каждый день
+                    </span>
+                  </li>
+                  <li class="prizes-list__item">
+                    <div class="prizes-img">
+                      <img src="/Kracks/assets/images/pizessm-2.png" alt="1 xbox каждую неделю">
+                    </div>
+                    <span class="base-text text-medium prizes-text">
+                      1 приставка Xbox каждую неделю
+                    </span>
+                  </li>
+                  <li class="prizes-list__item">
+                    <div class="prizes-img">
+                      <img src="/Kracks/assets/images/pizessm-3.png" alt="1 телевизор 4К">
+                    </div>
+                    <span class="base-text text-medium prizes-text">
+                      1 телевизор 4К
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <img src="/Kracks/assets/images/hbo.svg" alt="HBO">
+                <div class="footer__copyright">
+                    <p>
+                        GAME OF THRONES and all related characters and elements © & ™ Home Box Office, inc. (s21)
+                    </p>
+          
+                 </div>
+            </div>
+            <div class="footer__right">
+                <span class="footer__copyright footer__copyright-right">
+                    Политика конфинденциальности © 2020 Food Empire Ltd. Все права защищены.
+                </span>
+                <div>
+                    <div class="footer__kracks-link">
+                        <span>Написать организатору</span>
+                        <a href="#" target="_blank">kracksplay.ru</a>
+                    </div>
+                    <div class="footer__wow-link">
+                        <span>Разработка сайта</span>
+                        <a href="#" target="_blank">
+                            <img src="/Kracks/assets/images/wow-footer.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay js-overlay">
+      <picture>
+        <source srcset="assets/images/overlay-bg.webp">
+        <img src="/Kracks/assets/images/overlay-bg.webp" alt="img">
+      </picture>
+    </div>
+
+    <div class="popup popup--main js-popup" data-popup="coming-popup">
+      <img class="popup__img" src="/Kracks/assets/images/forpopup.png" alt="">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="popup__header">
+          <h2 class="section-title popup__title">Войти</h2>
+          <a href="check-registration.html" class="base-link">У меня нет аккаунта</a>
+        </div>
+        <form class="form form--coming" id="form-coming" method="POST" action="#" name="form-coming" novalidate>
+          <div class="form__body">
+            <div class="form__group invalid">
+              <label class="form__name" for="coming-phone">Номер телефона</label>
+              <input class="form__input" type="text" name="coming-phone" id="coming-phone" data-format="+* (***) *** - ** - **" data-mask="+7 (___) ___ - __ - __">
+              <span class="form__error-message">ошибка: неверные знаки</span>
+            </div>
+            <div class="form__group">
+              <label class="form__name" for="coming-password">
+                Введи пароль
+                <a class="base-link js-show-popup" data-trigger="restorepass-popup">Забыл</a>
+              </label>
+              <input class="form__input" type="password" name="coming-password" id="coming-password"
+                placeholder="Введите данные">
+            </div>
+            <button type="submit" class="btn primary primary--two">Открыть ворота!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--main js-popup" data-popup="restorepass-popup">
+      <img class="popup__img" src="/Kracks/assets/images/forpopup.png" alt="">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="popup__header">
+          <h2 class="section-title popup__title">Восстановить<br>пароль</h2>
+          <button type="button" class="base-link js-show-popup mobile__menu" data-trigger="coming-popup">Отмена</button>
+        </div>
+        <form class="form form--restorepass" id="form--restore-password" method="POST" action="#"
+          name="form--restore-password" novalidate>
+          <div class="form__body">
+            <div class="form__group">
+              <label class="form__name" for="restore-password-phone">
+                Номер телефона
+                <button type="button" class="base-link js-show-popup desktop" data-trigger="coming-popup">Отмена</button>
+              </label>
+              <input class="form__input" type="text" name="restore-password-phone" id="restore-password-phone"
+                placeholder="+ 7 (___) ___ - __ - __">
+            </div>
+            <button type="button" class="btn primary primary--two js-show-popup"
+              data-trigger="massage-popup">Восстановить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--main js-popup" data-popup="massage-popup">
+      <img class="popup__img" src="/Kracks/assets/images/forpopup.png" alt="">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="popup__header">
+          <h2 class="section-title popup__title">Восстановить<br>пароль</h2>
+        </div>
+        <div class="popup__massege">
+          <p class="base-text">На твой номер придет новый пароль</p>
+          <button type="button" class="btn primary primary--two js-show-popup" data-trigger="coming-popup">Войти</button>
+        </div>
+      </div>
+    </div>
+    <!-- product-popup -->
+
+    <div class="popup popup--story js-popup" data-popup="story-popup">
+      <button type="button" class="popup__close js-popup-close"></button>
+      <div class="popup__wrap">
+        <div class="tabs tabs--story js-tabs">
+          <div class="story">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="story__item tabs__content" data-content="tab-paprika">
+                    <div class="story__img">
+                      <img src="/Kracks/assets/images/paprika-content.png" alt="">
+                    </div>
+                    <div class="story__about">
+                      <div class="story__name">Kracks паприка</div>
+                      <p class="story__text">
+                        Специи всегда ассоциировались с иноземьем и кораблями, ведь торговые пути пролегали на море. А
+                        хозяевами моря и главным судопроизводством Семи Королевств прославились именно Железные Острова.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story__item tabs__content" data-content="tab-chese">
+                    <div class="story__img">
+                      <img src="/Kracks/assets/images/cheese-content.png" alt="">
+                    </div>
+                    <div class="story__about">
+                      <div class="story__name">Kracks сыр</div>
+                      <p class="story__text">
+                        Специи всегда ассоциировались с иноземьем и кораблями, ведь торговые пути пролегали на море. А
+                        хозяевами
+                        моря и главным судопроизводством Семи Королевств прославились именно Железные Острова.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story__item tabs__content" data-content="tab-original">
+                    <div class="story__img">
+                      <img src="/Kracks/assets/images/original-content.png" alt="">
+                    </div>
+                    <div class="story__about">
+                      <div class="story__name">Kracks original</div>
+                      <p class="story__text">
+                        Специи всегда ассоциировались с иноземьем и кораблями, ведь торговые пути пролегали на море. А
+                        хозяевами
+                        моря и главным судопроизводством Семи Королевств прославились именно Железные Острова.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story__item tabs__content" data-content="tab-onion">
+                    <div class="story__img">
+                      <img src="/Kracks/assets/images/onion-content.png" alt="">
+                    </div>
+                    <div class="story__about">
+                      <div class="story__name">Сметана и лук</div>
+                      <p class="story__text">
+                        Специи всегда ассоциировались с иноземьем и кораблями, ведь торговые пути пролегали на море. А
+                        хозяевами
+                        моря и главным судопроизводством Семи Королевств прославились именно Железные Острова.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <ul class="tabs__bottom">
+              <li data-tab="tab-paprika" class="tabs__btn">
+                <img src="/Kracks/assets/images/paprika-tab.png" alt="">
+                <span>Kracks паприка</span>
+              </li>
+              <li data-tab="tab-chese" class="tabs__btn">
+                <img src="/Kracks/assets/images/cheese-tab.png" alt="">
+                <span>Kracks сыр</span>
+              </li>
+              <li data-tab="tab-original" class="tabs__btn">
+                <img src="/Kracks/assets/images/original-tab.png" alt="">
+                <span>Kracks original</span>
+              </li>
+              <li data-tab="tab-onion" class="tabs__btn">
+                <img src="/Kracks/assets/images/onion-tab.png" alt="">
+                <span>Kracks сметана и лук</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/Kracks/assets/js/vendor.min.js"></script>
+  <script src="/Kracks/assets/js/app.js"></script>
+</body>
+
+</html>
