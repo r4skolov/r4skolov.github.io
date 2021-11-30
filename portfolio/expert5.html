@@ -1,158 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <title>Портфолио</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Expert5</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <svg style="display: none">
-        <symbol id="day"  viewBox="0 0 219.786 219.786">
-            <g>
-                <path d="M109.881,183.46c-4.142,0-7.5,3.358-7.5,7.5v21.324c0,4.142,3.358,7.5,7.5,7.5c4.143,0,7.5-3.358,7.5-7.5V190.96
-                    C117.381,186.817,114.023,183.46,109.881,183.46z"/>
-                <path d="M109.881,36.329c4.143,0,7.5-3.358,7.5-7.5V7.503c0-4.142-3.357-7.5-7.5-7.5c-4.142,0-7.5,3.358-7.5,7.5v21.326
-                    C102.381,32.971,105.739,36.329,109.881,36.329z"/>
-                <path d="M47.269,161.909l-15.084,15.076c-2.93,2.928-2.931,7.677-0.003,10.606c1.465,1.465,3.385,2.198,5.305,2.198
-                    c1.919,0,3.837-0.732,5.302-2.195l15.084-15.076c2.93-2.928,2.931-7.677,0.003-10.606
-                    C54.946,158.982,50.198,158.982,47.269,161.909z"/>
-                <path d="M167.208,60.067c1.919,0,3.838-0.732,5.303-2.196l15.082-15.076c2.929-2.929,2.93-7.677,0.002-10.607
-                    c-2.929-2.93-7.677-2.931-10.607-0.001l-15.082,15.076c-2.929,2.928-2.93,7.677-0.002,10.606
-                    C163.368,59.335,165.288,60.067,167.208,60.067z"/>
-                <path d="M36.324,109.895c0-4.142-3.358-7.5-7.5-7.5H7.5c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h21.324
-                    C32.966,117.395,36.324,114.037,36.324,109.895z"/>
-                <path d="M212.286,102.395h-21.334c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h21.334c4.143,0,7.5-3.358,7.5-7.5
-                    C219.786,105.754,216.429,102.395,212.286,102.395z"/>
-                <path d="M47.267,57.871c1.464,1.464,3.384,2.196,5.303,2.196c1.919,0,3.839-0.732,5.303-2.196c2.929-2.929,2.929-7.678,0-10.607
-                    L42.797,32.188c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L47.267,57.871z"/>
-                <path d="M172.52,161.911c-2.929-2.929-7.678-2.93-10.607-0.001c-2.93,2.929-2.93,7.678-0.001,10.606l15.074,15.076
-                    c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.196c2.93-2.929,2.93-7.678,0.001-10.606L172.52,161.911z"/>
-                <path class="test" d="M109.889,51.518c-32.187,0-58.373,26.188-58.373,58.377c0,32.188,26.186,58.375,58.373,58.375
-                    c32.19,0,58.378-26.187,58.378-58.375C168.267,77.706,142.078,51.518,109.889,51.518z M109.889,153.27
-                    c-23.916,0-43.373-19.458-43.373-43.375c0-23.918,19.457-43.377,43.373-43.377c23.919,0,43.378,19.459,43.378,43.377
-                    C153.267,133.812,133.808,153.27,109.889,153.27z"/>
-            </g>
-        </symbol>
-        <symbol id="night"  viewBox="-12 0 448 448.04455">
-            <g>
-                <path d="m224.023438 448.03125c85.714843.902344 164.011718-48.488281 200.117187-126.230469-22.722656 9.914063-47.332031 14.769531-72.117187 14.230469-97.15625-.109375-175.890626-78.84375-176-176 .972656-65.71875 37.234374-125.832031 94.910156-157.351562-15.554688-1.980469-31.230469-2.867188-46.910156-2.648438-123.714844 0-224.0000005 100.289062-224.0000005 224 0 123.714844 100.2851565 224 224.0000005 224zm0 0" />
-            </g>
-        </symbol>
-        <symbol id="tg" viewBox="0 -39 512.00011 512">
-            <g>
-                <path d="m504.09375 11.859375c-6.253906-7.648437-15.621094-11.859375-26.378906-11.859375-5.847656 0-12.042969 1.230469-18.410156 3.664062l-433.398438 165.441407c-23 8.777343-26.097656 21.949219-25.8984375 29.019531s4.0390625 20.046875 27.4999995 27.511719c.140626.042969.28125.085937.421876.125l89.898437 25.726562 48.617187 139.023438c6.628907 18.953125 21.507813 30.726562 38.835938 30.726562 10.925781 0 21.671875-4.578125 31.078125-13.234375l55.605469-51.199218 80.652344 64.941406c.007812.007812.019531.011718.027343.019531l.765625.617187c.070313.054688.144532.113282.214844.167969 8.964844 6.953125 18.75 10.625 28.308594 10.628907h.003906c18.675781 0 33.546875-13.824219 37.878906-35.214844l71.011719-350.640625c2.851563-14.074219.460937-26.667969-6.734375-35.464844zm-356.191406 234.742187 173.441406-88.605468-107.996094 114.753906c-1.769531 1.878906-3.023437 4.179688-3.640625 6.683594l-20.824219 84.351562zm68.132812 139.332032c-.71875.660156-1.441406 1.25-2.164062 1.792968l19.320312-78.25 35.144532 28.300782zm265.390625-344.566406-71.011719 350.644531c-.683593 3.355469-2.867187 11.164062-8.480468 11.164062-2.773438 0-6.257813-1.511719-9.824219-4.257812l-91.390625-73.585938c-.011719-.011719-.027344-.023437-.042969-.03125l-54.378906-43.789062 156.175781-165.949219c5-5.3125 5.453125-13.449219 1.074219-19.285156-4.382813-5.835938-12.324219-7.671875-18.820313-4.351563l-256.867187 131.226563-91.121094-26.070313 433.265625-165.390625c3.660156-1.398437 6.214844-1.691406 7.710938-1.691406.917968 0 2.550781.109375 3.15625.855469.796875.972656 1.8125 4.289062.554687 10.511719zm0 0"/>
-            </g>
-        </symbol>
-        <symbol id="mail" viewBox="0 0 479.058 479.058">
-            <g>
-                 <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
-            </g>
-        </symbol>
-     </svg>  
-    <div class="page">
+    <div class="site-container">
         <header class="header">
             <div class="container">
-                <div class="header-inner">
-                        <a class="header-link" href="index.html">Главная</a>
-                    <div class="header-right">
-                        <div class="header-contacts">
-                            <a class="header-contacts__link" href="https://t.me/r4skoll">
-                                <svg>
-                                   <use xlink:href="#tg"></use>
-                                </svg>
-                                <span class="contacts-title">@r4skoll</span>
-                            </a>
-                            <a class="header-contacts__link" href="mailto:davydchenkov1@gmail.com">
-                                <svg>
-                                   <use xlink:href="#mail"></use>
-                                </svg>
-                                <span class="contacts-title">davydchenkov1@gmail.com</span>
-                            </a>
-                        </div>
-                        <button href="#" class="themetoggle">
-                            <svg class="day">
-                                    <use xlink:href="#day"></use>
-                            </svg>
-                            <svg class="night">
-                                <use xlink:href="#night"></use>
-                            </svg>
-                        </button>
+                <div class="header__wrap">
+                    <div class="header__left"><a href="index.html" class="header__link">Главная</a></div>
+                    <div class="header__right"><a href="https://t.me/r4skoll" class="link-contact"><svg>
+                                <use xlink:href="img/sprite.svg#tg"></use>
+                            </svg> <span class="link-contact__text">@r4skoll</span> </a><a
+                            href="mailto:davydchenkov1@gmail.com" class="link-contact"><svg>
+                                <use xlink:href="img/sprite.svg#mail"></use>
+                            </svg> <span class="link-contact__text">davydchenkov1@gmail.com</span></a>
+                        <div class="checkbox"></div>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="product">
-            <div class="product-about">
+        <div class="main">
+            <section class="product">
                 <div class="container">
-                    <h1 class="about-title">Фирма по ремонту "expert5"</h1>
-                    <ul class="product-table">
-                        <li class="product-table__item">
-                            <h4 class="product-table__type-name">Тип сайта</h4>
-                            <p class="product-table__name">Сайт компании</p>
+                    <h1 class="product-title">Сайт компании "Expert5"</h1>
+                    <ul class="product-list list-reset">
+                        <li class="product-list__item">
+                            <h4 class="product-list__type-name">Тип сайта</h4>
+                            <p class="product-list__name">Сайт компании</p>
                         </li>
-                        <li class="product-table__item">
-                            <h4 class="product-table__type-name">Отрасль</h4>
-                            <p class="product-table__name">Сервис</p>
+                        <li class="product-list__item">
+                            <h4 class="product-list__type-name">Отрасль</h4>
+                            <p class="product-list__name">Услуги</p>
                         </li>
-                        <li class="product-table__item">
-                            <h4 class="product-table__type-name">Срок выполнения</h4>
-                            <p class="product-table__name">10 дней</p>
+                        <li class="product-list__item">
+                            <h4 class="product-list__type-name">Срок выполнения</h4>
+                            <p class="product-list__name">10 часов</p>
                         </li>
-                        <li class="product-table__item">
-                            <h4 class="product-table__type-name">Технологии</h4>
-                            <p class="product-table__name">HTML5,SCSS,<wbr>JS,Gulp</p>
+                        <li class="product-list__item">
+                            <h4 class="product-list__type-name">Технологии</h4>
+                            <p class="product-list__name">HTML5,SCSS,<wbr>JS,Gulp</p>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div class="projects">
-                <div class="container">
-                    <div class="video">
-                        <video src="/portfolio/img/video/expert.webm" preload="metadata" loop muted autoplay playsinlie></video>
+                    <div class="video"><video src="/portfolio/img/expert.webm" preload="metadata" loop muted autoplay
+                            playsinline></video></div>
+                    <div class="product-wrapper">
+                        <div class="project" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000">
+                            <div class="project__wrap" style="background-image: url('img/expert-main.jpg');"><a
+                                    href="https://r4skolov.github.io/expert5/index.html" target="_blank"
+                                    class="project__link">
+                                    <div class="project__about">
+                                        <h2 class="project__title">Expert5</h2><span class="project__subtitle">Главная
+                                            страница</span> <button
+                                            class="the-button call-to-button btn--position"><span
+                                                class="button-text">Перейти</span>
+                                            <div class="button-mask"></div>
+                                        </button>
+                                    </div>
+                                </a></div>
+                        </div>
                     </div>
-                    <div class="projects-wrapper">
-                        <div class="projects-page__item background--expert5" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
-                            <a class="projects-item__link" href="https://r4skolov.github.io/expert5/index.html" target="_blank">
-                                <div class="projects-about">
-                                    <div class="projects-item__name">expert5</div>
-                                    <div class="text-subtitle">Главная страница</div>
-                                </div>
-                            </a>
+                    <div class="other-projects">
+                        <h2 class="product-title">Другие проекты</h2>
+                        <div class="other-project">
+                            <div class="other-project__wrap">
+                                <div class="other-project__item" data-aos="fade-right" data-aos-offset="250"
+                                    data-aos-duration="1000" data-aos-delay="50"><a class="other-project__link"
+                                        href="mars.html">
+                                        <div class="other-project__img"><img src="/portfolio/img/mars-main.jpg" alt="Марс">
+                                            <div class="other-project__name">Марс</div>
+                                        </div>
+                                    </a></div>
+                                <div class="other-project__item" data-aos="fade-left" data-aos-offset="250"
+                                    data-aos-duration="1000" data-aos-delay="550"><a class="other-project__link"
+                                        href="roscafe.html">
+                                        <div class="other-project__img"><img src="/portfolio/img/roscafe-main.jpg" alt="Roscafe">
+                                            <div class="other-project__name">Roscafe</div>
+                                        </div>
+                                    </a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="other-projects">
-                <div class="container">
-                    <h2 class="about-title">Другие проекты</h2>
-                    <div class="other-projects__wrapper">
-                       <div class="other-projects__item" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1000" data-aos-delay="50">
-                           <a class="other-projects__link" href="roscafe.html">
-                                <div class="other-projects__img">
-                                    <img src="/portfolio/img/project1_01.jpg" alt="pahu">
-                                    <div class="other-projects__name">Roscafe</div>
-                                </div>
-                           </a>
-                       </div>
-                       <div class="other-projects__item" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000"  data-aos-delay="550">
-                        <a class="other-projects__link" href="status-stroy.html">
-                             <div class="other-projects__img">
-                                 <img src="/portfolio/img/project3.jpg" alt="марс">
-                                 <div class="other-projects__name">Статус строй</div>
-                             </div>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
-    <script src="/portfolio/js/aos.js"></script>
+    <script src="/portfolio/js/vendor.js"></script>
     <script src="/portfolio/js/main.js"></script>
 </body>
 
